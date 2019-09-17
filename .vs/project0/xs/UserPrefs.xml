@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{A80EA484-158E-643F-05BE-E073F0DD142F}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MoneyManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="44" Column="13" />
+      <File FileName="Assets/Scripts/VillagerMovement.cs" Line="33" Column="17" />
+      <File FileName="Assets/Scripts/dialogHolder.cs" Line="39" Column="87" />
+      <File FileName="Assets/Scripts/DialogueManager.cs" Line="25" Column="43" />
+      <File FileName="Assets/Scripts/CameraController.cs" Line="39" Column="10" />
+      <File FileName="Assets/Scripts/Bounds.cs" Line="14" Column="37" />
+      <File FileName="Assets/Scripts/SFXManager.cs" Line="16" Column="1" />
+      <File FileName="Assets/Scripts/PlayerHealthManager.cs" Line="32" Column="15" />
+      <File FileName="Assets/Scripts/MusicController.cs" Line="48" Column="42" />
+      <File FileName="Assets/Scripts/MusicSwitcher.cs" Line="20" Column="41" />
+      <File FileName="Assets/Scripts/VolumeController.cs" Line="28" Column="9" />
+      <File FileName="Assets/Scripts/VolumeManager.cs" Line="25" Column="12" />
+      <File FileName="Assets/Scripts/MoneyManager.cs" Line="14" Column="1" />
+      <File FileName="Assets/Scripts/GoldPickup.cs" Line="25" Column="33" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

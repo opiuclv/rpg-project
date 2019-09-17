@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Storage
+  - Vendor
+  - Inventory
+  - Equipment
+  - Craft
+  - Item
+  - SkillBar
+  - Weapon
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - "\u6700\u9AD8"
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 4144413157
+    locked: 0
+  - name: Player
+    uniqueID: 675597409
+    locked: 0
+  - name: WorldObject
+    uniqueID: 2864448223
+    locked: 0
+  - name: UI
+    uniqueID: 4022083905
+    locked: 0
