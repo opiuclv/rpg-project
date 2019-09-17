@@ -2193,11 +2193,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ColorOfRarity:
-  - rgba: 4291875024
-  - rgba: 4294950266
-  - rgba: 4294942682
-  - rgba: 4286251005
-  - rgba: 4286230271
+  - serializedVersion: 2
+    rgba: 4291875024
+  - serializedVersion: 2
+    rgba: 4294950266
+  - serializedVersion: 2
+    rgba: 4294942682
+  - serializedVersion: 2
+    rgba: 4286251005
+  - serializedVersion: 2
+    rgba: 4286230271
 --- !u!114 &114551738974744954
 MonoBehaviour:
   m_ObjectHideFlags: 1

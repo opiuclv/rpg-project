@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// 管理敵人血量 + 經驗量
+
 public class EnemyHealthManager : MonoBehaviour {
 
     public int MaxHealth;
     public int CurrentHealth;
 
-    private PlayerStats thePlayerStats;
+    private PlayerStats thePlayerStats;     // 玩家經驗值系統
 
-    public int expToGive;
+    public int expToGive;                   // 敵人死掉的經驗值
 
     public string enemyQuestName;
     private QuestManager theQM;
@@ -32,19 +34,17 @@ public class EnemyHealthManager : MonoBehaviour {
 
             Destroy(gameObject);
 
-            thePlayerStats.AddExperience(expToGive);
+            thePlayerStats.AddExperience(expToGive);    // 給玩家加經驗
         }
     }
 
-    public void HurtEnemy(int damageToGive)
+    public void HurtEnemy(int damageToGive)             // 敵人受傷
     {
         CurrentHealth -= damageToGive;
-
     }
 
-    public void SetMaxHealth()
+    public void SetMaxHealth()                          // 使滿血
     {
         CurrentHealth = MaxHealth;
     }
 }
-

@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// 控制音量 ( 各個音效 音樂
+
 public class VolumeController : MonoBehaviour {
 
     private AudioSource theAudio;
 
-    private float audioLevel;
-    public float defaultAudio;
+    private float audioLevel;                       // 當前音量
+    public float defaultAudio;                      // 預設最大音量
 
 	// Use this for initialization
 	void Start () {
@@ -19,9 +21,9 @@ public class VolumeController : MonoBehaviour {
 		
 	}
 
-    public void SetAudioLevel(float volume)
+    public void SetAudioLevel(float volume)         // 設定此音效(音樂)的音量
     {
-        if(theAudio == null)
+        if (theAudio == null)
         {
             theAudio = GetComponent<AudioSource>();
         }

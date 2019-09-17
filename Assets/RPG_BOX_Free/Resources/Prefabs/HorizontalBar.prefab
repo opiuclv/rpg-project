@@ -138,14 +138,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BarColor:
+    serializedVersion: 2
     rgba: 4294947328
   BackgroundColor:
+    serializedVersion: 2
     rgba: 4286479998
   OutlineColor:
+    serializedVersion: 2
     rgba: 4278190080
   OutlineSize: 2
   TextFontSize: 11
   TextColor:
+    serializedVersion: 2
     rgba: 4278190080
   BarSize: {x: 130, y: 20}
   PercentageRoundingToNearest: 1

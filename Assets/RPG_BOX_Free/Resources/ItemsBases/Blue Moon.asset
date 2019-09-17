@@ -13,11 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 21300000, guid: c57e820dd83665147b991a398b49cf74, type: 3}
   itemName: Blue Moon
-  Description: 
   SellPrice: 180
   BuyPrice: 360
   itemType: 0
   itemRarity: 2
+  Description: 
+  IsStackable: 0
   LevelReq: 7
   mainStat:
     TheStat: 1

@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoldPickup : MonoBehaviour {
+// 地上的錢 可以被撿起來
+
+public class GoldPickUp : MonoBehaviour {
 
     public int value;
-    public ShopManager theMM;
+    public MoneyManager theMM;
 
 	// Use this for initialization
 	void Start () {
-        theMM = FindObjectOfType<ShopManager>();
+        theMM = FindObjectOfType<MoneyManager>();
 	}
 	
 	// Update is called once per frame
@@ -17,12 +19,12 @@ public class GoldPickup : MonoBehaviour {
 		
 	}
 
-	private void OnTriggerEnter2D(Collider2D other)
-	{
-        if(other.gameObject.name == "Player")
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
         {
             theMM.AddMoney(value);
             Destroy(gameObject);
         }
-	}
+    }
 }

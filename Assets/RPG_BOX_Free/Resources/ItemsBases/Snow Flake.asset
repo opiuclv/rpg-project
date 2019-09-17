@@ -13,13 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 21300000, guid: 4a02d987f50b02c44b83ebe15056e15e, type: 3}
   itemName: Snow Flake
-  Description: 'Used to craft Freezing
-
-    Weapons.'
   SellPrice: 250
   BuyPrice: 500
   itemType: 1
   itemRarity: 0
+  Description: 'Used to craft Freezing
+
+    Weapons.'
+  IsStackable: 0
   LevelReq: 0
   mainStat:
     TheStat: 0

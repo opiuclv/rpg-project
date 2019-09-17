@@ -13,11 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 21300000, guid: 3b8f928d896c8624f90b0cebf35c5e22, type: 3}
   itemName: Ruby Amulet
-  Description: 
   SellPrice: 40
   BuyPrice: 80
   itemType: 0
   itemRarity: 1
+  Description: 
+  IsStackable: 0
   LevelReq: 1
   mainStat:
     TheStat: 1

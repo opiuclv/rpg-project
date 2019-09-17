@@ -13,11 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 21300000, guid: cce4c0af41d461f4bb5356498417d2e9, type: 3}
   itemName: Sharp Axe1
-  Description: 
   SellPrice: 350
   BuyPrice: 700
   itemType: 0
   itemRarity: 2
+  Description: 
+  IsStackable: 0
   LevelReq: 13
   mainStat:
     TheStat: 0

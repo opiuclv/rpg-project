@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Load Scene 時 給Camera邊界
+
 public class Bounds : MonoBehaviour {
 
     private BoxCollider2D bounds;
@@ -12,10 +14,5 @@ public class Bounds : MonoBehaviour {
         bounds = GetComponent<BoxCollider2D>();
         theCamera = FindObjectOfType<CameraController>();
         theCamera.SetBounds(bounds);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }

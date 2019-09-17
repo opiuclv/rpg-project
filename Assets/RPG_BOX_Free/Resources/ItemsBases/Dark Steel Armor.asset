@@ -13,11 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 21300000, guid: e224731b91dec134a9042cf61e29ad02, type: 3}
   itemName: Dark Steel Armor
-  Description: 
   SellPrice: 1000
   BuyPrice: 2000
   itemType: 0
   itemRarity: 3
+  Description: 
+  IsStackable: 0
   LevelReq: 15
   mainStat:
     TheStat: 2

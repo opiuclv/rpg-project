@@ -13,11 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 21300000, guid: 6ea1ba9d7c1acf9408a8150d08ebd6ab, type: 3}
   itemName: White Cloth
-  Description: 
   SellPrice: 100
   BuyPrice: 200
   itemType: 0
   itemRarity: 1
+  Description: 
+  IsStackable: 0
   LevelReq: 4
   mainStat:
     TheStat: 1

@@ -13,7 +13,6 @@ public class ShopManager : MonoBehaviour
     //For Test Scene
     public int TestScenePlayerGold;
     Text TestSceneGoldText;
-    Text TestSceneGoldText2;
     //For Test Scene
 
 
@@ -50,6 +49,7 @@ public class ShopManager : MonoBehaviour
     InventoryManager AccInv;
 
 
+
     void TransformsLoader()//load needed Transforms
     {
         if (ItemsParent == null)
@@ -72,11 +72,10 @@ public class ShopManager : MonoBehaviour
         IsSellMode = false;
         TransformsLoader();
         PrefabLoader();
-        TestScenePlayerGold += 5000; // 回傳money
+        TestScenePlayerGold += 5000;
         if (GameObject.Find("TestSceneGoldText") != null)
         {
             TestSceneGoldText = GameObject.Find("TestSceneGoldText").GetComponent<Text>();
-            TestSceneGoldText2 = GameObject.Find("TestSceneGoldText2").GetComponent<Text>();
         }
         if (GameObject.Find("InventoryWindow") != null)
         {
@@ -379,12 +378,7 @@ public class ShopManager : MonoBehaviour
     {
         if (TestSceneGoldText != null)
         {
-            TestSceneGoldText2.text = "Gold: " + TestScenePlayerGold;
             TestSceneGoldText.text = "Gold: " + TestScenePlayerGold;
         }
-    }
-    public void AddMoney(int goldToAdd)
-    {
-        TestScenePlayerGold += goldToAdd;
     }
 }

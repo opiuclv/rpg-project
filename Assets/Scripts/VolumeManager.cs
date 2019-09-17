@@ -2,27 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// 管理音量
+
 public class VolumeManager : MonoBehaviour {
 
-    public VolumeController vcObjects;
+    public VolumeController[] vcObjects;
 
-    public float MaxVolumeLevel = 1.0f;
+    public float maxVolumeLevel = 1.0f;
     public float currentVolumeLevel;
 
 	// Use this for initialization
 	void Start () {
-        vcObjects = FindObjectOfType<VolumeController>();
+        vcObjects = FindObjectsOfType<VolumeController>();
 
-        if(currentVolumeLevel > MaxVolumeLevel)
+        if (currentVolumeLevel > maxVolumeLevel)
         {
-            currentVolumeLevel = MaxVolumeLevel;
+            currentVolumeLevel = maxVolumeLevel;
         }
 
-        /*for (int i = 0; i < vcObjects.Length; i++)
+        for (int i = 0; i < vcObjects.Length; i++)
         {
-            Debug.Log("I'm on loop " + i);
             vcObjects[i].SetAudioLevel(currentVolumeLevel);
-        }*/
+        }
 	}
 	
 	// Update is called once per frame

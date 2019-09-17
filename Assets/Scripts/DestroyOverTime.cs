@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// 超時殺掉
+
 public class DestroyOverTime : MonoBehaviour {
 
     public float timeToDestroy;
@@ -15,7 +17,7 @@ public class DestroyOverTime : MonoBehaviour {
 	void Update () {
         timeToDestroy -= Time.deltaTime;
 
-        if(timeToDestroy <= 0)
+        if (timeToDestroy <= 0)
         {
             Destroy(gameObject);
         }

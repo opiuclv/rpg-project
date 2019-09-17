@@ -13,11 +13,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 21300000, guid: 8a03d5fe8f68377479557a9ce0284975, type: 3}
   itemName: Mysterious Bow
-  Description: 
   SellPrice: 600
   BuyPrice: 1200
   itemType: 0
   itemRarity: 4
+  Description: 
   IsStackable: 0
   LevelReq: 80
   mainStat:

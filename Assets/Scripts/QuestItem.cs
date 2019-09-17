@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// 任務觸發 ( Item )
+
 public class QuestItem : MonoBehaviour {
 
     public int questNumber;
@@ -20,15 +22,15 @@ public class QuestItem : MonoBehaviour {
 		
 	}
 
-	private void OnTriggerEnter2D(Collider2D other)
-	{
-        if(other.gameObject.name == "Player")
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")          // 是玩家 + 任務尚未完成 + 任務已經啟動
         {
-            if(!theQM.questCompleted[questNumber] && theQM.quests[questNumber].gameObject.activeSelf)
+            if (!theQM.questCompleted[questNumber] && theQM.quests[questNumber].gameObject.activeSelf)
             {
                 theQM.itemCollected = itemName;
                 gameObject.SetActive(false);
             }
         }
-	}
+    }
 }
