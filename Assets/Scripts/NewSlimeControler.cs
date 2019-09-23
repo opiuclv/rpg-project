@@ -17,7 +17,6 @@ public class NewSlimeControler : MonoBehaviour {
     public float attackRange;           //攻擊距離
     public float walkSpeed;             //移動速度
     public float runSpeed;              //跑動速度
-    //public float turnSpeed;             //轉身速度，建議0.1
 
     private Rigidbody2D myRigidbody;
 
@@ -40,11 +39,11 @@ public class NewSlimeControler : MonoBehaviour {
 
     private float diatanceToPlayer;             //怪物與玩家的距離
     private float diatanceToInitial;            //怪物與初始位置的距離
-    //private Quaternion targetRotation;          //怪物的目標朝向
     private Vector3 targetDirection;            //怪物的目標朝向
     private float targetDistance;               //怪物與目標的距離
 
     private bool is_Warned = false;
+    private bool is_Walking = false;
     private bool is_Running = false;
     private bool canSwitchState = true;         // 是否可以切換狀態
     private float lastSwitchStateTime;          // 最近一次切換狀態時間
@@ -98,7 +97,12 @@ public class NewSlimeControler : MonoBehaviour {
             //targetRotation = Quaternion.Euler(0, Random.Range(1, 5) * 90, 0);
             targetDirection = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f) );
 
-            thisAnimator.SetTrigger("Walk");
+            if (!is_Walking)
+            {
+                thisAnimator.SetTrigger("Walk");
+                animationTime = Time.time;
+                is_Walking = true;
+            }
         }
     }
 
@@ -107,6 +111,20 @@ public class NewSlimeControler : MonoBehaviour {
         if (Time.time - lastSwitchStateTime > switchStateDelay)     // 切換狀態延遲
         {
             canSwitchState = true;
+        }
+
+        if (Time.time - animationTime > thisAnimator.GetCurrentAnimatorStateInfo(0).length)
+        {
+            if (is_Walking)
+            {
+                thisAnimator.SetTrigger("Walk");
+                animationTime = Time.time;
+            }
+            if (is_Running)
+            {
+                thisAnimator.SetTrigger("Run");
+                animationTime = Time.time;
+            }
         }
 
         if (canSwitchState)
@@ -157,12 +175,10 @@ public class NewSlimeControler : MonoBehaviour {
                     if (!is_Warned)
                     {
                         thisAnimator.SetTrigger("Warn");
-                        // gameObject.GetComponent<AudioSource>().Play();
                         is_Warned = true;
                     }
 
                     WarningCheck();
-
                     break;
 
                 //追擊狀態，朝著玩家跑去
@@ -187,6 +203,7 @@ public class NewSlimeControler : MonoBehaviour {
                 case MonsterState.RETURN:
 
                     thisAnimator.SetTrigger("Walk");
+                    is_Walking = true;
 
                     targetDirection = Vector2.MoveTowards(transform.position, initialPosition, Time.deltaTime * runSpeed);
                     myRigidbody.MovePosition(targetDirection);
@@ -256,23 +273,26 @@ public class NewSlimeControler : MonoBehaviour {
         if (diatanceToPlayer < attackRange)
         {
             myRigidbody.velocity = Vector2.zero;
+            is_Walking = false;
             currentState = MonsterState.ATTACK;
         }
         else if (diatanceToPlayer < defendRadius)
         {
             myRigidbody.velocity = Vector2.zero;
+            is_Walking = false;
             currentState = MonsterState.CHASE;
         }
         else if (diatanceToPlayer < alertRadius)
         {
             myRigidbody.velocity = Vector2.zero;
+            is_Walking = false;
             currentState = MonsterState.WARN;
         }
 
         if (diatanceToInitial > wanderRadius)
         {
-            //朝向調整為初始方向
             myRigidbody.velocity = Vector2.zero;
+            is_Walking = false;
         }
     }
 
@@ -287,6 +307,7 @@ public class NewSlimeControler : MonoBehaviour {
         if (diatanceToPlayer < attackRange)
         {
             myRigidbody.velocity = Vector2.zero;
+            is_Running = false;
             currentState = MonsterState.ATTACK;
         }
         //如果超出追擊範圍或者敵人的距離超出警戒距離就返回
@@ -294,6 +315,7 @@ public class NewSlimeControler : MonoBehaviour {
         {
             myRigidbody.velocity = Vector2.zero;
             currentState = MonsterState.RETURN;
+            is_Running = false;
         }
         
     }

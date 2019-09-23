@@ -9,7 +9,7 @@ public class ShopManager : MonoBehaviour
 
     List<CustomBoolIntVector2> PositionsAndOccupation = new List<CustomBoolIntVector2>();//list for every position in the inventroy and is it occupied or not
 
-
+    private MoneyManager theMM ; // MoneyManager控制
     //For Test Scene
     public int TestScenePlayerGold;
     Text TestSceneGoldText;
@@ -72,7 +72,15 @@ public class ShopManager : MonoBehaviour
         IsSellMode = false;
         TransformsLoader();
         PrefabLoader();
-        TestScenePlayerGold += 5000;
+        if (PlayerPrefs.HasKey("CurrentMoney"))                     // 如果已經有"CurrentMoney"欄位 ( PlayerPrefs不懂是啥 特別的儲存空間?
+        {
+            TestScenePlayerGold = PlayerPrefs.GetInt("CurrentMoney");       // 從CurrentMoney欄位抓當前金錢
+        }
+        else
+        {
+            TestScenePlayerGold = 0;                                        // 尚未有"CurrentMoney"欄位
+            PlayerPrefs.SetInt("CurrentMoney", 0);                  // 設定一個int欄位"CurrentMoney" 給定數值為0
+        }
         if (GameObject.Find("TestSceneGoldText") != null)
         {
             TestSceneGoldText = GameObject.Find("TestSceneGoldText").GetComponent<Text>();
@@ -122,6 +130,7 @@ public class ShopManager : MonoBehaviour
         //FOR Test Scene ONLY
 
     }
+
 
     public void ChangeSprites() //change sprites of background and slots
     {
@@ -376,6 +385,18 @@ public class ShopManager : MonoBehaviour
 
     private void Update()
     {
+        // 因為會丟錢標的關係 所以要隨時更新金錢
+        if (PlayerPrefs.HasKey("CurrentMoney"))                     // 如果已經有"CurrentMoney"欄位 ( PlayerPrefs不懂是啥 特別的儲存空間?
+        {
+            TestScenePlayerGold = PlayerPrefs.GetInt("CurrentMoney");       // 從CurrentMoney欄位抓當前金錢
+        }
+        else
+        {
+            TestScenePlayerGold = 0;                                        // 尚未有"CurrentMoney"欄位
+            PlayerPrefs.SetInt("CurrentMoney", 0);                  // 設定一個int欄位"CurrentMoney" 給定數值為0
+        }
+
+        // 顯示目前金錢量
         if (TestSceneGoldText != null)
         {
             TestSceneGoldText.text = "Gold: " + TestScenePlayerGold;
