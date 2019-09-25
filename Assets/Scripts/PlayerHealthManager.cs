@@ -18,6 +18,7 @@ public class PlayerHealthManager : MonoBehaviour {
     private SpriteRenderer playerSprite;
     
     private SFXMnager theSFXM;
+    public string levelToLoad;
     private MusicControler theMusicControler;
 
     // Use this for initialization
@@ -35,8 +36,10 @@ public class PlayerHealthManager : MonoBehaviour {
         {
             theMusicControler.musicCanPlay = false;
             theSFXM.playerDead.Play();
-
             gameObject.SetActive(false);
+            Destroy(GameObject.Find("Main Camera"));
+            Destroy(GameObject.Find("Canvas")); // 把所有原本don't destroy的東西死掉後都destroy
+            Application.LoadLevel(levelToLoad); // load到死亡畫面
             // GetComponent<PlayerController>().canMove = false;
             // playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 0f);
 

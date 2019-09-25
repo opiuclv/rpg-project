@@ -76,6 +76,7 @@
      <Compile Include="Assets\Scripts\DestroyOverTime.cs" />
      <Compile Include="Assets\Scripts\DialogueHolder.cs" />
      <Compile Include="Assets\Scripts\DialogueManager.cs" />
+     <Compile Include="Assets\Scripts\End_game.cs" />
      <Compile Include="Assets\Scripts\EnemyHealthManager.cs" />
      <Compile Include="Assets\Scripts\FloatingNumbers.cs" />
      <Compile Include="Assets\Scripts\FloatingText.cs" />
@@ -84,6 +85,7 @@
      <Compile Include="Assets\Scripts\HurtPlayer.cs" />
      <Compile Include="Assets\Scripts\LoadNewArea.cs" />
      <Compile Include="Assets\Scripts\LoadScene.cs" />
+     <Compile Include="Assets\Scripts\LoadTXT.cs" />
      <Compile Include="Assets\Scripts\MoneyManager.cs" />
      <Compile Include="Assets\Scripts\MusicControler.cs" />
      <Compile Include="Assets\Scripts\MusicSwitcher.cs" />
