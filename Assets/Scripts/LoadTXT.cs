@@ -11,7 +11,7 @@ public class LoadTXT : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        Mytxt = ReadFile("C:\\Users\\Eniac\\Desktop\\Data.txt", 1);  //txt文件的绝对路径
+        Mytxt = ReadFile("C:\\Users\\User\\Desktop\\RPG_Data.txt", 1);  //txt文件的绝对路径
         print(Mytxt);           //输出验证
 
     }

@@ -32,12 +32,6 @@ public class Villager_shop : MonoBehaviour {
                     }
 
                 }
-                else
-                {
-                    canvas_g.alpha = 0;
-                    canvas_g.interactable = false;
-                    canvas_g.blocksRaycasts = false;
-                }
             }
         }
     }
