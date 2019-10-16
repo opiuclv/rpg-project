@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour {
 
     public string[] dialogueLines;      // 內容
     public int currentLine;
+    public int totalLine;
 
     private PlayerController thePlayer;
 
@@ -37,7 +38,8 @@ public class DialogueManager : MonoBehaviour {
             currentLine++;
         }
 
-        if (dialogueActive && currentLine >= dialogueLines.Length)          // 關閉對話框
+        // if (dialogueActive && currentLine >= dialogueLines.Length)          // 關閉對話框
+        if (dialogueActive && currentLine >= totalLine)          // 關閉對話框
         {
             dBox.SetActive(false);
             dialogueActive = false;
@@ -47,7 +49,7 @@ public class DialogueManager : MonoBehaviour {
         }
 
         // dText.text = dialogueLines[currentLine];                            // 顯示文字內容
-        dText.text = ReadFile("C:\\Users\\User\\Desktop\\RPG_Data.txt", currentLine);
+        dText.text = ReadFile("C:\\Users\\User\\Desktop\\RPG_Data.txt", currentLine); // 目前只有找到利用絕對路徑來存取的方法，希望能改成相對路徑(同一資料夾讀取)
     }
 
     /* public void ShowBox(string dialogue)
@@ -68,6 +70,7 @@ public class DialogueManager : MonoBehaviour {
     string ReadFile(string PathName, int linenumber)
     {
         string[] strs = File.ReadAllLines(PathName);//讀取txt文本的内容，返回sring数组的元素是每行内容
+        totalLine = strs.Length + 1; // 把總共有幾行讀出來
         if (linenumber == 0)
         {
             return "";

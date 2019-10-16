@@ -11091,6 +11091,7 @@ MonoBehaviour:
   dialogueActive: 0
   dialogueLines: []
   currentLine: 0
+  totalLine: 0
 --- !u!224 &1488862709
 RectTransform:
   m_ObjectHideFlags: 0
