@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 50484985951753618}
   - component: {fileID: 114674109658326182}
   m_Layer: 0
-  m_Name: coinBullet
+  m_Name: CoinBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
