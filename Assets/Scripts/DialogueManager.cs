@@ -38,8 +38,7 @@ public class DialogueManager : MonoBehaviour {
             currentLine++;
         }
 
-        // if (dialogueActive && currentLine >= dialogueLines.Length)          // 關閉對話框
-        if (dialogueActive && currentLine >= totalLine)          // 關閉對話框
+        if (dialogueActive && currentLine >= dialogueLines.Length)          // 關閉對話框
         {
             dBox.SetActive(false);
             dialogueActive = false;
@@ -48,8 +47,8 @@ public class DialogueManager : MonoBehaviour {
             thePlayer.canMove = true;
         }
 
-        // dText.text = dialogueLines[currentLine];                            // 顯示文字內容
-        dText.text = ReadFile("C:\\Users\\User\\Desktop\\RPG_Data.txt", currentLine); // 目前只有找到利用絕對路徑來存取的方法，希望能改成相對路徑(同一資料夾讀取)
+        dText.text = dialogueLines[currentLine];                            // 顯示文字內容
+        // dText.text = ReadFile("C:\\Users\\User\\Desktop\\RPG_Data.txt", currentLine); // 目前只有找到利用絕對路徑來存取的方法，希望能改成相對路徑(同一資料夾讀取)
     }
 
     /* public void ShowBox(string dialogue)
