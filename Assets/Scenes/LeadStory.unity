@@ -174,7 +174,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1377424725}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 403db8bac9381fe43b7b40d7cd4de014, type: 3}
   m_Name: 
@@ -185,6 +185,7 @@ MonoBehaviour:
   dialogueLines: []
   currentLine: 0
   totalLine: 0
+  clip: {fileID: 0}
 --- !u!1 &1565506456
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,6 +196,7 @@ GameObject:
   - component: {fileID: 1565506457}
   - component: {fileID: 1565506459}
   - component: {fileID: 1565506458}
+  - component: {fileID: 1565506461}
   - component: {fileID: 1565506460}
   m_Layer: 5
   m_Name: Text
@@ -218,7 +220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 11}
+  m_AnchoredPosition: {x: 986, y: 815}
   m_SizeDelta: {x: 700, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1565506458
@@ -242,7 +244,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -272,7 +274,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecdbb15d30e30cb4a92beeb9109aa420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charsPerSecond: 0.2
+  clip: {fileID: 0}
+--- !u!114 &1565506461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1565506456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403db8bac9381fe43b7b40d7cd4de014, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: main
+  dText: {fileID: 1565506458}
+  dialogueActive: 0
+  dialogueLines: []
+  currentLine: 0
+  totalLine: 0
+  clip: {fileID: 0}
 --- !u!1 &1635150253
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,7 +443,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1932157039}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.133596, y: -9.363903, z: 0.16935195}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
