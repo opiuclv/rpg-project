@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour {
 
     private PlayerStats thePS;
     public Text LevelText;
+    public Camera theCamera; // 小地圖的camera
 
     private static bool UIExists;
 
@@ -30,6 +31,7 @@ public class UIManager : MonoBehaviour {
         }
 
         thePS = GetComponent<PlayerStats>();
+        theCamera = GetComponent<Camera>();
     }
 	
 	// Update is called once per frame
@@ -40,4 +42,12 @@ public class UIManager : MonoBehaviour {
         HPText.text = "HP: " + playerHealth.playerCurrentHealth + "/" + playerHealth.playerMaxHealth;
         LevelText.text = "Lvl: " + thePS.currentLevel;
 	}
+
+    void OnGUI(){
+        if ( Application.loadedLevelName == "home_inside" ) // 換到別的地圖要改變小地圖camera的位置
+        {
+            //Debug.Log("HHH");
+            //theCamera.transform.position =  new Vector3(50, 50, 40);
+        }
+    }
 }

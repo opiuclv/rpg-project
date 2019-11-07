@@ -39,7 +39,7 @@ public class LoadLeadStory : MonoBehaviour {
     private LoadLeadStory theLS;
     private string text;
 
-    public bool ok_to_Enter = false ;
+    public bool ok_to_Enter = false ; // 跑完整段文字才能繼續下一行 不然會有錯誤
 
  
 
@@ -93,9 +93,9 @@ public class LoadLeadStory : MonoBehaviour {
 
     void OnGUI()
     {
-        GUI.Label(new Rect(100, 100, 200, 200), "序章"); // 使用GUI函數來固定text顯示位置
+        GUI.Label(new Rect(Screen.width / 2 - 250, Screen.height / 2 - 150, 200, 200), "序章"); // 使用GUI函數來固定text顯示位置
         GUI.Label(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 50, 300, 200), text);
-        GUI.Label(new Rect(Screen.width / 2 + 200, Screen.height / 2 + 100, 200, 200), "Press Enter to continue...");
+        GUI.Label(new Rect(Screen.width / 2 + 200, Screen.height / 2 + 100, 200, 200), "Press Space to continue...");
     }
 
     //按路徑讀取txt文本的内容，第一個参數是路徑名，第二個参數是第幾行，返回值是sring[]數組
