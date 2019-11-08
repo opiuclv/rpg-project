@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/home_inside.unity
     guid: bcdb522ad13e7544bb1e9d9f5a5a74fc
   - enabled: 1
-    path: Assets/Scenes/city.unity
+    path: Assets/Scenes/village.unity
     guid: 4b29350dc4ed7814f80a84e1146930b5
   - enabled: 1
     path: Assets/Scenes/start.unity
@@ -24,6 +24,14 @@ EditorBuildSettings:
     path: Assets/Scenes/died.unity
     guid: 7c50f92ba55e0ac4c85a043aa78e4eec
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/LeadStory.unity
     guid: 4c98ee8654fcbd6488feeff5fa850984
+=======
+    path: Assets/Scenes/suburbs.unity
+    guid: ad415de495ba6214780804f7e31dbf6d
+  - enabled: 1
+    path: Assets/Scenes/forest.unity
+    guid: 3b174d5fb668eb544881ffefbdedb65f
+>>>>>>> hayden
   m_configObjects: {}

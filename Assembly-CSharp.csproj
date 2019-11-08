@@ -100,6 +100,10 @@
      <Compile Include="Assets\Scripts\QuestManager.cs" />
      <Compile Include="Assets\Scripts\QuestObject.cs" />
      <Compile Include="Assets\Scripts\QuestTrigger.cs" />
+     <Compile Include="Assets\Scripts\RandomMaps\AddRoom.cs" />
+     <Compile Include="Assets\Scripts\RandomMaps\Destroyer.cs" />
+     <Compile Include="Assets\Scripts\RandomMaps\RoomSpawner.cs" />
+     <Compile Include="Assets\Scripts\RandomMaps\RoomTemplates.cs" />
      <Compile Include="Assets\Scripts\SFXMnager.cs" />
      <Compile Include="Assets\Scripts\SlimeController.cs" />
      <Compile Include="Assets\Scripts\Small_map_CanGroup.cs" />
@@ -130,25 +134,40 @@
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TileObject.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TmxObject.cs" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth-Instanced.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\L.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\Novice_village.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\village.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\R.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDefault.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepth-Instanced.shader" />
      <None Include="Assets\Tiled2Unity\Prefabs\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Imported\test_city.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\Tiled2Unity.cginc" />
+<<<<<<< HEAD
      <None Include="Assets\Resources\RPG_Data.txt" />
+=======
+     <None Include="Assets\Tiled2Unity\Imported\TBLR.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\B.tiled2unity.xml" />
+>>>>>>> hayden
      <None Include="Assets\Tiled2Unity\Tiled2Unity.export.txt" />
      <None Include="Assets\Tiled2Unity\Imported\testhome.tiled2unity.xml" />
      <None Include="Assets\FreePixelMob\ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepth.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\TB.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\RB.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\LR.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\T.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\LT.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Textures\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Imported\testGame.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\LB.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDefault-Instanced.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaColorKey-Instanced.shader" />
      <None Include="Assets\Tiled2Unity\Imported\testhomeInside.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaColorKey.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\RT.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepthColorKey.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepthColorKey-Instanced.shader" />
      <None Include="Assets\Tiled2Unity\License.txt" />

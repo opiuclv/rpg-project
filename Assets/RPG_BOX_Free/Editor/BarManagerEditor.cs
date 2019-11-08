@@ -25,7 +25,7 @@ public class BarManagerEditor : Editor
     SerializedProperty percentageRoundingToNearest;
     SerializedProperty isShowText;
 
-    bool IsTestBar = false;
+   // bool IsTestBar = false;
     bool ShowTest = false;
 
 

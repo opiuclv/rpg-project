@@ -14,6 +14,8 @@ public class UIManager : MonoBehaviour {
     private PlayerStats thePS;
     public Text LevelText;
 
+	public Text EXPText; // 經驗條
+
     private static bool UIExists;
 
 	// Use this for initialization
@@ -39,6 +41,7 @@ public class UIManager : MonoBehaviour {
         healthBar.value = playerHealth.playerCurrentHealth;
         HPText.text = "HP: " + playerHealth.playerCurrentHealth + "/" + playerHealth.playerMaxHealth;
         LevelText.text = "Lvl: " + thePS.currentLevel;
+		EXPText.text = "EXP: " + thePS.currentExp + "/" + thePS.toLevelUp [thePS.currentLevel];
 	}
 
 }
