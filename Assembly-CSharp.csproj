@@ -102,6 +102,8 @@
      <Compile Include="Assets\Scripts\QuestTrigger.cs" />
      <Compile Include="Assets\Scripts\SFXMnager.cs" />
      <Compile Include="Assets\Scripts\SlimeController.cs" />
+     <Compile Include="Assets\Scripts\Small_map_CanGroup.cs" />
+     <Compile Include="Assets\Scripts\Smap_camera_Controller.cs" />
      <Compile Include="Assets\Scripts\Stop.cs" />
      <Compile Include="Assets\Scripts\TypewriterEffect.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
