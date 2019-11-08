@@ -43,4 +43,5 @@ public class UIManager : MonoBehaviour {
         LevelText.text = "Lvl: " + thePS.currentLevel;
 		EXPText.text = "EXP: " + thePS.currentExp + "/" + thePS.toLevelUp [thePS.currentLevel];
 	}
+
 }
