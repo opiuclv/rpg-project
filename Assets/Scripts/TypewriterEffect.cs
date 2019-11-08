@@ -1,64 +1,69 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.UI;
 
-public class TypewriterEffect : MonoBehaviour {
+public class TypewriterEffect : MonoBehaviour
 
-    public float charsPerSecond = 0.2f;//打字時間間隔
-    private string words;//保存需要顯示的文字
-
-    private float timer;//計時器
-    private Text myText;
-    private int currentPos=0;//當前打字位置
-
-    private LoadLeadStory theLS;
-
-    // Use this for initialization
-    void Start () {
-        theLS = FindObjectOfType<LoadLeadStory>();
-        timer = 0;
-        theLS.dialogueActive = true ;
-        charsPerSecond = Mathf.Max (0.2f,charsPerSecond);
-        myText = GetComponent<Text> ();
-        words = theLS.dText.text;//獲取Text的文本信息，保存到words中，然後動態更新文本顯示內容，實現打字機的效果
-    }
-
-    // Update is called once per frame
-    void Update () {
-        OnStartWriter ();
-        //Debug.Log (isActive);
-    }
-
-    public void StartEffect(){
-        theLS.dialogueActive = true ;
-    }
+    // ********************************************************這支script目前沒用到，但是這是是打字機效果的code原型，待之後有需要時使用
+{
     /// <summary>
-    /// 執行打字任務
+    /// 間隔時間
     /// </summary>
-    void OnStartWriter(){
+    private float letterPause = 0.2f;
 
-        if(theLS.dialogueActive){
-            timer += Time.deltaTime;
-            if(timer>=charsPerSecond){//判斷計時器是否到達
-                timer = 0;
-                currentPos++;
-                myText.text = myText.text + words.Substring (0,currentPos);//刷新文本顯示內容
+    public AudioClip clip;
 
-                if(currentPos>=words.Length) {
-                    OnFinish();
-                }
-            }
+    private AudioSource source;
+    /// <summary>
+    /// 暫存中間值
+    /// </summary>
+    private string word;
+    /// <summary>
+    /// 要顯示的內容
+    /// </summary>
+    private LoadLeadStory theLS;
+    private string text;
 
+    void Start()
+    {
+        theLS = FindObjectOfType<LoadLeadStory>();
+        text = theLS.dText.text ;
+        source = GetComponent<AudioSource>();
+        word = text;
+        text = "";
+        StartCoroutine(TypeText());
+    }
+
+    void Update()
+    {
+        if( Input.GetKeyDown(KeyCode.Space) )
+        {
+            text = theLS.dText.text ;
+            word = text;
+            text = "";
+            StartCoroutine(TypeText());
         }
     }
-    /// <summary>
-    /// 結束打字，初始化數據
-    /// </summary>
-    void OnFinish(){
-        theLS.dialogueActive = false ;
-        timer = 0;
-        currentPos = 0;
-        myText.text = words;
+
+    void OnGUI()
+    {
+        GUI.Label(new Rect(100, 100, 200, 200), "序章");
+        GUI.Label(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 50, 300, 200), text);
     }
 
+    /// <summary>
+    /// 打字機效果
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator TypeText()
+    {
+        foreach (char letter in word.ToCharArray())
+        {
+            text += letter;
+            if(clip )
+            {
+                source.PlayOneShot(clip);
+            }
+            yield return new WaitForSeconds(letterPause);
+        }
+    }
 }

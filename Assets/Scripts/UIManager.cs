@@ -40,4 +40,5 @@ public class UIManager : MonoBehaviour {
         HPText.text = "HP: " + playerHealth.playerCurrentHealth + "/" + playerHealth.playerMaxHealth;
         LevelText.text = "Lvl: " + thePS.currentLevel;
 	}
+
 }
