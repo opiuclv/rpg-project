@@ -9,7 +9,6 @@ public class ShopManager : MonoBehaviour
 
     List<CustomBoolIntVector2> PositionsAndOccupation = new List<CustomBoolIntVector2>();//list for every position in the inventroy and is it occupied or not
 
-    private MoneyManager theMM ; // MoneyManager控制
     //For Test Scene
     public int TestScenePlayerGold;
     Text TestSceneGoldText;
@@ -53,19 +52,19 @@ public class ShopManager : MonoBehaviour
     void TransformsLoader()//load needed Transforms
     {
         if (ItemsParent == null)
-        {
+		{
             ItemsParent = transform.Find("ItemsParent");
-        }
+        } 
         if (SlotsParent == null)
-        {
+		{
             SlotsParent = transform.Find("SlotsParent");
         }
         if (BackgroundRT == null)
-        {
+		{
             BackgroundRT = transform.Find("ShopBG").GetComponent<RectTransform>();
         }
 
-    }
+	} // TransformsLoader()
 
     private void Start()
     {
@@ -75,27 +74,28 @@ public class ShopManager : MonoBehaviour
         if (PlayerPrefs.HasKey("CurrentMoney"))                     // 如果已經有"CurrentMoney"欄位 ( PlayerPrefs不懂是啥 特別的儲存空間?
         {
             TestScenePlayerGold = PlayerPrefs.GetInt("CurrentMoney");       // 從CurrentMoney欄位抓當前金錢
-        }
+        } // if
         else
         {
             TestScenePlayerGold = 0;                                        // 尚未有"CurrentMoney"欄位
             PlayerPrefs.SetInt("CurrentMoney", 0);                  // 設定一個int欄位"CurrentMoney" 給定數值為0
-        }
-        if (GameObject.Find("TestSceneGoldText") != null)
+        } //else
+        if (GameObject.Find("TestSceneGoldText") != null)             
         {
-            TestSceneGoldText = GameObject.Find("TestSceneGoldText").GetComponent<Text>();
-        }
+            TestSceneGoldText = GameObject.Find("TestSceneGoldText").GetComponent<Text>(); // 設定金錢字幕
+        } // if
         if (GameObject.Find("InventoryWindow") != null)
         {
-            AccInv = GameObject.Find("InventoryWindow").GetComponent<InventoryManager>();
-        }
+            AccInv = GameObject.Find("InventoryWindow").GetComponent<InventoryManager>(); // 設定交易視窗
+        } // if
         if (GameObject.Find("SellModeButton")!=null)
         {
-            SellModeImage = GameObject.Find("SellModeButton").GetComponent<Image>();
-        }
+            SellModeImage = GameObject.Find("SellModeButton").GetComponent<Image>(); // 設定購買按鈕
+        } // if
+
         MaxNumberOfItemsALLinventory = Columns * Rows;
         StartCoroutine(AssignXYPos());
-    }
+	} // Start()
 
     IEnumerator AssignXYPos()
     {
@@ -129,7 +129,7 @@ public class ShopManager : MonoBehaviour
         }
         //FOR Test Scene ONLY
 
-    }
+	} // AssignXYPos()
 
 
     public void ChangeSprites() //change sprites of background and slots
@@ -163,7 +163,7 @@ public class ShopManager : MonoBehaviour
 
     public void SellModeActivator()//in case the user needed SellMode button, call this function
     {
-        IsSellMode = !IsSellMode;
+        IsSellMode = !IsSellMode; 
         if (IsSellMode)
         {
             SellModeImage.color = Color.green;
@@ -303,10 +303,10 @@ public class ShopManager : MonoBehaviour
 
 
 
-    public bool BuyFromShop(int indexOfItemInShop)
+    public bool BuyFromShop(int indexOfItemInShop) // 從商店買東西
     {
         //CHECK IF PLAYER HAS ENOUGH MONEY
-        if (TestScenePlayerGold >= PlayerBuyInventory[indexOfItemInShop].TheItem.BuyPrice)
+        if (TestScenePlayerGold >= PlayerBuyInventory[indexOfItemInShop].TheItem.BuyPrice) // 確認金額是否足夠
         {
             if (AccInv != null)
             {
@@ -314,6 +314,8 @@ public class ShopManager : MonoBehaviour
                 {
                     TestScenePlayerGold -= PlayerBuyInventory[indexOfItemInShop].TheItem.BuyPrice;
                     RemoveItemFromShop(indexOfItemInShop);
+					PlayerPrefs.SetInt("CurrentMoney", TestScenePlayerGold); // 修改金額
+
                     return true;
                 }
                 else
@@ -328,7 +330,7 @@ public class ShopManager : MonoBehaviour
             }
         }
         else
-        {
+		{ // 常常出問題
             ErrorMessageText.instance.ShowMessage("No Enough Gold!");
             return false;
         }
@@ -389,17 +391,17 @@ public class ShopManager : MonoBehaviour
         if (PlayerPrefs.HasKey("CurrentMoney"))                     // 如果已經有"CurrentMoney"欄位 ( PlayerPrefs不懂是啥 特別的儲存空間?
         {
             TestScenePlayerGold = PlayerPrefs.GetInt("CurrentMoney");       // 從CurrentMoney欄位抓當前金錢
-        }
+        } // if
         else
         {
             TestScenePlayerGold = 0;                                        // 尚未有"CurrentMoney"欄位
             PlayerPrefs.SetInt("CurrentMoney", 0);                  // 設定一個int欄位"CurrentMoney" 給定數值為0
-        }
+        } // else
 
         // 顯示目前金錢量
         if (TestSceneGoldText != null)
         {
             TestSceneGoldText.text = "Gold: " + TestScenePlayerGold;
-        }
+        } // if
     }
 }
