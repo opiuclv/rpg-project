@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 2019/11/8 下午 09:26:10-->
+<!--Last exported: 2019/11/12 下午 07:05:54-->
 <Tiled2Unity version="1.0.13.2">
   <AssignMaterial mesh="Novice_village_mesh_0001" material="roguelikeSheet_transparent" />
   <AssignMaterial mesh="Novice_village_mesh_0002" material="roguelikeSheet_transparent2" />

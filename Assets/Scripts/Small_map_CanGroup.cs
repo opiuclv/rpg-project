@@ -12,7 +12,7 @@ public class Small_map_CanGroup : MonoBehaviour {
     }
     // Update is called once per frame
     void Update () {
-        if (Application.loadedLevelName == "home_inside") //在房間裡不能開啟小地圖
+        if (Application.loadedLevelName == "home_inside" || Application.loadedLevelName == "forest" ) //在房間裡不能開啟小地圖
         {
             canvasGroup.alpha = 0;
             canvasGroup.interactable = false;

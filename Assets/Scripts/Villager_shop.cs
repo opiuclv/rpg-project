@@ -32,25 +32,16 @@ public class Villager_shop : MonoBehaviour {
 				   	   transform.parent.GetComponent<VillagerMovement>().canMove = false;
                     } // if
 
-<<<<<<< HEAD
                 }
-            }
-        }
-    }
-=======
-                } // if
                 else
                 {
                     canvas_g.alpha = 0;
                     canvas_g.interactable = false;
                     canvas_g.blocksRaycasts = false;
-
-
                 } // else
             } // if
         } // if
 	} // OnTriggerStay2D()
->>>>>>> hayden
 
     void Update()
     {
