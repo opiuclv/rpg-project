@@ -10,17 +10,19 @@ public class HurtPlayer : MonoBehaviour {
     private int currentDamage;              // 總攻擊力
     public GameObject damageNumber;         // 顯示傷害值效果
 
-
+	private Animator anim;              // 動畫變數
+	public bool attackplayer; // 攻擊玩家
     private PlayerStats thePS;
 
     // Use this for initialization
     void Start () {
-        thePS = FindObjectOfType<PlayerStats>();
+		thePS = FindObjectOfType<PlayerStats>();
+		anim = GetComponent<Animator>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
+		anim.SetBool("attackplayer", attackplayer);
 	}
 
     void OnCollisionEnter2D(Collision2D other)
@@ -28,6 +30,7 @@ public class HurtPlayer : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             currentDamage = damageToGive - thePS.currentDefence;                        // 計算傷害值
+			attackplayer = true;
             if ( currentDamage < 0)
             {
                 currentDamage = 0;
@@ -39,5 +42,6 @@ public class HurtPlayer : MonoBehaviour {
             var clone = (GameObject)Instantiate(damageNumber, other.transform.position, Quaternion.Euler(Vector3.zero));
             clone.GetComponent<FloatingNumbers>().damageNumber = currentDamage;         // 給定傷害值
         }
+
     }
 }

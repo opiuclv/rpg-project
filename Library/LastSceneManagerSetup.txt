@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/city.unity
-=======
-- path: Assets/Scenes/main.unity
->>>>>>> hayden
+- path: Assets/Scenes/forest.unity
   isLoaded: 1
   isActive: 1
