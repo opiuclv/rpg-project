@@ -32,12 +32,7 @@ public class Villager_shop : MonoBehaviour {
 				   	   transform.parent.GetComponent<VillagerMovement>().canMove = false;
                     } // if
 
-<<<<<<< HEAD
-                }
-            }
-        }
-    }
-=======
+
                 } // if
                 else
                 {
@@ -50,7 +45,7 @@ public class Villager_shop : MonoBehaviour {
             } // if
         } // if
 	} // OnTriggerStay2D()
->>>>>>> hayden
+
 
     void Update()
     {
