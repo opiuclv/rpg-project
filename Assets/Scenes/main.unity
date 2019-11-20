@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5903,6 +5903,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4483599918082328, guid: 56af3e9872e45ad459f6c181a4940917, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1973864600675156, guid: 56af3e9872e45ad459f6c181a4940917, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4252038729976356, guid: 56af3e9872e45ad459f6c181a4940917, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6316,14 +6324,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayer
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4483599918082328, guid: 56af3e9872e45ad459f6c181a4940917, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1973864600675156, guid: 56af3e9872e45ad459f6c181a4940917, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56af3e9872e45ad459f6c181a4940917, type: 3}
@@ -9791,7 +9791,7 @@ PrefabInstance:
     - target: {fileID: 114651397391236154, guid: 92aaa75c824b7914e9ff41a1a8c41c2b,
         type: 3}
       propertyPath: playerMaxHealth
-      value: 999
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 114651397391236154, guid: 92aaa75c824b7914e9ff41a1a8c41c2b,
         type: 3}
@@ -9801,7 +9801,7 @@ PrefabInstance:
     - target: {fileID: 114651397391236154, guid: 92aaa75c824b7914e9ff41a1a8c41c2b,
         type: 3}
       propertyPath: playerCurrentHealth
-      value: 999
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4348206121937906, guid: 92aaa75c824b7914e9ff41a1a8c41c2b, type: 3}
       propertyPath: m_LocalPosition.x

@@ -36,7 +36,6 @@ public class LoadLeadStory : MonoBehaviour {
     /// <summary>
     /// 要顯示的內容
     /// </summary>
-    private LoadLeadStory theLS;
     private string text;
 
     public bool ok_to_Enter = false ; // 跑完整段文字才能繼續下一行 不然會有錯誤
