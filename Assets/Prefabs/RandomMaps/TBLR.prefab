@@ -92,7 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDirection: 4
   spawned: 0
-  waitTime: 4
+  waitTime: 10
 --- !u!61 &61986767865319742
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -815,7 +815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDirection: 3
   spawned: 0
-  waitTime: 4
+  waitTime: 10
 --- !u!61 &61143448745174644
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -910,7 +910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDirection: 2
   spawned: 0
-  waitTime: 4
+  waitTime: 10
 --- !u!61 &61086163374931784
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1095,7 +1095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDirection: 1
   spawned: 0
-  waitTime: 4
+  waitTime: 10
 --- !u!61 &61812395168714422
 BoxCollider2D:
   m_ObjectHideFlags: 0
