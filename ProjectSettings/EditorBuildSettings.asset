@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/village.unity
     guid: 4b29350dc4ed7814f80a84e1146930b5
+  - enabled: 1
+    path: Assets/Scenes/Thanks.unity
+    guid: 3cb2392252f19b84aa1f104492fc6bbf
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: eafd65f64eb30bb4083e20974c4cf541
   m_configObjects: {}
