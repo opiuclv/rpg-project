@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/main.unity
-=======
-- path: Assets/Scenes/forest.unity
->>>>>>> MBHAO
   isLoaded: 1
   isActive: 1
