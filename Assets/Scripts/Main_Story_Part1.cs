@@ -45,7 +45,6 @@ public class Main_Story_Part1 : MonoBehaviour
 
     // Use this for initialization
     void Start () {
-        canvasGroup.alpha = 1;
         thePlayer = FindObjectOfType<PlayerController>();
         dialogueLines = new string[1];  // 不給的話會在執行第47行的時候出現IndexOutOfRangeException的Error 因為沒給空間他會亂亂抓東西
         dialogueActive = true;
