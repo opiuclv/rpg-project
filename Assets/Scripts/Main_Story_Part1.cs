@@ -55,7 +55,6 @@ public class Main_Story_Part1 : MonoBehaviour
         source = GetComponent<AudioSource>();
         word = text;
         text = "";
-        StartCoroutine(TypeText());
         ok_to_Enter = true ;
     }
 	
@@ -64,7 +63,10 @@ public class Main_Story_Part1 : MonoBehaviour
 
         if (canvasGroup.alpha == 1) {
         
-            if ( currentLine == 1 ) currentLine ++ ;
+			if (currentLine == 1) {
+				currentLine++;
+				StartCoroutine(TypeText());
+			}
 
             if ( dialogueActive && currentLine == totalLine && Input.GetKeyDown(KeyCode.Space) ) // 放在這是因為如果超過可讀取行數會當掉，所以先load並初始化
             {
@@ -76,7 +78,7 @@ public class Main_Story_Part1 : MonoBehaviour
             }
             if ( dialogueActive && currentLine <= totalLine ) // 可以讀的行數才讀
             {
-                dText.text = ReadFile("Assets\\Text\\Main_story_part1.txt", currentLine); // 目前只有找到利用絕對路徑來存取的方法，希望能改成相對路徑(同一資料夾讀取)
+                dText.text = ReadFile("Assets\\Text\\Main_story_part1.txt", currentLine); 
             }
 
 		    if (dialogueActive && Input.GetKeyDown(KeyCode.Space) && ok_to_Enter == true )              // 繼續對話
