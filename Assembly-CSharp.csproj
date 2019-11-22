@@ -87,7 +87,10 @@
      <Compile Include="Assets\Scripts\LoadNewArea.cs" />
      <Compile Include="Assets\Scripts\LoadScene.cs" />
      <Compile Include="Assets\Scripts\LoadTXT.cs" />
+     <Compile Include="Assets\Scripts\LoadVictoryStory.cs" />
+     <Compile Include="Assets\Scripts\Main_Story_Part1.cs" />
      <Compile Include="Assets\Scripts\MoneyManager.cs" />
+     <Compile Include="Assets\Scripts\MS_Part1_Holder.cs" />
      <Compile Include="Assets\Scripts\MusicControler.cs" />
      <Compile Include="Assets\Scripts\MusicSwitcher.cs" />
      <Compile Include="Assets\Scripts\NewSlimeControler.cs" />
@@ -134,6 +137,8 @@
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TileObject.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TmxObject.cs" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth-Instanced.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\R1.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\B1.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\L.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\Novice_village.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\village.tiled2unity.xml" />
@@ -148,6 +153,7 @@
      <None Include="Assets\Resources\RPG_Data.txt" />
      <None Include="Assets\Tiled2Unity\Tiled2Unity.export.txt" />
      <None Include="Assets\Tiled2Unity\Imported\testhome.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\TBL.tiled2unity.xml" />
      <None Include="Assets\FreePixelMob\ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepth.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth.shader" />
@@ -155,12 +161,16 @@
      <None Include="Assets\Tiled2Unity\Imported\RB.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\LR.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\T.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\suburbs.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\TBR.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Imported\LT.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Textures\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Imported\testGame.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\LB.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDefault-Instanced.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\T1.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\BLR.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaColorKey-Instanced.shader" />
      <None Include="Assets\Tiled2Unity\Imported\testhomeInside.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaColorKey.shader" />
@@ -169,7 +179,9 @@
      <None Include="Assets\Tiled2Unity\Shaders\shaDepthColorKey-Instanced.shader" />
      <None Include="Assets\Tiled2Unity\License.txt" />
      <None Include="Assets\Tiled2Unity\Imported\test_area.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\L1.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\TLR.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/User/Desktop/rpg-project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -426,6 +438,12 @@
  <Reference Include="Boo.Lang">
  <HintPath>E:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{C00B7974-9599-56B2-CC62-AC6D9B2B7E9B}</Project>      <Name>NavMeshComponentsEditor</Name>    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{EA0D0C79-7B27-EA3C-AF3F-869049011E01}</Project>      <Name>NavMeshComponents</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

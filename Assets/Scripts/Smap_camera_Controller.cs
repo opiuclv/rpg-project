@@ -13,17 +13,13 @@ public class Smap_camera_Controller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Application.loadedLevelName == "main") 
+		if (Application.loadedLevelName == "main") //在房間裡不能開啟小地圖
         {
-            transform.position = new Vector3(40, -31, -46); // 經過計算請勿隨意更改 (9, 6.5, -46)
+            transform.position = new Vector3(9, 6.5f, -46); // 經過計算請勿隨意更改 (9, 6.5, -46)
 	    }
-        if (Application.loadedLevelName == "suburbs") 
+        if (Application.loadedLevelName == "city") //在房間裡不能開啟小地圖
         {
-            transform.position = new Vector3(20, -25, -33); // 經過計算請勿隨意更改 (20, -6, -33)
-	    }
-        if (Application.loadedLevelName == "village") 
-        {
-            transform.position = new Vector3(30, -18, -33); // 經過計算請勿隨意更改 (20, -6, -33)
+            transform.position = new Vector3(20, -6, -33); // 經過計算請勿隨意更改 (20, -6, -33)
 	    }
     }
 }

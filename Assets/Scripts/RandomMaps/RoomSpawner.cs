@@ -26,21 +26,45 @@ public class RoomSpawner : MonoBehaviour {
 
 	void Spawn(){
 		if(spawned == false){
-			if(openingDirection == 1){
-				rand = Random.Range(0, templates.bottomRooms.Length);
-				Instantiate(templates.bottomRooms[rand], transform.position, templates.bottomRooms[rand].transform.rotation);
+			if(openingDirection == 1){ // 找出口向下的房間
+				if (templates.rooms.Count < 10) {
+					rand = Random.Range (0, templates.bottomRooms.Length);
+					Instantiate (templates.bottomRooms [rand], transform.position, templates.bottomRooms [rand].transform.rotation);
+				} // if
+				else{
+					rand = Random.Range (2, 3);
+					Instantiate (templates.lastRooms [rand], transform.position, templates.lastRooms [rand].transform.rotation);
+				} // else
 			} // if
-			else if(openingDirection == 2){
-				rand = Random.Range(0, templates.topRooms.Length);
-				Instantiate(templates.topRooms[rand], transform.position, templates.topRooms[rand].transform.rotation);
+			else if(openingDirection == 2){ // 找出口向上的房間
+				if (templates.rooms.Count < 10) {
+					rand = Random.Range (0, templates.topRooms.Length);
+					Instantiate (templates.topRooms [rand], transform.position, templates.topRooms [rand].transform.rotation);
+				} // if
+				else{
+					rand = Random.Range (0, 1);
+					Instantiate (templates.lastRooms [rand], transform.position, templates.lastRooms [rand].transform.rotation);
+				} // else
 			} // else if
-			else if(openingDirection == 3){
-				rand = Random.Range(0, templates.leftRooms.Length);
-				Instantiate(templates.leftRooms[rand], transform.position, templates.leftRooms[rand].transform.rotation);
+			else if(openingDirection == 3){ // 找出口向左的房間
+				if (templates.rooms.Count < 10) {
+					rand = Random.Range (0, templates.leftRooms.Length);
+					Instantiate (templates.leftRooms [rand], transform.position, templates.leftRooms [rand].transform.rotation);
+				} // if
+				else{
+					rand = Random.Range (6, 7);
+					Instantiate (templates.lastRooms [rand], transform.position, templates.lastRooms [rand].transform.rotation);
+				} // else
 			} // else if
-			else if(openingDirection == 4){
-				rand = Random.Range(0, templates.rightRooms.Length);
-				Instantiate(templates.rightRooms[rand], transform.position, templates.rightRooms[rand].transform.rotation);
+			else if(openingDirection == 4){ // 找出口向右的房間
+				if (templates.rooms.Count < 10) {
+					rand = Random.Range (0, templates.rightRooms.Length);
+					Instantiate (templates.rightRooms [rand], transform.position, templates.rightRooms [rand].transform.rotation);
+				} // if
+				else{
+					rand = Random.Range (4, 5);
+					Instantiate (templates.lastRooms [rand], transform.position, templates.lastRooms [rand].transform.rotation);
+				} // else
 			} // else if
 			spawned = true;
 		} //if

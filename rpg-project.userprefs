@@ -1,8 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Tiled2Unity\Scripts\Editor\ImportTiled2Unity.Prefab.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\RandomMaps\RoomSpawner.cs">
     <Files>
-      <File FileName="Assets\Tiled2Unity\Scripts\Editor\ImportTiled2Unity.Prefab.cs" Line="97" Column="1" />
+      <File FileName="Assets\Scripts\RandomMaps\RoomSpawner.cs" Line="78" Column="10" />
+      <File FileName="Assets\Scripts\RandomMaps\RoomTemplates.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\HurtEnemy.cs" Line="39" Column="53" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
