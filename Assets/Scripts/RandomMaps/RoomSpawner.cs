@@ -23,9 +23,44 @@ public class RoomSpawner : MonoBehaviour {
 		Invoke("Spawn", 0.1f);
 	}
 
+    GameObject FindClosetSpawner()
+    {
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag("SpawnPoint");
+        GameObject closest = null;
+        float distance = Mathf.Infinity;
+        Vector3 position = transform.position;
+        foreach (GameObject go in gos)
+        {
+            if (go != gameObject)
+            {
+                Vector3 diff = go.transform.position - position;
+                float curDistance = diff.sqrMagnitude;
+                if (curDistance < distance)
+                {
+                    closest = go;
+                    distance = curDistance;
+                }
+            }
+        }
+        return closest;
+    }
 
-	void Spawn(){
-		if(spawned == false){
+    void Spawn(){
+        
+        GameObject closest = FindClosetSpawner();
+        float dis = (closest.transform.position - transform.position).sqrMagnitude;
+        if (dis < 1f)
+        {
+            if (closest.GetComponent<RoomSpawner>().spawned == false && spawned == false)
+            {
+                Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
+                Destroy(gameObject);
+            } //if
+            spawned = true;
+        }
+
+        if (spawned == false){
 			if(openingDirection == 1){ // 找出口向下的房間
 				if (templates.rooms.Count < 10) {
 					rand = Random.Range (0, templates.bottomRooms.Length);
@@ -69,8 +104,9 @@ public class RoomSpawner : MonoBehaviour {
 			spawned = true;
 		} //if
 	} //Spawn()
-
+    /*
 	void OnTriggerEnter2D(Collider2D other){
+        
 		if(other.CompareTag("SpawnPoint")){
 			if(other.GetComponent<RoomSpawner>().spawned == false && spawned == false){
 				Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
@@ -79,4 +115,5 @@ public class RoomSpawner : MonoBehaviour {
 			spawned = true;
 		} // if
 	}
+    */
 }

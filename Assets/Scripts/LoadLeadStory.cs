@@ -47,7 +47,7 @@ public class LoadLeadStory : MonoBehaviour {
         dialogueLines = new string[1];  // 不給的話會在執行第47行的時候出現IndexOutOfRangeException的Error 因為沒給空間他會亂亂抓東西
         dialogueActive = true;
         currentLine = 1 ;
-        dText.text = ReadFile("C:\\Users\\User\\Desktop\\Lead_story.txt", currentLine);
+        dText.text = ReadFile("Assets\\Text\\Lead_story.txt", currentLine);
 
         text = dText.text ;
         source = GetComponent<AudioSource>();
@@ -70,7 +70,7 @@ public class LoadLeadStory : MonoBehaviour {
         }
         if ( dialogueActive && currentLine <= totalLine ) // 可以讀的行數才讀
         {
-            dText.text = ReadFile("C:\\Users\\User\\Desktop\\Lead_story.txt", currentLine); // 目前只有找到利用絕對路徑來存取的方法，希望能改成相對路徑(同一資料夾讀取)
+            dText.text = ReadFile("Assets\\Text\\Lead_story.txt", currentLine); // 目前只有找到利用絕對路徑來存取的方法，希望能改成相對路徑(同一資料夾讀取)
         }
 
 		if (dialogueActive && Input.GetKeyDown(KeyCode.Space) && ok_to_Enter == true )              // 繼續對話
