@@ -18,6 +18,24 @@ public class Small_map_CanGroup : MonoBehaviour {
             canvasGroup.interactable = false;
             canvasGroup.blocksRaycasts = false;
         }
+        else if (Application.loadedLevelName == "forest") //不能開啟小地圖
+        {
+            canvasGroup.alpha = 0;
+            canvasGroup.interactable = false;
+            canvasGroup.blocksRaycasts = false;
+        }
+        else if (Application.loadedLevelName == "Victory") //不能開啟小地圖
+        {
+            canvasGroup.alpha = 0;
+            canvasGroup.interactable = false;
+            canvasGroup.blocksRaycasts = false;
+        }
+        else if (Application.loadedLevelName == "Thanks") //不能開啟小地圖
+        {
+            canvasGroup.alpha = 0;
+            canvasGroup.interactable = false;
+            canvasGroup.blocksRaycasts = false;
+        }
         else if ( Input.GetKeyDown(KeyCode.M) ) //可手動關閉小地圖
         {
             if (canvasGroup.alpha == 1)

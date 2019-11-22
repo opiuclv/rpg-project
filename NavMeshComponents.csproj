@@ -264,12 +264,6 @@
  <Reference Include="UnityEditor.Networking">
  <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
  </Reference>
- <Reference Include="Vuforia.UnityExtensions.Editor">
- <HintPath>E:/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Vuforia.UnityExtensions">
- <HintPath>E:/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.GoogleAudioSpatializer">
  <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
  </Reference>
@@ -316,19 +310,19 @@
  <HintPath>E:/Unity/Editor/Data/PlaybackEngines/Facebook/UnityEditor.Facebook.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
- <HintPath>C:/Users/User/Desktop/rpg-project/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+ <HintPath>C:/Users/User/Desktop/rpg_master/rpg-project/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>C:/Users/User/Desktop/rpg-project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>C:/Users/User/Desktop/rpg_master/rpg-project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/User/Desktop/rpg-project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/User/Desktop/rpg_master/rpg-project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>C:/Users/User/Desktop/rpg-project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>C:/Users/User/Desktop/rpg_master/rpg-project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
- <HintPath>C:/Users/User/Desktop/rpg-project/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+ <HintPath>C:/Users/User/Desktop/rpg_master/rpg-project/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>E:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
