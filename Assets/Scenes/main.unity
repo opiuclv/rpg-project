@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9469,7 +9469,7 @@ PrefabInstance:
     - target: {fileID: 114651397391236154, guid: 92aaa75c824b7914e9ff41a1a8c41c2b,
         type: 3}
       propertyPath: playerMaxHealth
-      value: 50
+      value: 999
       objectReference: {fileID: 0}
     - target: {fileID: 114651397391236154, guid: 92aaa75c824b7914e9ff41a1a8c41c2b,
         type: 3}
