@@ -77,6 +77,7 @@
     <Compile Include="Assets\RPG_BOX_Free\Scripts\ScriptablObjects\Attribute.cs" />
     <Compile Include="Assets\RPG_BOX_Free\Scripts\ScriptablObjects\Item.cs" />
     <Compile Include="Assets\RPG_BOX_Free\Scripts\ScriptablObjects\LootTable.cs" />
+    <Compile Include="Assets\Scripts\AgentScript.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Bounds.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
