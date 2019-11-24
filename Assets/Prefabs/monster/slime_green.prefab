@@ -186,12 +186,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy3D: {fileID: 0}
   wanderRadius: 3
-  alertRadius: 5
-  defendRadius: 4
+  alertRadius: 6
+  defendRadius: 5
   chaseRadius: 10
-  attackRange: 1.2
-  walkSpeed: 1
-  runSpeed: 2
+  attackRange: 1.06
+  walkSpeed: 3
+  runSpeed: 5
   currentState: 0
   actionWeight:
   - 3000

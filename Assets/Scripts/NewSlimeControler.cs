@@ -36,7 +36,7 @@ public class NewSlimeControler : MonoBehaviour {
     public float[] actionWeight = { 3000, 3000, 4000 };             //設置待機時各種動作的權重，順序依次為呼吸、觀察、移動
     public float actRestTime;                   //更換待機指令的間隔時間
     private float lastActTime;                  //最近一次指令時間
-    private float animationTime;
+    private float animationTime;                //最近一次移動的動畫開始時間
 
     private float distanceToPlayer;             //怪物與玩家的距離
     private float distanceToInitial;            //怪物與初始位置的距離
@@ -51,8 +51,6 @@ public class NewSlimeControler : MonoBehaviour {
     private bool canSwitchState = true;         // 是否可以切換狀態
     private float lastSwitchStateTime;          // 最近一次切換狀態時間
     private float switchStateDelay = 1.25f;     // 切換狀態延遲
-
-    private bool testing = false;
 
     void Start()
     {
@@ -78,7 +76,10 @@ public class NewSlimeControler : MonoBehaviour {
         RandomAction();
     }
 
-
+    /// <summary>
+    /// 找出最屬於自己的3D物件
+    /// </summary>
+    /// <returns>  最近的tag有"Enemy3D"的3D物件  </returns>
     GameObject FindClosestEnemy3D()
     {
         GameObject[] gos;
@@ -108,9 +109,9 @@ public class NewSlimeControler : MonoBehaviour {
     void RandomAction()
     {
         myRigidbody.velocity = Vector2.zero;
-        //更新行動時間
-        lastActTime = Time.time;
-        //根據權重隨機
+        lastActTime = Time.time;            //更新行動時間
+
+        //根據權重 隨機選擇待機,觀察,遊走模式
         float number = Random.Range(0, actionWeight[0] + actionWeight[1] + actionWeight[2]);
         if (number <= actionWeight[0])
         {
@@ -125,151 +126,133 @@ public class NewSlimeControler : MonoBehaviour {
         if (actionWeight[0] + actionWeight[1] < number && number <= actionWeight[0] + actionWeight[1] + actionWeight[2])
         {
             currentState = MonsterState.WALK;
-            //隨機一個朝向
-            //targetRotation = Quaternion.Euler(0, Random.Range(1, 5) * 90, 0);
-            Vector2 targetPosOffset = new Vector2(Random.Range(-3f, 3f), Random.Range(-3f, 3f));
+            //附近隨機一個座標
+            Vector2 targetPosOffset = new Vector2(Random.Range(-wanderRadius, wanderRadius), Random.Range(-wanderRadius, wanderRadius));
             targetPosition = new Vector3(transform.position.x + targetPosOffset.x, transform.position.y + targetPosOffset.y, transform.position.z);
         }
     }
 
     void Update()
     {
-        if (testing)
+        if (!canSwitchState && Time.time - lastSwitchStateTime > switchStateDelay)     // 切換狀態延遲
         {
-            testing = true;
+            canSwitchState = true;
         }
-        else
+
+        if (canSwitchState)
         {
-
-            if (!canSwitchState && Time.time - lastSwitchStateTime > switchStateDelay)     // 切換狀態延遲
+            switch (currentState)
             {
-                canSwitchState = true;
-            }
+                //待機狀態（原地呼吸），等待actRestTime後重新隨機指令
+                case MonsterState.STAND:
+                    if (Time.time - lastActTime > actRestTime)
+                    {
+                        RandomAction(); //隨機切換指令
+                    }
+                    
+                    EnemyDistanceCheck();
 
-            if (canSwitchState)
-            {
-                switch (currentState)
-                {
-                    //待機狀態，等待actRestTime後重新隨機指令
-                    case MonsterState.STAND:
-                        if (Time.time - lastActTime > actRestTime)
-                        {
-                            RandomAction(); //隨機切換指令
-                        }
-                        //該狀態下的檢測指令
+                    break;
 
-                        EnemyDistanceCheck();
+                //待機狀態2（觀察），等待actRestTime後重新隨機指令
+                case MonsterState.CHECK:
+                    if (Time.time - lastActTime > actRestTime)
+                    {
+                        RandomAction();
+                    }
+                    
+                    EnemyDistanceCheck();
 
-                        break;
-                    //待機狀態，等待actRestTime後重新隨機指令
-                    case MonsterState.CHECK:
-                        if (Time.time - lastActTime > actRestTime)
-                        {
-                            RandomAction(); //隨機切換指令
-                        }
-                        //該狀態下的檢測指令
+                    break;
 
-                        EnemyDistanceCheck();
+                //遊走狀態，根據狀態隨機時生成的目標位置移動
+                case MonsterState.WALK:
+                    if (Time.time - lastActTime > actRestTime)
+                    {
+                        RandomAction();
+                    }
 
-                        break;
+                    startPosition = transform.position;
+                    enemy3D.GetComponent<AgentScript>().MoveAgent(targetPosition, walkSpeed);
 
-                    //遊走，根據狀態隨機時生成的目標位置修改朝向，並向前移動
-                    case MonsterState.WALK:
-
-                        // myRigidbody.velocity = new Vector2(targetPosition.x * walkSpeed, targetPosition.y * walkSpeed);
-
-                        if (Time.time - lastActTime > actRestTime)
-                        {
-                            //myRigidbody.velocity = Vector2.zero;
-                            RandomAction(); //隨機切換指令
-                        }
-                        //該狀態下的檢測指令
-
-                        startPosition = transform.position;
-                        enemy3D.GetComponent<AgentScript>().MoveAgent(targetPosition);
-
-                        if (!is_Walking)
-                        {
-                            thisAnimator.SetTrigger("Walk");
-                            animationTime = Time.time;
-                            is_Walking = true;
-                        }
-                        WanderRadiusCheck();
-                        break;
-
-                    //警戒狀態，播放一次警告動畫和聲音
-                    case MonsterState.WARN:
-                        canSwitchState = false;
-                        lastSwitchStateTime = Time.time;
-                        if (!is_Warned)
-                        {
-                            thisAnimator.SetTrigger("Warn");
-                            is_Warned = true;
-                        }
-
-                        WarningCheck();
-                        break;
-
-                    //追擊狀態，朝著玩家跑去
-                    case MonsterState.CHASE:
-
-                        if (!is_Running)
-                        {
-                            thisAnimator.SetTrigger("Run");
-                            animationTime = Time.time;
-                            is_Running = true;
-                        }
-                        //transform.Translate(Vector3.forward * Time.deltaTime * runSpeed);
-
-                        //targetPosition = Vector2.MoveTowards(transform.position, playerUnit.transform.position, Time.deltaTime * runSpeed);
-                        //myRigidbody.MovePosition(targetPosition);
-                        targetPosition = playerUnit.transform.position;
-                        enemy3D.GetComponent<AgentScript>().MoveAgent(targetPosition);
-
-
-                        ChaseRadiusCheck();
-                        break;
-
-                    //返回狀態，超出追擊範圍後返回出生位置
-                    case MonsterState.RETURN:
-
+                    if (!is_Walking)                    // 確保移動動畫在移動的時候會連續撥放
+                    {
                         thisAnimator.SetTrigger("Walk");
+                        animationTime = Time.time;
                         is_Walking = true;
+                    }
+                    WanderRadiusCheck();
+                    break;
 
-                        //targetPosition = Vector2.MoveTowards(transform.position, initialPosition, Time.deltaTime * runSpeed);
-                        //myRigidbody.MovePosition(targetPosition);
-                        enemy3D.GetComponent<AgentScript>().MoveAgent(initialPosition);
+                //警戒狀態，播放一次警告動畫（聲音）
+                case MonsterState.WARN:
+                    canSwitchState = false;             // 確保警告動畫能先播完
+                    lastSwitchStateTime = Time.time;
+                    if (!is_Warned)
+                    {
+                        thisAnimator.SetTrigger("Warn");
+                        is_Warned = true;
+                    }
 
-                        //該狀態下的檢測指令
-                        ReturnCheck();
-                        break;
-                    case MonsterState.ATTACK:
+                    WarningCheck();
+                    break;
 
-                        is_Running = false;
-                        //transform.Translate(Vector2.zero);
-                        enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position);
-                        thisAnimator.SetTrigger("Attack");
+                //追擊狀態，朝著玩家跑去
+                case MonsterState.CHASE:
 
-                        EnemyDistanceCheck();
-                        break;
-                }
-            }
+                    if (!is_Running)                    // 確保移動動畫在移動的時候會連續撥放
+                    {
+                        thisAnimator.SetTrigger("Run");
+                        animationTime = Time.time;
+                        is_Running = true;
+                    }
+                    
+                    enemy3D.GetComponent<AgentScript>().MoveAgent(playerUnit.transform.position, runSpeed);
+                    
+                    ChaseRadiusCheck();
+                    break;
 
-            if (Time.time - animationTime > thisAnimator.GetCurrentAnimatorStateInfo(0).length)     // 如果還在走路或跑步就持續觸發動作
-            {
-                if (is_Walking)
-                {
-                    thisAnimator.SetTrigger("Walk");
-                    animationTime = Time.time;
-                }
-                if (is_Running)
-                {
-                    thisAnimator.SetTrigger("Run");
-                    animationTime = Time.time;
-                }
+                //返回狀態，超出追擊範圍後返回出生位置
+                case MonsterState.RETURN:
+
+                    if (!is_Walking)
+                    {
+                        thisAnimator.SetTrigger("Walk");
+                        animationTime = Time.time;
+                        is_Walking = true;
+                    }
+
+                    enemy3D.GetComponent<AgentScript>().MoveAgent(initialPosition, walkSpeed);
+
+                    //該狀態下的檢測指令
+                    ReturnCheck();
+                    break;
+                case MonsterState.ATTACK:
+
+                    is_Walking = false;
+                    is_Running = false;
+
+                    enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
+                    thisAnimator.SetTrigger("Attack");
+
+                    EnemyDistanceCheck();
+                    break;
             }
         }
 
+        if (Time.time - animationTime > thisAnimator.GetCurrentAnimatorStateInfo(0).length)     // 如果還在走路或跑步就持續觸發動作
+        {
+            if (is_Walking)
+            {
+                thisAnimator.SetTrigger("Walk");
+                animationTime = Time.time;
+            }
+            if (is_Running)
+            {
+                thisAnimator.SetTrigger("Run");
+                animationTime = Time.time;
+            }
+        }
     }
 
     /// <summary>
@@ -308,8 +291,15 @@ public class NewSlimeControler : MonoBehaviour {
         distanceToPlayer = Vector2.Distance(playerUnit.transform.position, transform.position);
         if (distanceToPlayer < alertRadius)
         {
-            is_Warned = false;
-            currentState = MonsterState.CHASE;
+            if (distanceToPlayer < defendRadius)         // 進入防備半徑 進入追擊模式
+            {
+                is_Warned = false;
+                currentState = MonsterState.CHASE;
+            }
+            else                                        // 慢慢朝向玩家移動
+            {
+                enemy3D.GetComponent<AgentScript>().MoveAgent(playerUnit.transform.position, 1f);
+            }
         }
 
         if (distanceToPlayer > alertRadius)
@@ -330,27 +320,23 @@ public class NewSlimeControler : MonoBehaviour {
 
         if (distanceToPlayer < attackRange)
         {
-            //myRigidbody.velocity = Vector2.zero;
             is_Walking = false;
             currentState = MonsterState.ATTACK;
         }
         else if (distanceToPlayer < defendRadius)
         {
-            //myRigidbody.velocity = Vector2.zero;
             is_Walking = false;
             currentState = MonsterState.CHASE;
         }
         else if (distanceToPlayer < alertRadius)
         {
-            //myRigidbody.velocity = Vector2.zero;
             is_Walking = false;
             currentState = MonsterState.WARN;
         }
 
         if (distanceToStartPoint > wanderRadius)        // 一次不給走太遠距離
         {
-            // myRigidbody.velocity = Vector2.zero;
-            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position);
+            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
             is_Walking = false;
         }
     }
@@ -365,8 +351,7 @@ public class NewSlimeControler : MonoBehaviour {
 
         if (distanceToPlayer < attackRange)
         {
-            // myRigidbody.velocity = Vector2.zero;
-            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position);
+            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
             is_Running = false;
             currentState = MonsterState.ATTACK;
         }
@@ -377,7 +362,6 @@ public class NewSlimeControler : MonoBehaviour {
             currentState = MonsterState.RETURN;
             is_Running = false;
         }
-        
     }
 
     /// <summary>
@@ -389,11 +373,10 @@ public class NewSlimeControler : MonoBehaviour {
         //如果已經接近初始位置，則隨機一個待機狀態
         if (distanceToInitial < 0.5f)
         {
+            is_Walking = false;
             is_Running = false;
-            // myRigidbody.velocity = Vector2.zero;
-            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position);
+            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
             RandomAction();
         }
     }
-        
 }

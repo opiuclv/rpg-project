@@ -21,18 +21,11 @@ public class AgentScript : MonoBehaviour {
             transform.position = closestHit.position;
             agent.enabled = true;
         }
-        
-		/*
-        if (Input.GetMouseButtonDown(0))
-        {
-            playerUnit = GameObject.FindGameObjectWithTag("Player");
-            agent.SetDestination(playerUnit.transform.position);
-        }
-        */
 	}
 
-    public void MoveAgent( Vector3 destination )
+    public void MoveAgent( Vector3 destination, float moveSpeed )
     {
+        agent.speed = moveSpeed;
         agent.SetDestination(destination);
     }
 }
