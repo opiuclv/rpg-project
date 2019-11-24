@@ -12,7 +12,6 @@ public class Griding : MonoBehaviour {
     public List<Node> path;
     public GameObject wall;
     private Transform walls3D;
-    public Transform world3D;
 
     float nodeDiameter;                     // 格子直徑 ( 邊長 )
     int gridSizeX, gridSizeY;               // 兩軸中各有幾格格子
@@ -96,14 +95,16 @@ public class Griding : MonoBehaviour {
     private void DrawUnwalkableArea()
     {
         walls3D = new GameObject("walls3D").transform;
-        walls3D.transform.SetParent(world3D);
+        walls3D.transform.SetParent(this.transform);
+        walls3D.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        
         if (grid != null)
         {
             foreach (Node n in grid)
             {
                 if (!n.walkable)
                 {
-                    Vector3 wallPos = new Vector3(n.worldPosition.x, n.worldPosition.y, n.worldPosition.z + world3D.position.z);
+                    Vector3 wallPos = new Vector3(n.worldPosition.x, n.worldPosition.y, n.worldPosition.z);
                     GameObject clone = Instantiate(wall, wallPos, Quaternion.Euler(Vector3.zero));
                     
                     clone.transform.SetParent(walls3D);

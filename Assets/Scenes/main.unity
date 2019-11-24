@@ -2303,7 +2303,6 @@ MonoBehaviour:
   gridWorldSize: {x: 69, y: 69}
   nodeRadius: 0.5
   wall: {fileID: 2458664237082596482, guid: f7131978d08512741bdf310ea2fbc12a, type: 3}
-  world3D: {fileID: 259472144}
 --- !u!4 &259472144
 Transform:
   m_ObjectHideFlags: 0
@@ -10392,11 +10391,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4348206121937906, guid: 92aaa75c824b7914e9ff41a1a8c41c2b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 57
+      value: 34.1
       objectReference: {fileID: 0}
     - target: {fileID: 4348206121937906, guid: 92aaa75c824b7914e9ff41a1a8c41c2b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -29
+      value: -21.2
       objectReference: {fileID: 0}
     - target: {fileID: 4348206121937906, guid: 92aaa75c824b7914e9ff41a1a8c41c2b, type: 3}
       propertyPath: m_LocalPosition.z

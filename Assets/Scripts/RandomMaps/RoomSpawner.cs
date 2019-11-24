@@ -23,7 +23,7 @@ public class RoomSpawner : MonoBehaviour {
 		Invoke("Spawn", 0.1f);
 	}
 
-    GameObject FindClosetSpawner()
+    GameObject FindClosestSpawner()
     {
         GameObject[] gos;
         gos = GameObject.FindGameObjectsWithTag("SpawnPoint");
@@ -48,7 +48,7 @@ public class RoomSpawner : MonoBehaviour {
 
     void Spawn(){
         
-        GameObject closest = FindClosetSpawner();
+        GameObject closest = FindClosestSpawner();
         float dis = (closest.transform.position - transform.position).sqrMagnitude;
         if (dis < 1f)
         {
