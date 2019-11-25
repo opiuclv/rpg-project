@@ -8,6 +8,8 @@ TagManager:
   - Invincible
   - SpawnPoint
   - Rooms
+  - Enemy3D
+  - Player3D
   layers:
   - Default
   - TransparentFX
