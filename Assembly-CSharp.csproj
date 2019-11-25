@@ -140,6 +140,7 @@
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TileLayer.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TileObject.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TmxObject.cs" />
+     <None Include="Assets\Tiled2Unity\Imported\village_house5.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth-Instanced.shader" />
      <None Include="Assets\Tiled2Unity\Imported\LT1.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\R1.tiled2unity.xml" />
@@ -150,6 +151,7 @@
      <None Include="Assets\Tiled2Unity\Imported\R.tiled2unity.xml" />
      <None Include="Assets\Text\Victory_story.txt" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDefault.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\village_house3.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepth-Instanced.shader" />
      <None Include="Assets\Tiled2Unity\Prefabs\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Imported\test_city.tiled2unity.xml" />
@@ -173,6 +175,7 @@
      <None Include="Assets\Tiled2Unity\Imported\T.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\suburbs.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\TBR.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\village_house6.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\LR1.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Imported\TB1.tiled2unity.xml" />
@@ -183,6 +186,7 @@
      <None Include="Assets\Tiled2Unity\Shaders\shaDefault-Instanced.shader" />
      <None Include="Assets\Tiled2Unity\Imported\T1.tiled2unity.xml" />
      <None Include="Assets\Text\Main_story_part2.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\village_house2.tiled2unity.xml" />
      <None Include="Assets\Text\Lead_story.txt" />
      <None Include="Assets\Tiled2Unity\Imported\BLR.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\village_house.tiled2unity.xml" />
@@ -199,6 +203,8 @@
      <None Include="Assets\Tiled2Unity\Imported\L1.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Imported\TLR.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\village_house4.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\village_house7.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/qaz50/Desktop/RPG/RPG_cloud/rpg-project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
