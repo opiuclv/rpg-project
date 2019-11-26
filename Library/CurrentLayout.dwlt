@@ -95,7 +95,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 348}
   m_MaxSize: {x: 22012, y: 10024}
   vertical: 0
-  controlID: 125
+  controlID: 57
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 348}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 138
+  controlID: 70
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -119808
+  m_LastSelectedObjectID: -9118
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -442,21 +442,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: aef1ffff
+      m_ExpandedIDs: 46dcffff4adcffff4edcffff54dcffffeae4ffffeee4fffff2e4fffff8e4ffff42edffff46edffff4aedffff4eedffff32f5ffffd6fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: boss_I
+        m_OriginalName: boss_I
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -4772
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 7}
       m_SearchString: 
@@ -539,20 +539,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/house
+    - Assets/Prefabs/all_map
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/house
+  - Assets/Prefabs/all_map
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\qaz50\Desktop\RPG\RPG_cloud\rpg-project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9e4b0000
-    m_LastClickedID: 19358
-    m_ExpandedIDs: 0000000080290000062c0000de310000c032000064420000804200002645000072460000ee460000cc4900009a4a0000cc5e0000ce5e0000d05e000000ca9a3b
+    m_SelectedIDs: a4240000
+    m_LastClickedID: 9380
+    m_ExpandedIDs: 000000009a0b0000820c0000d00c0000b80d00005c1c00007a1c00005a1e00004c1f0000aa2000002a21000028240000fc240000085600000a5600000c56000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -580,7 +580,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000080290000062c0000de310000c032000064420000804200002645000072460000ee460000cc4900009a4a0000cc5e0000ce5e0000d05e0000
+    m_ExpandedIDs: 000000009a0b0000820c0000b80d00005c1c00007a1c00005a1e00004c1f0000aa2000002a21000028240000fc240000085600000a5600000c560000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -607,7 +607,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -747,9 +747,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 20.863638, y: -6.8223267, z: -0.3382947}
+    m_Target: {x: 20, y: -20, z: 0}
     speed: 2
-    m_Value: {x: 20.863638, y: -6.8223267, z: -0.3382947}
+    m_Value: {x: 20, y: -20, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -781,9 +781,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 55.602844
+    m_Target: 93.3381
     speed: 2
-    m_Value: 55.602844
+    m_Value: 93.3381
   m_Ortho:
     m_Target: 1
     speed: 2
