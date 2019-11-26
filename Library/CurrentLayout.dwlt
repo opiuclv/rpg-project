@@ -92,10 +92,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 915, y: 348}
-  m_MaxSize: {x: 22010, y: 10024}
+  m_MinSize: {x: 917, y: 348}
+  m_MaxSize: {x: 22012, y: 10024}
   vertical: 0
-  controlID: 86
+  controlID: 125
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 348}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 68
+  controlID: 138
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -213,8 +213,8 @@ MonoBehaviour:
     y: 0
     width: 429
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -442,21 +442,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8021feffda2bfeffde2bfeffe22bfeffe62bfefffc2bfeff022cfeff7481ffff7a81ffff8081ffff8881ffff8c81ffff9081ffff9681ffff9e81ffffaa81ffff0482fffffa8cffff008dffff068dffff0a8dffff0e8dffff128dffff168dffff1c8dffff228dffff288dffff2e8dfffffc8dffffdabfffff96c6ffff94cbffff8ad3ffff16ecffff18ecffff20ecffffe2efffffd6fbffffc8830000
+      m_ExpandedIDs: aef1ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: wolf
-        m_OriginalName: wolf
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 41358
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 4
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 7}
       m_SearchString: 
@@ -539,20 +539,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs/house
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs/house
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\qaz50\Desktop\RPG\RPG_cloud\rpg-project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0e1d0000
-    m_LastClickedID: 7438
-    m_ExpandedIDs: 00000000920b00007a0c0000b00d0000541c0000721c0000521e0000421f00009e2000001e2100001c240000ee240000aa560000ac560000ae56000000ca9a3b
+    m_SelectedIDs: 9e4b0000
+    m_LastClickedID: 19358
+    m_ExpandedIDs: 0000000080290000062c0000de310000c032000064420000804200002645000072460000ee460000cc4900009a4a0000cc5e0000ce5e0000d05e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -580,7 +580,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000920b00007a0c0000b00d0000541c0000721c00000e1d0000521e0000421f00009e2000001e2100001c240000ee240000aa560000ac560000ae560000
+    m_ExpandedIDs: 0000000080290000062c0000de310000c032000064420000804200002645000072460000ee460000cc4900009a4a0000cc5e0000ce5e0000d05e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -607,7 +607,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
