@@ -101,10 +101,15 @@ public class Main_Story_Part2 : MonoBehaviour
     {
         if (canvasGroup.alpha == 1)
         {
-            GUI.contentColor = Color.black;
+            GUIStyle style =new GUIStyle();
+            style.normal.background = null;    //这是设置背景填充的
+            style.normal.textColor= Color.black;   //设置字体颜色的
+            style.fontSize = 20;       //当然，这是字体大小
+            style.wordWrap = true ;
+
             //GUI.Label(new Rect(Screen.width / 2 - 250, Screen.height / 2 - 150, 200, 200), "序章"); // 使用GUI函數來固定text顯示位置
-            GUI.Label(new Rect(Screen.width / 2 - 200, Screen.height / 2 - 50, 300, 200), text, "color");
-            GUI.Label(new Rect(Screen.width / 2 + 100, Screen.height / 2 + 100, 200, 200), "Press Space to continue...", "color");
+            GUI.Label(new Rect(Screen.width / 2 - 300, Screen.height / 2 - 50, 600, 200), text, style);
+            GUI.Label(new Rect(Screen.width / 2 + 100, Screen.height / 2 + 100, 300, 200), "Press Space to continue...", style);
         }
     }
 
