@@ -155,6 +155,7 @@
      <None Include="Assets\Tiled2Unity\Imported\village_house3.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepth-Instanced.shader" />
      <None Include="Assets\Tiled2Unity\Prefabs\_ReadMe.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\boss_C.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\test_city.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\Tiled2Unity.cginc" />
      <None Include="Assets\Tiled2Unity\Imported\TBLR.tiled2unity.xml" />
@@ -188,10 +189,12 @@
      <None Include="Assets\Tiled2Unity\Imported\T1.tiled2unity.xml" />
      <None Include="Assets\Text\Main_story_part2.txt" />
      <None Include="Assets\Tiled2Unity\Imported\village_house2.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\boss_I.tiled2unity.xml" />
      <None Include="Assets\Text\Lead_story.txt" />
      <None Include="Assets\Tiled2Unity\Imported\BLR.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\village_house.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaColorKey-Instanced.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\boss_E.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\house.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\LB1.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\testhomeInside.tiled2unity.xml" />
