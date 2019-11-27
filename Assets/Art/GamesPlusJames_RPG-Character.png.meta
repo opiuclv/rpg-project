@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8090a02b25b8c9b488794a203f4e3831
+guid: 98ea29b20e88f2847b417d9377da2015
 TextureImporter:
   fileIDToRecycleName:
     21300000: GamesPlusJames_RPG-Character_0
@@ -19,7 +19,7 @@ TextureImporter:
     21300028: GamesPlusJames_RPG-Character_14
     21300030: GamesPlusJames_RPG-Character_15
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -52,7 +52,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -61,7 +61,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,10 +76,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 64
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -87,21 +87,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 64
-    resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 1
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
-    maxTextureSize: 64
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,9 +104,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 16
-        height: 16
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,7 +114,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b183729d8a2e64841aa6b21821d211b5
+      spriteID: 16fe7afc19206184d9d85b63af96f33c
       vertices: []
       indices: 
       edges: []
@@ -134,10 +123,10 @@ TextureImporter:
       name: GamesPlusJames_RPG-Character_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,7 +134,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f9601a3112c11b4cb1c9010707e8317
+      spriteID: 321e62f1c7a126f4bb97e6a9ed211a30
       vertices: []
       indices: 
       edges: []
@@ -154,10 +143,10 @@ TextureImporter:
       name: GamesPlusJames_RPG-Character_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,7 +154,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2671f198de23de408dd50f0218f614b
+      spriteID: 4aa5defd9d0871d40bfd66a50f24772e
       vertices: []
       indices: 
       edges: []
@@ -174,10 +163,10 @@ TextureImporter:
       name: GamesPlusJames_RPG-Character_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
-        width: 16
-        height: 16
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,7 +174,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 565768a7105295d45839fbba7a90bb8e
+      spriteID: 6a7eff10aa349c445af1769c5cb784d9
       vertices: []
       indices: 
       edges: []
@@ -195,9 +184,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 16
-        height: 16
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,7 +194,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 480975a33b1ed0148b54333b565488f6
+      spriteID: 43b38099444314a4fba76da325f693bf
       vertices: []
       indices: 
       edges: []
@@ -214,10 +203,10 @@ TextureImporter:
       name: GamesPlusJames_RPG-Character_5
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,7 +214,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7573cbe328cc174a86c8bad7ad372c5
+      spriteID: 0de2188044f4b8943880a65b95f9460a
       vertices: []
       indices: 
       edges: []
@@ -234,10 +223,10 @@ TextureImporter:
       name: GamesPlusJames_RPG-Character_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,7 +234,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8310b7bb4a95b424a94c3e814161f7e1
+      spriteID: e6e16a2c8a493194d858863c988e06c6
       vertices: []
       indices: 
       edges: []
@@ -254,10 +243,10 @@ TextureImporter:
       name: GamesPlusJames_RPG-Character_7
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 16
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,7 +254,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 328988fd23147b541a45eb2bc1b5057b
+      spriteID: 0ca354bee8186474d9da363d0df0a648
       vertices: []
       indices: 
       edges: []
@@ -275,9 +264,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 16
-        height: 16
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,7 +274,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ec8f3d51a8d67f4aa6098207edb13b9
+      spriteID: 5a073ac77c6ff564db6ef3a210f4216a
       vertices: []
       indices: 
       edges: []
@@ -294,10 +283,10 @@ TextureImporter:
       name: GamesPlusJames_RPG-Character_9
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,7 +294,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c791ffde587c054ea4dd5124d61b211
+      spriteID: 5bc5e19421018364288954356b0fcb13
       vertices: []
       indices: 
       edges: []
@@ -314,10 +303,10 @@ TextureImporter:
       name: GamesPlusJames_RPG-Character_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,7 +314,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88ae79a16affdc94dbbf32aefe5c35b4
+      spriteID: e89c55869636f8a4484faa81a1d8c791
       vertices: []
       indices: 
       edges: []
@@ -334,10 +323,10 @@ TextureImporter:
       name: GamesPlusJames_RPG-Character_11
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,7 +334,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 372cc352d025dc045a30ca421eb9dabc
+      spriteID: 877dfda65df882743b59ba461ded7970
       vertices: []
       indices: 
       edges: []
@@ -356,8 +345,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,7 +354,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0a5849e520547641bfbc733d291a32d
+      spriteID: fd674422fca47a442840dd764181a24d
       vertices: []
       indices: 
       edges: []
@@ -374,10 +363,10 @@ TextureImporter:
       name: GamesPlusJames_RPG-Character_13
       rect:
         serializedVersion: 2
-        x: 16
+        x: 64
         y: 0
-        width: 16
-        height: 16
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -385,7 +374,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaca072170c0f3943a1b4735ad01877a
+      spriteID: 8fb47ef62c7694b4284e8457d3421853
       vertices: []
       indices: 
       edges: []
@@ -394,10 +383,10 @@ TextureImporter:
       name: GamesPlusJames_RPG-Character_14
       rect:
         serializedVersion: 2
-        x: 32
+        x: 128
         y: 0
-        width: 16
-        height: 16
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -405,7 +394,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c9cdfcc531d48b49b71ec19500e1a03
+      spriteID: 83b0ca6a386d50343b879fa74bf8f4bd
       vertices: []
       indices: 
       edges: []
@@ -414,10 +403,10 @@ TextureImporter:
       name: GamesPlusJames_RPG-Character_15
       rect:
         serializedVersion: 2
-        x: 48
+        x: 192
         y: 0
-        width: 16
-        height: 16
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,7 +414,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bb1b03f83fa35a45b33025551249bfc
+      spriteID: a64d0d2f6414c9747977a7e62c169793
       vertices: []
       indices: 
       edges: []
@@ -433,7 +422,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 13fc73faeedfa93439016add2e058229
+    spriteID: a94036d53b7c552439035b654ad93a3e
     vertices: []
     indices: 
     edges: []
