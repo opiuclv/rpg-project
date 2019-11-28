@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8998892437101914959}
   m_Layer: 0
   m_Name: slime yellow
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,7 +149,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14730549, y: 0.11605793}
   m_EdgeRadius: 0
+<<<<<<< HEAD
 --- !u!114 &8998892437101914959
+=======
+--- !u!114 &114126766797374828
+>>>>>>> 7e87aabd0d26e43f52a3973a9e5b6d7c3cc5187f
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
