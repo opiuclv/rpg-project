@@ -95,6 +95,7 @@
     <Compile Include="Assets\Scripts\Griding.cs" />
     <Compile Include="Assets\Scripts\HurtEnemy.cs" />
     <Compile Include="Assets\Scripts\HurtPlayer.cs" />
+    <Compile Include="Assets\Scripts\Load_Victory.cs" />
     <Compile Include="Assets\Scripts\LoadLeadStory.cs" />
     <Compile Include="Assets\Scripts\LoadNewArea.cs" />
     <Compile Include="Assets\Scripts\LoadScene.cs" />
@@ -152,6 +153,7 @@
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TileLayer.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TileObject.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TmxObject.cs" />
+    <None Include="Assets\Tiled2Unity\Imported\village_house5.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth-Instanced.shader" />
     <None Include="Assets\Tiled2Unity\Imported\LT1.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\R1.tiled2unity.xml" />
@@ -162,8 +164,10 @@
     <None Include="Assets\Tiled2Unity\Imported\R.tiled2unity.xml" />
     <None Include="Assets\Text\Victory_story.txt" />
     <None Include="Assets\Tiled2Unity\Shaders\shaDefault.shader" />
+    <None Include="Assets\Tiled2Unity\Imported\village_house3.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Shaders\shaDepth-Instanced.shader" />
     <None Include="Assets\Tiled2Unity\Prefabs\_ReadMe.txt" />
+    <None Include="Assets\Tiled2Unity\Imported\boss_C.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\test_city.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Shaders\Tiled2Unity.cginc" />
     <None Include="Assets\Tiled2Unity\Imported\TBLR.tiled2unity.xml" />
@@ -185,6 +189,7 @@
     <None Include="Assets\Tiled2Unity\Imported\T.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\suburbs.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\TBR.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\village_house6.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\LR1.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
     <None Include="Assets\Tiled2Unity\Imported\TB1.tiled2unity.xml" />
@@ -195,10 +200,13 @@
     <None Include="Assets\Tiled2Unity\Shaders\shaDefault-Instanced.shader" />
     <None Include="Assets\Tiled2Unity\Imported\T1.tiled2unity.xml" />
     <None Include="Assets\Text\Main_story_part2.txt" />
+    <None Include="Assets\Tiled2Unity\Imported\village_house2.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\boss_I.tiled2unity.xml" />
     <None Include="Assets\Text\Lead_story.txt" />
     <None Include="Assets\Tiled2Unity\Imported\BLR.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\village_house.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Shaders\shaColorKey-Instanced.shader" />
+    <None Include="Assets\Tiled2Unity\Imported\boss_E.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\house.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\LB1.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\testhomeInside.tiled2unity.xml" />
@@ -211,6 +219,8 @@
     <None Include="Assets\Tiled2Unity\Imported\L1.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
     <None Include="Assets\Tiled2Unity\Imported\TLR.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\village_house4.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\village_house7.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/UNITY/temp project/rpg-project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

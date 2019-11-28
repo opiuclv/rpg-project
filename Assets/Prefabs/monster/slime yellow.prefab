@@ -13,9 +13,13 @@ GameObject:
   - component: {fileID: 95889930155335284}
   - component: {fileID: 50040575608670318}
   - component: {fileID: 61708743101006754}
+<<<<<<< HEAD
   - component: {fileID: 181272568}
   - component: {fileID: 181272569}
   - component: {fileID: 8183345896773455693}
+=======
+  - component: {fileID: 8998892437101914959}
+>>>>>>> master
   m_Layer: 0
   m_Name: slime yellow
   m_TagString: Enemy
@@ -151,6 +155,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14730549, y: 0.11605793}
   m_EdgeRadius: 0
+<<<<<<< HEAD
 --- !u!114 &181272568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +188,9 @@ MonoBehaviour:
   damageNumber: {fileID: 1745051995956282, guid: c9fcf0ef3f5abe047a91fef0acfbf258,
     type: 3}
 --- !u!114 &8183345896773455693
+=======
+--- !u!114 &8998892437101914959
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,8 +208,8 @@ MonoBehaviour:
   defendRadius: 3
   chaseRadius: 10
   attackRange: 1
-  walkSpeed: 1
-  runSpeed: 2
+  walkSpeed: 3
+  runSpeed: 5
   currentState: 0
   actionWeight:
   - 3000

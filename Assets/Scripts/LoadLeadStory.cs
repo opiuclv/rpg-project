@@ -92,9 +92,14 @@ public class LoadLeadStory : MonoBehaviour {
 
     void OnGUI()
     {
-        GUI.Label(new Rect(Screen.width / 2 - 250, Screen.height / 2 - 150, 200, 200), "序章"); // 使用GUI函數來固定text顯示位置
-        GUI.Label(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 50, 300, 200), text);
-        GUI.Label(new Rect(Screen.width / 2 + 200, Screen.height / 2 + 100, 200, 200), "Press Space to continue...");
+        GUIStyle style =new GUIStyle();
+        style.normal.background = null;    //这是设置背景填充的
+        style.normal.textColor= Color.white;   //设置字体颜色的
+        style.fontSize = 20;       //当然，这是字体大小
+        style.wordWrap = true ;
+        GUI.Label(new Rect(Screen.width / 2 - 250, Screen.height / 2 - 150, 200, 200), "序章", style); // 使用GUI函數來固定text顯示位置
+        GUI.Label(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 50, 300, 300), text, style);
+        GUI.Label(new Rect(Screen.width / 2 + 200, Screen.height / 2 + 100, 300, 200), "Press Space to continue...", style);
     }
 
     //按路徑讀取txt文本的内容，第一個参數是路徑名，第二個参數是第幾行，返回值是sring[]數組
