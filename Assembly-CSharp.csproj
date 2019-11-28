@@ -85,6 +85,7 @@
      <Compile Include="Assets\Scripts\Griding.cs" />
      <Compile Include="Assets\Scripts\HurtEnemy.cs" />
      <Compile Include="Assets\Scripts\HurtPlayer.cs" />
+     <Compile Include="Assets\Scripts\Load_Victory.cs" />
      <Compile Include="Assets\Scripts\LoadLeadStory.cs" />
      <Compile Include="Assets\Scripts\LoadNewArea.cs" />
      <Compile Include="Assets\Scripts\LoadScene.cs" />

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Prefabs/Player.prefab.meta
+guid: 92aaa75c824b7914e9ff41a1a8c41c2b
+PrefabImporter:
+  externalObjects: {}
+=======
+guid: c26d14e72acf94d4abb2ca2663ecf73b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+>>>>>>> master:Assets/Animations/monster/slime/Slime_blue2_attack.anim.meta
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

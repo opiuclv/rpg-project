@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":56.2884521484375,"y":-28.791011810302736,"z":0.20170477032661439},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":1.6910151243209839,"orthographic":true}
+=======
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":33.13359451293945,"y":-21.07931900024414,"z":-0.02880854345858097},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":3.498828411102295,"orthographic":true}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":54.99337387084961,"y":-28.9532413482666,"z":-0.03926455229520798},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":6.052405834197998,"orthographic":true}
 >>>>>>> master
+>>>>>>> hayden

@@ -2,6 +2,7 @@ fileFormatVersion: 2
 guid: 98ea29b20e88f2847b417d9377da2015
 TextureImporter:
   fileIDToRecycleName:
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
     21300000: GamesPlusJames_RPG-Character_0
     21300002: GamesPlusJames_RPG-Character_1
     21300004: GamesPlusJames_RPG-Character_2
@@ -18,6 +19,24 @@ TextureImporter:
     21300026: GamesPlusJames_RPG-Character_13
     21300028: GamesPlusJames_RPG-Character_14
     21300030: GamesPlusJames_RPG-Character_15
+=======
+    21300000: player_0
+    21300002: player_1
+    21300004: player_2
+    21300006: player_3
+    21300008: player_4
+    21300010: player_5
+    21300012: player_6
+    21300014: player_7
+    21300016: player_8
+    21300018: player_9
+    21300020: player_10
+    21300022: player_11
+    21300024: player_12
+    21300026: player_13
+    21300028: player_14
+    21300030: player_15
+>>>>>>> master:Assets/Art/player.png.meta
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -89,7 +108,11 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 256
     resizeAlgorithm: 0
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
     textureFormat: 4
+=======
+    textureFormat: 12
+>>>>>>> master:Assets/Art/player.png.meta
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -100,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GamesPlusJames_RPG-Character_0
+      name: player_0
       rect:
         serializedVersion: 2
         x: 0
@@ -114,13 +137,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
       spriteID: ce886ca65a2d21a4e9b62bea9d0edce1
+=======
+      spriteID: 0895778c53ac57e488ca40a069d3de8c
+>>>>>>> master:Assets/Art/player.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamesPlusJames_RPG-Character_1
+      name: player_1
       rect:
         serializedVersion: 2
         x: 64
@@ -134,13 +161,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
       spriteID: ac388116e423d8e4b9a3d541e0ba22ff
+=======
+      spriteID: ea622ba0d2ebc9648874dd1c2e2b16e5
+>>>>>>> master:Assets/Art/player.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamesPlusJames_RPG-Character_2
+      name: player_2
       rect:
         serializedVersion: 2
         x: 128
@@ -154,13 +185,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
       spriteID: 380e1caad09090e4cb0df9bd695ef167
+=======
+      spriteID: 6fae06a01fb50b84f96eeb53c15cdc6f
+>>>>>>> master:Assets/Art/player.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamesPlusJames_RPG-Character_3
+      name: player_3
       rect:
         serializedVersion: 2
         x: 192
@@ -174,13 +209,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
       spriteID: fc967616ba286a4469da11728c7a3b16
+=======
+      spriteID: cae68defe69b6544a87ca75bce47ddea
+>>>>>>> master:Assets/Art/player.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamesPlusJames_RPG-Character_4
+      name: player_4
       rect:
         serializedVersion: 2
         x: 0
@@ -194,13 +233,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
       spriteID: d20e0bc7ae7a29847a816a5490e399fc
+=======
+      spriteID: 2fc691dce0fad0447a97c044151c40db
+>>>>>>> master:Assets/Art/player.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamesPlusJames_RPG-Character_5
+      name: player_5
       rect:
         serializedVersion: 2
         x: 64
@@ -214,13 +257,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
       spriteID: 540e1e6642418904bb581c1a0b16569b
+=======
+      spriteID: af8ffcbd77e4cff4eb6a9e77f7094c02
+>>>>>>> master:Assets/Art/player.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamesPlusJames_RPG-Character_6
+      name: player_6
       rect:
         serializedVersion: 2
         x: 128
@@ -234,13 +281,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
       spriteID: 30da1d44bab185146862c3acbc2ee63e
+=======
+      spriteID: a5ce11ab00fba004694d51a1a042056d
+>>>>>>> master:Assets/Art/player.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamesPlusJames_RPG-Character_7
+      name: player_7
       rect:
         serializedVersion: 2
         x: 192
@@ -254,13 +305,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
       spriteID: 9fd532f1108bd9e4fb39bb874b35b613
+=======
+      spriteID: fea5690ae2927414db5b491711e77c13
+>>>>>>> master:Assets/Art/player.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamesPlusJames_RPG-Character_8
+      name: player_8
       rect:
         serializedVersion: 2
         x: 0
@@ -274,13 +329,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
       spriteID: 38200ed5e88ec234fa64f13a99e16231
+=======
+      spriteID: e23a6cb2f9818c04a958d4d80fc6d346
+>>>>>>> master:Assets/Art/player.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamesPlusJames_RPG-Character_9
+      name: player_9
       rect:
         serializedVersion: 2
         x: 64
@@ -294,13 +353,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
       spriteID: 1165dcf07b041b840a66c8a22c2f51d6
+=======
+      spriteID: 0cf6db7cc1aa3bb4791244fda06602d8
+>>>>>>> master:Assets/Art/player.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamesPlusJames_RPG-Character_10
+      name: player_10
       rect:
         serializedVersion: 2
         x: 128
@@ -314,13 +377,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
       spriteID: 4f7cec43e6321c545bdb4fe6f6841586
+=======
+      spriteID: e1cfa9f95c23a0449bd66f5b46b0f996
+>>>>>>> master:Assets/Art/player.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamesPlusJames_RPG-Character_11
+      name: player_11
       rect:
         serializedVersion: 2
         x: 192
@@ -334,13 +401,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
       spriteID: 979d89c10f3b9a74495b5646ed5f6adb
+=======
+      spriteID: af1541e893f3006449e23e2a0fc6bdc2
+>>>>>>> master:Assets/Art/player.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamesPlusJames_RPG-Character_12
+      name: player_12
       rect:
         serializedVersion: 2
         x: 0
@@ -354,13 +425,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
       spriteID: bcd7e2fafe0830f4c8c65f2774eb7c9f
+=======
+      spriteID: d242b698d94d5d04881dc25bedadce63
+>>>>>>> master:Assets/Art/player.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamesPlusJames_RPG-Character_13
+      name: player_13
       rect:
         serializedVersion: 2
         x: 64
@@ -374,13 +449,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
       spriteID: afd7bace38caab640a10e54f81a895b9
+=======
+      spriteID: 66fcd5d06e80a5a4dbcb05d3ff3688c6
+>>>>>>> master:Assets/Art/player.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamesPlusJames_RPG-Character_14
+      name: player_14
       rect:
         serializedVersion: 2
         x: 128
@@ -394,13 +473,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
       spriteID: b4dfeedca0dbff84d9c421179325fe7a
+=======
+      spriteID: 6f85f4a5768dad844a43420c70606472
+>>>>>>> master:Assets/Art/player.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GamesPlusJames_RPG-Character_15
+      name: player_15
       rect:
         serializedVersion: 2
         x: 192
@@ -414,7 +497,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
       spriteID: 427fdc2e00575a34b89e9d0719455137
+=======
+      spriteID: 03051cafe2395604dbd3ac740e032d06
+>>>>>>> master:Assets/Art/player.png.meta
       vertices: []
       indices: 
       edges: []
@@ -422,7 +509,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD:Assets/Art/GamesPlusJames_RPG-Character.png.meta
     spriteID: a86ec78c63e6f3640850e3d30d6ff454
+=======
+    spriteID: ca71de12f34c13d479ed49bade82959f
+>>>>>>> master:Assets/Art/player.png.meta
     vertices: []
     indices: 
     edges: []
