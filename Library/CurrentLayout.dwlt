@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 498}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 498}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_MinSize: {x: 1021, y: 448}
   m_MaxSize: {x: 26016, y: 10024}
   vertical: 0
-  controlID: 2251
+  controlID: 181
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 448}
   m_MaxSize: {x: 8006, y: 8048}
   vertical: 1
-  controlID: 2519
+  controlID: 55
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 2448
+  controlID: 56
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -437,9 +437,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 18.577484, y: -17.708942, z: -0.042982817}
+    m_Target: {x: 21.545078, y: -17.531244, z: -0.2140626}
     speed: 2
-    m_Value: {x: 18.577484, y: -17.708942, z: -0.042982817}
+    m_Value: {x: 21.545078, y: -17.531244, z: -0.2140626}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -471,9 +471,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.6649365
+    m_Target: 23.758303
     speed: 2
-    m_Value: 6.6649365
+    m_Value: 23.758303
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -684,9 +684,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 383f0000
       m_LastClickedID: 0
-      m_ExpandedIDs: dcc6feff60a6ffff0261000066610000
+      m_ExpandedIDs: 5cf2ffff92faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -748,7 +748,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Art/monster/slime
+    - Assets/Scenes
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
@@ -760,7 +760,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 3c780100
     m_LastClickedID: 96316
-    m_ExpandedIDs: ffffffff0000000066390000ba420000504300003644000098520000aa520000cc520000da520000de5400005056000082580000106c0000126c0000146c0000
+    m_ExpandedIDs: 000000009e2a00006e2b0000ae2c0000c42d00004e3b00006c3b0000a03b00000e3c0000543d00004a3e0000e23e0000f43e0000bc3f00004c40000000440000b84e0000ba4e0000bc4e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -788,7 +788,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000066390000ba42000050430000364400001c45000098520000aa520000cc52000034530000de5400004a5500005a550000f25500005056000062590000106c0000126c0000146c0000
+    m_ExpandedIDs: ffffffff000000009e2a00006e2b0000ae2c0000c42d00004e3b0000a03b0000543d00004a3e0000e23e0000f43e0000bc3f00004c400000b84e0000ba4e0000bc4e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
