@@ -90,6 +90,8 @@
     <Compile Include="Assets\Scripts\FloatingNumbers.cs" />
     <Compile Include="Assets\Scripts\FloatingText.cs" />
     <Compile Include="Assets\Scripts\GoldPickup.cs" />
+    <Compile Include="Assets\Scripts\GreenSlimeControler.cs" />
+    <Compile Include="Assets\Scripts\GreenSlimeControler1.cs" />
     <Compile Include="Assets\Scripts\Griding.cs" />
     <Compile Include="Assets\Scripts\HurtEnemy.cs" />
     <Compile Include="Assets\Scripts\HurtPlayer.cs" />
@@ -131,6 +133,7 @@
     <Compile Include="Assets\Scripts\VillagerMovement.cs" />
     <Compile Include="Assets\Scripts\VolumeController.cs" />
     <Compile Include="Assets\Scripts\VolumeManager.cs" />
+    <Compile Include="Assets\Scripts\YellowSlimeControler.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GameObjectExtensions.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GPUInstancing.cs" />
