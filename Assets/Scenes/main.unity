@@ -17913,6 +17913,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 20185163910265614, guid: 5d56f41fe7aec294387fbbb822a5ee35,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 311
+      objectReference: {fileID: 0}
     - target: {fileID: 114536253393064876, guid: 5d56f41fe7aec294387fbbb822a5ee35,
         type: 3}
       propertyPath: followTarget
@@ -17923,11 +17928,6 @@ PrefabInstance:
       propertyPath: boundBox
       value: 
       objectReference: {fileID: 323907573}
-    - target: {fileID: 20185163910265614, guid: 5d56f41fe7aec294387fbbb822a5ee35,
-        type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 311
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d56f41fe7aec294387fbbb822a5ee35, type: 3}
 --- !u!4 &1766862367 stripped
@@ -22226,6 +22226,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6646227876589915448, guid: eb77f0515ef7c044880190ccd738f8b1,
+        type: 3}
+      propertyPath: playerMaxHealth
+      value: 9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6646227876589915448, guid: eb77f0515ef7c044880190ccd738f8b1,
+        type: 3}
+      propertyPath: playerCurrentHealth
+      value: 9999
       objectReference: {fileID: 0}
     - target: {fileID: 3286874097192032387, guid: eb77f0515ef7c044880190ccd738f8b1,
         type: 3}
