@@ -9,7 +9,6 @@ public class NewSlimeControler : MonoBehaviour {
     private Animator thisAnimator;      //自身動畫組件
     private Vector3 initialPosition;    //初始位置
     public GameObject enemy3D;          //自己的3D物件
-    public GameObject attackObject;     //攻擊的特效(咬咬 射子彈)
 
     public float wanderRadius;          //遊走半徑，移動狀態下，如果超出遊走半徑會返回出生位置
     public float alertRadius;           //警戒半徑，玩家進入後怪物會發出警告，並一直面朝玩家
@@ -55,7 +54,7 @@ public class NewSlimeControler : MonoBehaviour {
 
     void Start()
     {
-        playerUnit = GameObject.FindGameObjectWithTag("Player3D");
+        playerUnit = GameObject.FindGameObjectWithTag("Player");
         thisAnimator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
 
@@ -357,7 +356,7 @@ public class NewSlimeControler : MonoBehaviour {
             currentState = MonsterState.ATTACK;
         }
         //如果超出追擊範圍或者敵人的距離超出警戒距離就返回
-        if (distanceToInitial > chaseRadius || distanceToPlayer > alertRadius)
+        if (distanceToInitial > chaseRadius)
         {
             // myRigidbody.velocity = Vector2.zero;
             currentState = MonsterState.RETURN;

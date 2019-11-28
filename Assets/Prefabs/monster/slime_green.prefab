@@ -15,11 +15,7 @@ GameObject:
   - component: {fileID: 7626218993711935599}
   - component: {fileID: 7626218993711935593}
   - component: {fileID: 7626218993711935592}
-<<<<<<< HEAD
-  - component: {fileID: 4598942996282675723}
-=======
   - component: {fileID: 7777704042816221532}
->>>>>>> master
   m_Layer: 0
   m_Name: slime_green
   m_TagString: Enemy
@@ -176,11 +172,7 @@ MonoBehaviour:
   CurrentHealth: 0
   expToGive: 25
   enemyQuestName: green_slime
-<<<<<<< HEAD
---- !u!114 &4598942996282675723
-=======
 --- !u!114 &7777704042816221532
->>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,21 +189,12 @@ MonoBehaviour:
     type: 3}
   wanderRadius: 3
   alertRadius: 6
-<<<<<<< HEAD
-  defendRadius: 5.5
-  chaseRadius: 15
-  attackRange: 1.06
-  walkSpeed: 3
-  runSpeed: 5.5
-  shootingSpeed: 0
-=======
   defendRadius: 5
   chaseRadius: 10
   attackRange: 2.5
   walkSpeed: 3
   runSpeed: 4
   shootingSpeed: 10
->>>>>>> master
   currentState: 0
   actionWeight:
   - 3000

@@ -91,7 +91,6 @@
     <Compile Include="Assets\Scripts\FloatingText.cs" />
     <Compile Include="Assets\Scripts\GoldPickup.cs" />
     <Compile Include="Assets\Scripts\GreenSlimeControler.cs" />
-    <Compile Include="Assets\Scripts\GreenSlimeControler1.cs" />
     <Compile Include="Assets\Scripts\Griding.cs" />
     <Compile Include="Assets\Scripts\HurtEnemy.cs" />
     <Compile Include="Assets\Scripts\HurtPlayer.cs" />
