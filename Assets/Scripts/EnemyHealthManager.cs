@@ -1,17 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 // 管理敵人血量 + 經驗量
 
 public class EnemyHealthManager : MonoBehaviour {
 
-    public int MaxHealth;
-    public int CurrentHealth;
+	public float MaxHealth; // 一開始怪物血量
+	public float CurrentHealth;
 
     private PlayerStats thePlayerStats;     // 玩家經驗值系統
 
     public int expToGive;                   // 敵人死掉的經驗值
+
+	public Image healthBar; // 怪物血條
 
     public string enemyQuestName;
     private QuestManager theQM;
@@ -41,6 +44,8 @@ public class EnemyHealthManager : MonoBehaviour {
     public void HurtEnemy(int damageToGive)             // 敵人受傷
     {
         CurrentHealth -= damageToGive;
+		healthBar.fillAmount = CurrentHealth / MaxHealth;
+
     }
 
     public void SetMaxHealth()                          // 使滿血
