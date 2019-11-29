@@ -1,7 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD
-=======
 --- !u!1 &1044376429634994723
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,7 +244,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
->>>>>>> master
 --- !u!1 &9171969292648240310
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,10 +260,7 @@ GameObject:
   - component: {fileID: 7993081418157106366}
   - component: {fileID: 9061744782871708172}
   - component: {fileID: 7724256155931998592}
-<<<<<<< HEAD
-=======
   - component: {fileID: 7961654452371198577}
->>>>>>> master
   m_Layer: 0
   m_Name: slime_blue
   m_TagString: Enemy
@@ -284,12 +278,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 24.136106, y: -17.808666, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-<<<<<<< HEAD
-  m_Children: []
-=======
   m_Children:
   - {fileID: 1505351639877075803}
->>>>>>> master
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -427,10 +417,7 @@ MonoBehaviour:
   MaxHealth: 15
   CurrentHealth: 0
   expToGive: 25
-<<<<<<< HEAD
-=======
   healthBar: {fileID: 1248715655002213678}
->>>>>>> master
   enemyQuestName: blue_slime
 --- !u!114 &7724256155931998592
 MonoBehaviour:
@@ -439,11 +426,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9171969292648240310}
-<<<<<<< HEAD
-  m_Enabled: 1
-=======
   m_Enabled: 0
->>>>>>> master
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bdec1ffc5fbea844f9550ba6d7f9bbd1, type: 3}
   m_Name: 
@@ -462,8 +445,6 @@ MonoBehaviour:
   - 3000
   - 4000
   actRestTime: 5
-<<<<<<< HEAD
-=======
 --- !u!114 &7961654452371198577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -494,4 +475,3 @@ MonoBehaviour:
   - 4000
   actRestTime: 5
   attackCDTime: 1
->>>>>>> master

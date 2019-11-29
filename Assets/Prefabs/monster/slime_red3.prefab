@@ -1,7 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD
-=======
 --- !u!1 &1444694967428097222
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,7 +172,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
->>>>>>> master
 --- !u!1 &5199571530979341143
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,10 +188,7 @@ GameObject:
   - component: {fileID: 2772260824103045496}
   - component: {fileID: 4567921943277268675}
   - component: {fileID: 6391656665539122360}
-<<<<<<< HEAD
-=======
   - component: {fileID: 114759412413742504}
->>>>>>> master
   m_Layer: 0
   m_Name: slime_red3
   m_TagString: Enemy
@@ -212,12 +206,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15.964882, y: -19.753632, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-<<<<<<< HEAD
-  m_Children: []
-=======
   m_Children:
   - {fileID: 8139560344357766915}
->>>>>>> master
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -355,12 +345,8 @@ MonoBehaviour:
   MaxHealth: 15
   CurrentHealth: 0
   expToGive: 25
-<<<<<<< HEAD
-  enemyQuestName: red_slime2
-=======
   healthBar: {fileID: 384412813544187158}
   enemyQuestName: red_slime3
->>>>>>> master
 --- !u!114 &6391656665539122360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,11 +354,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5199571530979341143}
-<<<<<<< HEAD
-  m_Enabled: 1
-=======
   m_Enabled: 0
->>>>>>> master
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bdec1ffc5fbea844f9550ba6d7f9bbd1, type: 3}
   m_Name: 
@@ -391,8 +373,6 @@ MonoBehaviour:
   - 3000
   - 4000
   actRestTime: 5
-<<<<<<< HEAD
-=======
 --- !u!114 &114759412413742504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,4 +475,3 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
->>>>>>> master
