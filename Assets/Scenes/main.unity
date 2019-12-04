@@ -1834,6 +1834,7 @@ MonoBehaviour:
   MaxHealth: 15
   CurrentHealth: 0
   expToGive: 25
+  healthBar: {fileID: 0}
   enemyQuestName: yellow_slime
 --- !u!114 &181272569
 MonoBehaviour:
@@ -22310,6 +22311,16 @@ PrefabInstance:
     - target: {fileID: 4199220383372522015, guid: eb77f0515ef7c044880190ccd738f8b1,
         type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073927568846508232, guid: eb77f0515ef7c044880190ccd738f8b1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529158340195000224, guid: eb77f0515ef7c044880190ccd738f8b1,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
