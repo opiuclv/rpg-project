@@ -25,8 +25,10 @@ public class Load_Victory : MonoBehaviour
         theMusicControler.musicCanPlay = false;
         theSFXM.playerDead.Play();
         gameObject.SetActive(false);
-        Destroy(GameObject.Find("Main Camera"));
-        Destroy(GameObject.Find("Canvas")); // 把所有原本don't destroy的東西死掉後都destroy
-        Application.LoadLevel(levelToLoad); // load到死亡畫面
+        GameObject.Find("Player").SetActive(false) ;
+        GameObject.Find("Main Camera").SetActive(false) ;
+        GameObject.Find("Canvas").SetActive(false) ;
+        //Destroy(GameObject.Find("Canvas")); // 把所有原本don't destroy的東西死掉後都destroy
+        Application.LoadLevel(levelToLoad);
     }
 }
