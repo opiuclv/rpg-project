@@ -709,7 +709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &522301451
 Animator:
   serializedVersion: 3
@@ -1608,16 +1608,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5665543616547992775, guid: 822501df6d62f3845884ce661da47922,
-        type: 3}
-      propertyPath: m_Name
-      value: slime_brown
-      objectReference: {fileID: 0}
-    - target: {fileID: 5665543616547992775, guid: 822501df6d62f3845884ce661da47922,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 126539712778988155, guid: 822501df6d62f3845884ce661da47922,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1672,6 +1662,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665543616547992775, guid: 822501df6d62f3845884ce661da47922,
+        type: 3}
+      propertyPath: m_Name
+      value: slime_brown
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665543616547992775, guid: 822501df6d62f3845884ce661da47922,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 822501df6d62f3845884ce661da47922, type: 3}
@@ -2112,16 +2112,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5199571530979341143, guid: 99d17a1ebf951be47a13ace40009906f,
-        type: 3}
-      propertyPath: m_Name
-      value: slime_red3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5199571530979341143, guid: 99d17a1ebf951be47a13ace40009906f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 680995710476651897, guid: 99d17a1ebf951be47a13ace40009906f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2177,6 +2167,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5199571530979341143, guid: 99d17a1ebf951be47a13ace40009906f,
+        type: 3}
+      propertyPath: m_Name
+      value: slime_red3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199571530979341143, guid: 99d17a1ebf951be47a13ace40009906f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99d17a1ebf951be47a13ace40009906f, type: 3}
 --- !u!1 &4507499519236022596 stripped
@@ -2222,16 +2222,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9171969292648240310, guid: b904d019de307ac4fa83a83e20f36f68,
-        type: 3}
-      propertyPath: m_Name
-      value: slime_blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 9171969292648240310, guid: b904d019de307ac4fa83a83e20f36f68,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7622648653075984019, guid: b904d019de307ac4fa83a83e20f36f68,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2286,6 +2276,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9171969292648240310, guid: b904d019de307ac4fa83a83e20f36f68,
+        type: 3}
+      propertyPath: m_Name
+      value: slime_blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 9171969292648240310, guid: b904d019de307ac4fa83a83e20f36f68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b904d019de307ac4fa83a83e20f36f68, type: 3}
