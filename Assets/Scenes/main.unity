@@ -1834,6 +1834,7 @@ MonoBehaviour:
   MaxHealth: 15
   CurrentHealth: 0
   expToGive: 25
+  healthBar: {fileID: 0}
   enemyQuestName: yellow_slime
 --- !u!114 &181272569
 MonoBehaviour:
@@ -9654,13 +9655,7 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 114792216328121270, guid: 822594c7ab642934fa36c3c2efa1134d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114792216328121270, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
 --- !u!1 &1093144126
 GameObject:
@@ -20548,26 +20543,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 992bce3231cfa38438ea467864dc008e, type: 3}
---- !u!1 &2055710180 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1091924284}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2055710185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055710180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7f0947286c8cd74f986cd0f677aa2a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 5
-  theMM: {fileID: 0}
 --- !u!1 &2057028260
 GameObject:
   m_ObjectHideFlags: 0
