@@ -33,7 +33,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6276726284557210439}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!33 &1668901422996082254
 MeshFilter:
@@ -155,8 +155,8 @@ Transform:
   m_LocalPosition: {x: 104.1, y: -132.4, z: 0}
   m_LocalScale: {x: 16, y: 16, z: 16}
   m_Children:
-  - {fileID: 4619804667967754934}
   - {fileID: 8984791486142138608}
+  - {fileID: 4619804667967754934}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -210,7 +210,7 @@ PrefabInstance:
     - target: {fileID: 7626218993711935587, guid: c3b4bd44954a64b4aafed871c4a3c923,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7626218993711935587, guid: c3b4bd44954a64b4aafed871c4a3c923,
         type: 3}
@@ -226,36 +226,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626218993711935587, guid: c3b4bd44954a64b4aafed871c4a3c923,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626218993711935587, guid: c3b4bd44954a64b4aafed871c4a3c923,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626218993711935587, guid: c3b4bd44954a64b4aafed871c4a3c923,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626218993711935598, guid: c3b4bd44954a64b4aafed871c4a3c923,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626218993711935586, guid: c3b4bd44954a64b4aafed871c4a3c923,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1902189171
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626218993711935586, guid: c3b4bd44954a64b4aafed871c4a3c923,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3b4bd44954a64b4aafed871c4a3c923, type: 3}
