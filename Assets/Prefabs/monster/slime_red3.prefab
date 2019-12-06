@@ -187,7 +187,6 @@ GameObject:
   - component: {fileID: 4089653722096650273}
   - component: {fileID: 2772260824103045496}
   - component: {fileID: 4567921943277268675}
-  - component: {fileID: 6391656665539122360}
   - component: {fileID: 114759412413742504}
   m_Layer: 0
   m_Name: slime_red3
@@ -330,6 +329,7 @@ MonoBehaviour:
   damageToGive: 10
   damageNumber: {fileID: 1745051995956282, guid: c9fcf0ef3f5abe047a91fef0acfbf258,
     type: 3}
+  destroyOnCollision: 0
 --- !u!114 &4567921943277268675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,32 +347,6 @@ MonoBehaviour:
   expToGive: 25
   healthBar: {fileID: 384412813544187158}
   enemyQuestName: red_slime3
---- !u!114 &6391656665539122360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5199571530979341143}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdec1ffc5fbea844f9550ba6d7f9bbd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy3D: {fileID: 0}
-  wanderRadius: 3
-  alertRadius: 6
-  defendRadius: 5
-  chaseRadius: 10
-  attackRange: 1.06
-  walkSpeed: 3
-  runSpeed: 5
-  currentState: 0
-  actionWeight:
-  - 3000
-  - 3000
-  - 4000
-  actRestTime: 5
 --- !u!114 &114759412413742504
 MonoBehaviour:
   m_ObjectHideFlags: 0

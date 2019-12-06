@@ -1851,6 +1851,7 @@ MonoBehaviour:
   damageToGive: 10
   damageNumber: {fileID: 1745051995956282, guid: c9fcf0ef3f5abe047a91fef0acfbf258,
     type: 3}
+  destroyOnCollision: 0
 --- !u!1 &205924242
 GameObject:
   m_ObjectHideFlags: 0
