@@ -24,11 +24,6 @@ public class MoneyManager : MonoBehaviour {
             PlayerPrefs.SetInt("CurrentMoney", 0);                  // 設定一個int欄位"CurrentMoney" 給定數值為0
         }
 
-		//test
-		currentGold = 1000;
-		PlayerPrefs.SetInt("CurrentMoney", currentGold);
-		//
-
         moneyText.text = "Gold: " + currentGold;                    // 顯示當前金錢
 	}
 	

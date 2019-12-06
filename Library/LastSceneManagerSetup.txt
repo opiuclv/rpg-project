@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/main.unity
+=======
+- path: Assets/Scenes/boss_room.unity
+>>>>>>> master
   isLoaded: 1
   isActive: 1
