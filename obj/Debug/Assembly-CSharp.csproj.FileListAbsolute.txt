@@ -166,7 +166,3 @@ D:\UNITY\unity project\test1\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.
 D:\UNITY\unity project\test1\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 D:\UNITY\unity project\test1\obj\Debug\Assembly-CSharp.dll
 D:\UNITY\unity project\test1\obj\Debug\Assembly-CSharp.pdb
-D:\UNITY\temp project\rpg-project\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-D:\UNITY\temp project\rpg-project\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-D:\UNITY\temp project\rpg-project\obj\Debug\Assembly-CSharp.dll
-D:\UNITY\temp project\rpg-project\obj\Debug\Assembly-CSharp.pdb

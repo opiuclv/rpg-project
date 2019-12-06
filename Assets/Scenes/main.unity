@@ -1851,6 +1851,7 @@ MonoBehaviour:
   damageToGive: 10
   damageNumber: {fileID: 1745051995956282, guid: c9fcf0ef3f5abe047a91fef0acfbf258,
     type: 3}
+  destroyOnCollision: 0
 --- !u!1 &205924242
 GameObject:
   m_ObjectHideFlags: 0
@@ -22285,21 +22286,6 @@ PrefabInstance:
     - target: {fileID: 4199220383372522015, guid: eb77f0515ef7c044880190ccd738f8b1,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8073927568846508232, guid: eb77f0515ef7c044880190ccd738f8b1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4529158340195000224, guid: eb77f0515ef7c044880190ccd738f8b1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7463895654868239060, guid: eb77f0515ef7c044880190ccd738f8b1,
-        type: 3}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

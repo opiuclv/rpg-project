@@ -88,7 +88,6 @@ GameObject:
   - component: {fileID: 3798821641600437689}
   - component: {fileID: 3798821641600437688}
   - component: {fileID: 3798821641600437691}
-  - component: {fileID: 3798821641600437690}
   - component: {fileID: 4141112880607524603}
   m_Layer: 0
   m_Name: slime_blue2
@@ -231,6 +230,7 @@ MonoBehaviour:
   damageToGive: 10
   damageNumber: {fileID: 1745051995956282, guid: c9fcf0ef3f5abe047a91fef0acfbf258,
     type: 3}
+  destroyOnCollision: 0
 --- !u!114 &3798821641600437691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,32 +248,6 @@ MonoBehaviour:
   expToGive: 25
   healthBar: {fileID: 6995842802322828824}
   enemyQuestName: blue_slime2
---- !u!114 &3798821641600437690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3798821641600437694}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdec1ffc5fbea844f9550ba6d7f9bbd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy3D: {fileID: 0}
-  wanderRadius: 3
-  alertRadius: 6
-  defendRadius: 5
-  chaseRadius: 10
-  attackRange: 1.06
-  walkSpeed: 3
-  runSpeed: 5
-  currentState: 0
-  actionWeight:
-  - 3000
-  - 3000
-  - 4000
-  actRestTime: 5
 --- !u!114 &4141112880607524603
 MonoBehaviour:
   m_ObjectHideFlags: 0

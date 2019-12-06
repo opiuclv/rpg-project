@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4249198872630520}
   - component: {fileID: 212812481372257226}
   - component: {fileID: 58231809110841860}
-  - component: {fileID: 114882995660668240}
   - component: {fileID: 50484985951753618}
   - component: {fileID: 114674109658326182}
+  - component: {fileID: 114882995660668240}
   m_Layer: 0
   m_Name: CoinBullet
   m_TagString: Untagged
@@ -100,24 +100,6 @@ CircleCollider2D:
   m_Offset: {x: -0.04, y: -0.13}
   serializedVersion: 2
   m_Radius: 0.17
---- !u!114 &114882995660668240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1855321191575604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fb01eb039561fd4184a85c4c19adaef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageToGive: 1
-  damageBurst: {fileID: 1920987025076836, guid: c5c496cbc8cc03f4095e85aceb4f15c2,
-    type: 3}
-  hitPoint: {fileID: 4999695028226718}
-  damageNumber: {fileID: 1745051995956282, guid: c9fcf0ef3f5abe047a91fef0acfbf258,
-    type: 3}
 --- !u!50 &50484985951753618
 Rigidbody2D:
   serializedVersion: 4
@@ -146,12 +128,31 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855321191575604}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36eed02c4af76d94d84adbff3d7a0ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timeToDestroy: 0.6
+--- !u!114 &114882995660668240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855321191575604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb01eb039561fd4184a85c4c19adaef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
+  damageBurst: {fileID: 1920987025076836, guid: c5c496cbc8cc03f4095e85aceb4f15c2,
+    type: 3}
+  hitPoint: {fileID: 4999695028226718}
+  damageNumber: {fileID: 1745051995956282, guid: c9fcf0ef3f5abe047a91fef0acfbf258,
+    type: 3}
+  destroyOnCollision: 1
 --- !u!1 &1942314761028304
 GameObject:
   m_ObjectHideFlags: 0
