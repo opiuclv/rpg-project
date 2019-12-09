@@ -119,7 +119,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.25
 --- !u!50 &3904767227535972735
 Rigidbody2D:
   serializedVersion: 4
@@ -186,7 +186,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29e0c69c77c580a419d7a1cea89fa93e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: {x: 0, y: 0}
   enemy3D: {fileID: 0}
   attackObject: {fileID: 8693391830529579338, guid: 1e8f985dcb22c6b4590d60da60db8d55,
     type: 3}
@@ -196,7 +195,7 @@ MonoBehaviour:
   chaseRadius: 30
   attackRange: 2.5
   walkSpeed: 3
-  runSpeed: 4
+  runSpeed: 5
   shootingSpeed: 10
   currentState: 0
   actionWeight:
@@ -205,3 +204,4 @@ MonoBehaviour:
   - 4000
   actRestTime: 5
   attackCDTime: 1
+  switchStateDelay: 0.5

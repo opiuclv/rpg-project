@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class WolfControler : MonoBehaviour
 {
-    public Vector2 move;
+    private Vector2 move;
 
     private GameObject playerUnit;      //獲取玩家單位
     private Animator thisAnimator;      //自身動畫組件
@@ -57,7 +57,7 @@ public class WolfControler : MonoBehaviour
     private bool is_Running = false;
     private bool canSwitchState = true;         // 是否可以切換狀態
     private float lastSwitchStateTime;          // 最近一次切換狀態時間
-    private float switchStateDelay = 1.25f;     // 切換狀態延遲
+    public float switchStateDelay = 0.5f;     // 切換狀態延遲
 
     void Start()
     {
@@ -402,7 +402,7 @@ public class WolfControler : MonoBehaviour
             currentState = MonsterState.ATTACK;
         }
         //如果超出追擊範圍或者敵人的距離超出警戒距離就返回
-        if (distanceToInitial > chaseRadius || distanceToPlayer > alertRadius)
+        if (distanceToInitial > chaseRadius)
         {
             // myRigidbody.velocity = Vector2.zero;
             currentState = MonsterState.RETURN;
