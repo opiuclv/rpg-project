@@ -135,6 +135,7 @@
     <Compile Include="Assets\Scripts\VillagerMovement.cs" />
     <Compile Include="Assets\Scripts\VolumeController.cs" />
     <Compile Include="Assets\Scripts\VolumeManager.cs" />
+    <Compile Include="Assets\Scripts\WolfControler.cs" />
     <Compile Include="Assets\Scripts\YellowSlimeControler.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GameObjectExtensions.cs" />
