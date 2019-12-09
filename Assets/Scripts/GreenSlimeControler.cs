@@ -6,19 +6,19 @@ using UnityEngine.SceneManagement;
 public class GreenSlimeControler : MonoBehaviour {
 
     private GameObject playerUnit;      //獲取玩家單位
-    private Animator thisAnimator;      //自身動畫組件
-    private Vector3 initialPosition;    //初始位置
+    private Animator thisAnimator;      //自身動畫組件
+    private Vector3 initialPosition;    //初始位置
     public GameObject enemy3D;          //自己的3D物件
     public GameObject attackObject;     //攻擊的特效(咬咬 射子彈)
 
     public float wanderRadius;          //遊走半徑，移動狀態下，如果超出遊走半徑會返回出生位置
-    public float alertRadius;           //警戒半徑，玩家進入後怪物會發出警告，並一直面朝玩家
-    public float defendRadius;          //自衛半徑，玩家進入後怪物會追擊玩家，當距離<攻擊距離則會發動攻擊（或者觸發戰鬥）
-    public float chaseRadius;           //追擊半徑，當怪物超出追擊半徑後會放棄追擊，返回追擊起始位置
+    public float alertRadius;           //警戒半徑，玩家進入後怪物會發出警告，並一直面朝玩家
+    public float defendRadius;          //自衛半徑，玩家進入後怪物會追擊玩家，當距離<攻擊距離則會發動攻擊（或者觸發戰鬥）
+    public float chaseRadius;           //追擊半徑，當怪物超出追擊半徑後會放棄追擊，返回追擊起始位置
 
     public float attackRange;           //攻擊距離
-    public float walkSpeed;             //移動速度
-    public float runSpeed;              //跑動速度
+    public float walkSpeed;             //移動速度
+    public float runSpeed;              //跑動速度
     public float shootingSpeed;         //射擊速度
 
     private Rigidbody2D myRigidbody;
@@ -36,15 +36,15 @@ public class GreenSlimeControler : MonoBehaviour {
     public MonsterState currentState = MonsterState.STAND;         //默認狀態為原地呼吸
 
     public float[] actionWeight = { 3000, 3000, 4000 };             //設置待機時各種動作的權重，順序依次為呼吸、觀察、移動
-    public float actRestTime;                   //更換待機指令的間隔時間
-    private float lastActTime;                  //最近一次指令時間
+    public float actRestTime;                   //更換待機指令的間隔時間
+    private float lastActTime;                  //最近一次指令時間
     private float animationTime;                //最近一次移動的動畫開始時間
 
     public float attackCDTime;                  //攻擊間隔時間
     private float lastAttackTime;
 
     private float distanceToPlayer;             //怪物與玩家的距離
-    private float distanceToInitial;            //怪物與初始位置的距離
+    private float distanceToInitial;            //怪物與初始位置的距離
     private float distanceToStartPoint;         //怪物與開始移動的位置的距離
     private float targetDistance;               //怪物與目標的距離
     private Vector3 startPosition;              //開始移動的座標
@@ -235,7 +235,7 @@ public class GreenSlimeControler : MonoBehaviour {
                     is_Walking = false;
                     is_Running = false;
 
-                    enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
+                    enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 0f);
 
                     if (Time.time - lastAttackTime > attackCDTime)
                     {
@@ -244,17 +244,9 @@ public class GreenSlimeControler : MonoBehaviour {
 
                         var clone = (GameObject)Instantiate(attackObject, transform.position, Quaternion.Euler(Vector3.zero));
                         Vector2 aimsDir = Vector2.zero;
-                        if (playerUnit.transform.position.x < transform.position.x)
-                            aimsDir.x = Mathf.Clamp01(transform.position.x - playerUnit.transform.position.x) * -1f;
-                        else
-                            aimsDir.x = Mathf.Clamp01(playerUnit.transform.position.x - transform.position.x);
-
-
-                        if (playerUnit.transform.position.y < transform.position.y)
-                            aimsDir.y = Mathf.Clamp01(transform.position.y - playerUnit.transform.position.y) * -1f;
-                        else
-                            aimsDir.y = Mathf.Clamp01(playerUnit.transform.position.y - transform.position.y);
-
+                        aimsDir.x = Mathf.Clamp(playerUnit.transform.position.x - transform.position.x, -1, 1);
+                        aimsDir.y = Mathf.Clamp(playerUnit.transform.position.y - transform.position.y, -1, 1);
+                        
                         clone.GetComponent<Rigidbody2D>().velocity = new Vector2(aimsDir.x * shootingSpeed, aimsDir.y * shootingSpeed);
                     }
 
@@ -359,7 +351,7 @@ public class GreenSlimeControler : MonoBehaviour {
 
         if (distanceToStartPoint > wanderRadius)        // 一次不給走太遠距離
         {
-            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
+            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 0f);
             is_Walking = false;
         }
     }
@@ -374,7 +366,7 @@ public class GreenSlimeControler : MonoBehaviour {
 
         if (distanceToPlayer < attackRange)
         {
-            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
+            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 0f);
             is_Running = false;
             currentState = MonsterState.ATTACK;
         }
@@ -398,7 +390,7 @@ public class GreenSlimeControler : MonoBehaviour {
         {
             is_Walking = false;
             is_Running = false;
-            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
+            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 0f);
             RandomAction();
         }
     }

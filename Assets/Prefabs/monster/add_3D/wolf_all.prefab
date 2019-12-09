@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6782394656114023303
+--- !u!1 &2231965440340051739
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,65 +8,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3860962195885479645}
+  - component: {fileID: 6050015076702553226}
   m_Layer: 0
-  m_Name: boss_wolf
+  m_Name: wolf_all
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3860962195885479645
+--- !u!4 &6050015076702553226
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6782394656114023303}
+  m_GameObject: {fileID: 2231965440340051739}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.925804, y: -22.217028, z: 1.2820823}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8925923893416806916}
-  - {fileID: 7042791280807396014}
+  - {fileID: 3521970000280940287}
+  - {fileID: 9095414025790187991}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3758599063302573320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8925923893416806921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6738bbdd42a05404192d917156d56d9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy3D: {fileID: 0}
-  attackObject: {fileID: 0}
-  wanderRadius: 3
-  alertRadius: 6
-  defendRadius: 5
-  chaseRadius: 10
-  attackRange: 2.5
-  walkSpeed: 3
-  runSpeed: 4
-  shootingSpeed: 10
-  currentState: 0
-  actionWeight:
-  - 3000
-  - 3000
-  - 4000
-  actRestTime: 5
-  attackCDTime: 1
---- !u!1001 &5615924309355238269
+--- !u!1001 &490901245663229830
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 3860962195885479645}
+    m_TransformParent: {fileID: 6050015076702553226}
     m_Modifications:
     - target: {fileID: 3904767227535972724, guid: aafd5b46b0038994181b939d037715bc,
         type: 3}
@@ -130,29 +101,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aafd5b46b0038994181b939d037715bc, type: 3}
---- !u!1 &8925923893416806921 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3904767227535972724, guid: aafd5b46b0038994181b939d037715bc,
-    type: 3}
-  m_PrefabInstance: {fileID: 5615924309355238269}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &8925923893416806916 stripped
+--- !u!4 &3521970000280940287 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3904767227535972729, guid: aafd5b46b0038994181b939d037715bc,
     type: 3}
-  m_PrefabInstance: {fileID: 5615924309355238269}
+  m_PrefabInstance: {fileID: 490901245663229830}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &5739499761471746580
+--- !u!1001 &5774370195713579373
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 3860962195885479645}
+    m_TransformParent: {fileID: 6050015076702553226}
     m_Modifications:
     - target: {fileID: 8257146773903406739, guid: b18c3092298951842a603c4390ff8fe3,
         type: 3}
       propertyPath: m_Name
-      value: boss_wolf_3D
+      value: wolf_3D
       objectReference: {fileID: 0}
     - target: {fileID: 3322470996740944058, guid: b18c3092298951842a603c4390ff8fe3,
         type: 3}
@@ -177,12 +142,12 @@ PrefabInstance:
     - target: {fileID: 3322470996740944058, guid: b18c3092298951842a603c4390ff8fe3,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3322470996740944058, guid: b18c3092298951842a603c4390ff8fe3,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3322470996740944058, guid: b18c3092298951842a603c4390ff8fe3,
         type: 3}
@@ -209,26 +174,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3322470996740944058, guid: b18c3092298951842a603c4390ff8fe3,
+    - target: {fileID: 6788349646687155761, guid: b18c3092298951842a603c4390ff8fe3,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.5
+      propertyPath: m_Radius
+      value: 1.25
       objectReference: {fileID: 0}
-    - target: {fileID: 3322470996740944058, guid: b18c3092298951842a603c4390ff8fe3,
+    - target: {fileID: 286740810828315722, guid: b18c3092298951842a603c4390ff8fe3,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3322470996740944058, guid: b18c3092298951842a603c4390ff8fe3,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.5
+      propertyPath: m_AgentTypeID
+      value: -334000983
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b18c3092298951842a603c4390ff8fe3, type: 3}
---- !u!4 &7042791280807396014 stripped
+--- !u!4 &9095414025790187991 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3322470996740944058, guid: b18c3092298951842a603c4390ff8fe3,
     type: 3}
-  m_PrefabInstance: {fileID: 5739499761471746580}
+  m_PrefabInstance: {fileID: 5774370195713579373}
   m_PrefabAsset: {fileID: 0}

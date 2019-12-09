@@ -436,7 +436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &305407184
 Transform:
   m_ObjectHideFlags: 0
@@ -614,6 +614,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: slime_brown_all
       objectReference: {fileID: 0}
+    - target: {fileID: 6984333864859134053, guid: 7dc621b13c778ee46995b2dfa8cc9f86,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7425093670481713218, guid: 7dc621b13c778ee46995b2dfa8cc9f86,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -684,17 +689,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4934631370756317107, guid: 7dc621b13c778ee46995b2dfa8cc9f86,
-        type: 3}
-      propertyPath: goldObject
-      value: 
-      objectReference: {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d,
-        type: 3}
-    - target: {fileID: 4934631370756317107, guid: 7dc621b13c778ee46995b2dfa8cc9f86,
-        type: 3}
-      propertyPath: MaxHealth
-      value: 50
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dc621b13c778ee46995b2dfa8cc9f86, type: 3}
 --- !u!4 &846842271 stripped
@@ -714,6 +708,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: slime_red2_all
+      objectReference: {fileID: 0}
+    - target: {fileID: 1718678393348556271, guid: 2169be6fd3458f24d8961c69977be8d6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2525576909668360261, guid: 2169be6fd3458f24d8961c69977be8d6,
         type: 3}
@@ -784,17 +783,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4430435098537690984, guid: 2169be6fd3458f24d8961c69977be8d6,
-        type: 3}
-      propertyPath: goldObject
-      value: 
-      objectReference: {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d,
-        type: 3}
-    - target: {fileID: 4430435098537690984, guid: 2169be6fd3458f24d8961c69977be8d6,
-        type: 3}
-      propertyPath: MaxHealth
-      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2169be6fd3458f24d8961c69977be8d6, type: 3}
@@ -1093,6 +1081,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: slime_blue2_all
       objectReference: {fileID: 0}
+    - target: {fileID: 5626787162920312911, guid: bae5eb09b39a89f449bf41e41d43ea57,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8909543838629201913, guid: bae5eb09b39a89f449bf41e41d43ea57,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1163,17 +1156,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4576221668742455514, guid: bae5eb09b39a89f449bf41e41d43ea57,
-        type: 3}
-      propertyPath: goldObject
-      value: 
-      objectReference: {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d,
-        type: 3}
-    - target: {fileID: 4576221668742455514, guid: bae5eb09b39a89f449bf41e41d43ea57,
-        type: 3}
-      propertyPath: MaxHealth
-      value: 35
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bae5eb09b39a89f449bf41e41d43ea57, type: 3}
 --- !u!4 &1218388829 stripped
@@ -1193,6 +1175,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: slime_blue_all
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529523157200537189, guid: 1c2926c99f91c354d8233bbb2e6ccb78,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1660396652696195826, guid: 1c2926c99f91c354d8233bbb2e6ccb78,
         type: 3}
@@ -1264,17 +1251,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2108072997734594120, guid: 1c2926c99f91c354d8233bbb2e6ccb78,
-        type: 3}
-      propertyPath: goldObject
-      value: 
-      objectReference: {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d,
-        type: 3}
-    - target: {fileID: 2108072997734594120, guid: 1c2926c99f91c354d8233bbb2e6ccb78,
-        type: 3}
-      propertyPath: MaxHealth
-      value: 40
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c2926c99f91c354d8233bbb2e6ccb78, type: 3}
 --- !u!4 &1437537959 stripped
@@ -1283,75 +1259,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1437537958}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1574141818
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6782394656114023303, guid: 815a2b95c0a09084e8332888344680be,
-        type: 3}
-      propertyPath: m_Name
-      value: boss_wolf
-      objectReference: {fileID: 0}
-    - target: {fileID: 3860962195885479645, guid: 815a2b95c0a09084e8332888344680be,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 13.644683
-      objectReference: {fileID: 0}
-    - target: {fileID: 3860962195885479645, guid: 815a2b95c0a09084e8332888344680be,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -17.974115
-      objectReference: {fileID: 0}
-    - target: {fileID: 3860962195885479645, guid: 815a2b95c0a09084e8332888344680be,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.2820823
-      objectReference: {fileID: 0}
-    - target: {fileID: 3860962195885479645, guid: 815a2b95c0a09084e8332888344680be,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3860962195885479645, guid: 815a2b95c0a09084e8332888344680be,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3860962195885479645, guid: 815a2b95c0a09084e8332888344680be,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3860962195885479645, guid: 815a2b95c0a09084e8332888344680be,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3860962195885479645, guid: 815a2b95c0a09084e8332888344680be,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3860962195885479645, guid: 815a2b95c0a09084e8332888344680be,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3860962195885479645, guid: 815a2b95c0a09084e8332888344680be,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3860962195885479645, guid: 815a2b95c0a09084e8332888344680be,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 815a2b95c0a09084e8332888344680be, type: 3}
 --- !u!1001 &1702281873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1363,6 +1270,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: slime_green_all
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545847209396940299, guid: f043385bfeac9334cb95432ffe8aa556,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6276726284557210439, guid: f043385bfeac9334cb95432ffe8aa556,
         type: 3}
@@ -1434,12 +1346,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8984791486142138619, guid: f043385bfeac9334cb95432ffe8aa556,
-        type: 3}
-      propertyPath: goldObject
-      value: 
-      objectReference: {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f043385bfeac9334cb95432ffe8aa556, type: 3}
 --- !u!4 &1702281874 stripped
@@ -1459,6 +1365,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: slime_red3_all
+      objectReference: {fileID: 0}
+    - target: {fileID: 8043664861251506320, guid: 5a352bd4cba64784e9eb3f0f980c6ba5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9035200111123912970, guid: 5a352bd4cba64784e9eb3f0f980c6ba5,
         type: 3}
@@ -1529,17 +1440,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2371012604990821203, guid: 5a352bd4cba64784e9eb3f0f980c6ba5,
-        type: 3}
-      propertyPath: goldObject
-      value: 
-      objectReference: {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d,
-        type: 3}
-    - target: {fileID: 2371012604990821203, guid: 5a352bd4cba64784e9eb3f0f980c6ba5,
-        type: 3}
-      propertyPath: MaxHealth
-      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a352bd4cba64784e9eb3f0f980c6ba5, type: 3}

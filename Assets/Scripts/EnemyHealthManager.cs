@@ -16,8 +16,6 @@ public class EnemyHealthManager : MonoBehaviour {
 
 	public Image healthBar; // 怪物血條
 
-	public GameObject goldObject; // 掉金幣
-
     public string enemyQuestName;
     private QuestManager theQM;
 
@@ -36,8 +34,6 @@ public class EnemyHealthManager : MonoBehaviour {
         if (CurrentHealth <= 0)
         {
             theQM.enemyKilled = enemyQuestName;
-
-			var clone = (GameObject)Instantiate(goldObject, transform.position, Quaternion.Euler(Vector3.zero));
 
             Destroy(gameObject);
 
