@@ -416,6 +416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 15
   CurrentHealth: 0
+  goldToGive: {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
   expToGive: 25
   healthBar: {fileID: 806837128808773218}
   enemyQuestName: green_slime

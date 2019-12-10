@@ -11,7 +11,7 @@ public class EnemyHealthManager : MonoBehaviour {
 	public float CurrentHealth;
 
     private PlayerStats thePlayerStats;     // 玩家經驗值系統
-
+	public GameObject goldToGive;           // 敵人死掉的掉落物
     public int expToGive;                   // 敵人死掉的經驗值
 
 	public Image healthBar; // 怪物血條
@@ -34,7 +34,7 @@ public class EnemyHealthManager : MonoBehaviour {
         if (CurrentHealth <= 0)
         {
             theQM.enemyKilled = enemyQuestName;
-
+			var clone = (GameObject)Instantiate(goldToGive, transform.position, Quaternion.Euler(Vector3.zero));
             Destroy(gameObject);
 
             thePlayerStats.AddExperience(expToGive);    // 給玩家加經驗
