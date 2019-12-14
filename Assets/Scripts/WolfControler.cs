@@ -6,12 +6,14 @@ using UnityEngine.SceneManagement;
 public class WolfControler : MonoBehaviour
 {
     private Vector2 move;
+    private Vector3 pos3D;
 
     private GameObject playerUnit;      //獲取玩家單位
     private Animator thisAnimator;      //自身動畫組件
     private Vector3 initialPosition;    //初始位置
     public GameObject enemy3D;          //自己的3D物件
     public GameObject attackObject;     //攻擊的特效(咬咬 射子彈)
+    public GameObject attackObject_2;   //攻擊的特效(咬咬 射子彈)
 
     public float wanderRadius;          //遊走半徑，移動狀態下，如果超出遊走半徑會返回出生位置
     public float alertRadius;           //警戒半徑，玩家進入後怪物會發出警告，並一直面朝玩家
@@ -19,6 +21,7 @@ public class WolfControler : MonoBehaviour
     public float chaseRadius;           //追擊半徑，當怪物超出追擊半徑後會放棄追擊，返回追擊起始位置
 
     public float attackRange;           //攻擊距離
+    public float attackRange_2;         //遠距攻擊距離
     public float walkSpeed;             //移動速度
     public float runSpeed;              //跑動速度
     public float shootingSpeed;         //射擊速度
@@ -33,11 +36,13 @@ public class WolfControler : MonoBehaviour
         WARN,               //盯著玩家
         CHASE,              //追擊玩家
         RETURN,             //超出追擊範圍後返回
-        ATTACK              //攻擊玩家
+        ATTACK_1,           //攻擊玩家
+        ATTACK_2
     }
-    public MonsterState currentState = MonsterState.STAND;         //默認狀態為原地呼吸
+    public MonsterState currentState = MonsterState.STAND;          //默認狀態為原地呼吸
 
     public float[] actionWeight = { 3000, 3000, 4000 };             //設置待機時各種動作的權重，順序依次為呼吸、觀察、移動
+    public float[] attackWeight = { 1000, 1000 };                   //攻擊動作權重
     public float actRestTime;                   //更換待機指令的間隔時間
     private float lastActTime;                  //最近一次指令時間
     private float animationTime;                //最近一次移動的動畫開始時間
@@ -57,7 +62,7 @@ public class WolfControler : MonoBehaviour
     private bool is_Running = false;
     private bool canSwitchState = true;         // 是否可以切換狀態
     private float lastSwitchStateTime;          // 最近一次切換狀態時間
-    public float switchStateDelay = 0.5f;     // 切換狀態延遲
+    public float switchStateDelay = 0.5f;       // 切換狀態延遲
 
     void Start()
     {
@@ -201,6 +206,7 @@ public class WolfControler : MonoBehaviour
                     }
 
                     WarningCheck();
+                    UpdateLastMove(playerUnit.transform.position);
                     break;
 
                 //追擊狀態，朝著玩家跑去
@@ -235,24 +241,33 @@ public class WolfControler : MonoBehaviour
                     //該狀態下的檢測指令
                     ReturnCheck();
                     break;
-                case MonsterState.ATTACK:
+                case MonsterState.ATTACK_1:
 
                     is_Walking = false;
                     is_Running = false;
 
-                    enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 0f);
+                    enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
+                    UpdateLastMove(playerUnit.transform.position);
 
                     if (Time.time - lastAttackTime > attackCDTime)
                     {
                         lastAttackTime = Time.time;
                         thisAnimator.SetTrigger("Attack");
 
-                        var clone = (GameObject)Instantiate(attackObject, transform.position, Quaternion.Euler(Vector3.zero));
-                        Vector2 aimsDir = Vector2.zero;
-                        aimsDir.x = Mathf.Clamp(playerUnit.transform.position.x - transform.position.x, -1, 1);
-                        aimsDir.y = Mathf.Clamp(playerUnit.transform.position.y - transform.position.y, -1, 1);
+                        Vector2 aimsDir = (playerUnit.transform.position - transform.position);
+                        aimsDir.Normalize();
+                        Vector3 aims = aimsDir;
 
-                        clone.GetComponent<Rigidbody2D>().velocity = new Vector2(aimsDir.x * shootingSpeed, aimsDir.y * shootingSpeed);
+                        float number = Random.Range(0, attackWeight[0] + attackWeight[1] );
+                        if (number < attackWeight[0])
+                        {
+                            var clone_1 = (GameObject)Instantiate(attackObject, transform.position + aims * 2f, Quaternion.Euler(Vector3.zero));
+                        }
+                        else if (number < attackWeight[0] + attackWeight[1])
+                        {
+                            var clone_2 = (GameObject)Instantiate(attackObject_2, transform.position + aims * 2f, Quaternion.Euler(Vector3.zero));
+                            clone_2.GetComponent<Rigidbody2D>().velocity = new Vector2(aimsDir.x * shootingSpeed, aimsDir.y * shootingSpeed);
+                        }
                     }
 
                     EnemyDistanceCheck();
@@ -280,30 +295,15 @@ public class WolfControler : MonoBehaviour
     /// </summary>
     private void LateUpdate()
     {
-        Vector3 pos3D = enemy3D.transform.position;
+        pos3D = enemy3D.transform.position;
         transform.position = new Vector3(pos3D.x, pos3D.y, transform.position.z);
     }
 
     void UpdateLastMove(Vector3 targetPos)
     {
-        move.x = Mathf.Clamp(targetPos.x - transform.position.x, -1, 1);
-        move.y = Mathf.Clamp(targetPos.y - transform.position.y, -1, 1);
-
-        if (move.x >= -1 && move.x < -0.5)
-            move.x = -1;
-        else if (move.x >= -0.5 && move.x <= 0.5)
-            move.x = 0;
-        else if (move.x > 0.5 && move.x <= 1)
-            move.x = 1;
-
-        if (move.y >= -1 && move.y < -0.5)
-            move.y = -1;
-        else if (move.y >= -0.5 && move.y <= 0.5)
-            move.y = 0;
-        else if (move.y > 0.5 && move.y <= 1)
-            move.y = 1;
-
-
+        move = (targetPos - transform.position);
+        move.Normalize();
+        
         thisAnimator.SetFloat("MoveX", move.x);
         thisAnimator.SetFloat("MoveY", move.y);
     }
@@ -316,7 +316,7 @@ public class WolfControler : MonoBehaviour
         distanceToPlayer = Vector2.Distance(playerUnit.transform.position, transform.position);
         if (distanceToPlayer < attackRange)
         {
-            currentState = MonsterState.ATTACK;
+            currentState = MonsterState.ATTACK_1;
         }
         else if (distanceToPlayer < defendRadius)
         {
@@ -367,7 +367,7 @@ public class WolfControler : MonoBehaviour
         if (distanceToPlayer < attackRange)
         {
             is_Walking = false;
-            currentState = MonsterState.ATTACK;
+            currentState = MonsterState.ATTACK_1;
         }
         else if (distanceToPlayer < defendRadius)
         {
@@ -382,7 +382,7 @@ public class WolfControler : MonoBehaviour
 
         if (distanceToStartPoint > wanderRadius)        // 一次不給走太遠距離
         {
-            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 0f);
+            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
             is_Walking = false;
         }
     }
@@ -397,9 +397,9 @@ public class WolfControler : MonoBehaviour
 
         if (distanceToPlayer < attackRange)
         {
-            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 0f);
+            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
             is_Running = false;
-            currentState = MonsterState.ATTACK;
+            currentState = MonsterState.ATTACK_1;
         }
         //如果超出追擊範圍或者敵人的距離超出警戒距離就返回
         if (distanceToInitial > chaseRadius)
@@ -421,7 +421,7 @@ public class WolfControler : MonoBehaviour
         {
             is_Walking = false;
             is_Running = false;
-            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 0f);
+            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
             RandomAction();
         }
     }
