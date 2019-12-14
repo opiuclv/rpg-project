@@ -67,10 +67,11 @@ public class FlowerControler : MonoBehaviour {
 
 	void Update()
 	{
-		enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
 		distanceToPlayer = Vector2.Distance(playerUnit.transform.position, transform.position);
 		if (distanceToPlayer < attackRange)
 		{
+			enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 0f);
+
 			if (Time.time - lastAttackTime > attackCDTime)
 			{
 				lastAttackTime = Time.time;

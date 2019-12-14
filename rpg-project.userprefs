@@ -1,16 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\RPG_BOX_Free\Scripts\Managers\ShopManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FlowerControler.cs">
     <Files>
-      <File FileName="Assets\Scripts\Villager_shop.cs" Line="18" Column="57" />
-      <File FileName="Assets\Scripts\VillagerMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\RPG_BOX_Free\Scripts\ScriptablObjects\Attribute.cs" Line="1" Column="1" />
-      <File FileName="Assets\RPG_BOX_Free\Scripts\ScriptablObjects\Item.cs" Line="1" Column="1" />
-      <File FileName="Assets\RPG_BOX_Free\Scripts\ScriptablObjects\LootTable.cs" Line="1" Column="1" />
-      <File FileName="Assets\RPG_BOX_Free\Scripts\Other\ItemProps.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\OpenCanvasGroup.cs" Line="22" Column="14" />
-      <File FileName="Assets\RPG_BOX_Free\Scripts\Managers\EquipmentManager.cs" Line="8" Column="2" />
-      <File FileName="Assets\RPG_BOX_Free\Scripts\Managers\ShopManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\WolfControler.cs" Line="335" Column="6" />
+      <File FileName="Assets\Scripts\HurtPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FlowerControler.cs" Line="83" Column="5" />
+      <File FileName="Assets\Scripts\GreenSlimeControler.cs" Line="49" Column="33" />
+      <File FileName="Assets\Scripts\EnemyHealthManager.cs" Line="39" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
