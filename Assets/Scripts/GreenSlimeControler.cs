@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GreenSlimeControler : MonoBehaviour {
 
+    public Vector2 aimsDir;
+    public Vector2 attackObj;
+
     private GameObject playerUnit;      //獲取玩家單位
     private Animator thisAnimator;      //自身動畫組件
     private Vector3 initialPosition;    //初始位置
@@ -235,7 +238,7 @@ public class GreenSlimeControler : MonoBehaviour {
                     is_Walking = false;
                     is_Running = false;
 
-                    enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 0f);
+                    enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
 
                     if (Time.time - lastAttackTime > attackCDTime)
                     {
@@ -243,9 +246,8 @@ public class GreenSlimeControler : MonoBehaviour {
                         thisAnimator.SetTrigger("Attack");
 
                         var clone = (GameObject)Instantiate(attackObject, transform.position, Quaternion.Euler(Vector3.zero));
-                        Vector2 aimsDir = Vector2.zero;
-                        aimsDir.x = Mathf.Clamp(playerUnit.transform.position.x - transform.position.x, -1, 1);
-                        aimsDir.y = Mathf.Clamp(playerUnit.transform.position.y - transform.position.y, -1, 1);
+                        aimsDir = (playerUnit.transform.position - transform.position);
+                        aimsDir.Normalize();
                         
                         clone.GetComponent<Rigidbody2D>().velocity = new Vector2(aimsDir.x * shootingSpeed, aimsDir.y * shootingSpeed);
                     }
@@ -351,7 +353,7 @@ public class GreenSlimeControler : MonoBehaviour {
 
         if (distanceToStartPoint > wanderRadius)        // 一次不給走太遠距離
         {
-            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 0f);
+            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
             is_Walking = false;
         }
     }
@@ -366,7 +368,7 @@ public class GreenSlimeControler : MonoBehaviour {
 
         if (distanceToPlayer < attackRange)
         {
-            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 0f);
+            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
             is_Running = false;
             currentState = MonsterState.ATTACK;
         }
@@ -390,7 +392,7 @@ public class GreenSlimeControler : MonoBehaviour {
         {
             is_Walking = false;
             is_Running = false;
-            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 0f);
+            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
             RandomAction();
         }
     }

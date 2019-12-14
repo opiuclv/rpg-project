@@ -94,7 +94,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.04, y: -0.13}
@@ -149,7 +149,7 @@ MonoBehaviour:
   damageToGive: 5
   damageNumber: {fileID: 1745051995956282, guid: c9fcf0ef3f5abe047a91fef0acfbf258,
     type: 3}
-  destroyOnCollision: 1
+  destroyOnTrigger: 1
 --- !u!1 &6930576380177203936
 GameObject:
   m_ObjectHideFlags: 0

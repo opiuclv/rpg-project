@@ -11,7 +11,7 @@ public class HurtEnemy : MonoBehaviour {
     public GameObject damageBurst;          // 濺血粒子效果
     public Transform hitPoint;              // 命中點
     public GameObject damageNumber;         // 顯示傷害值效果
-    public bool destroyOnCollision = false;         // 碰撞後消失
+    public bool destroyOnTrigger = false;         // 碰撞後消失
 
     private PlayerStats thePS;
 
@@ -39,7 +39,7 @@ public class HurtEnemy : MonoBehaviour {
             var clone = (GameObject) Instantiate(damageNumber, hitPoint.position, Quaternion.Euler (Vector3.zero) );
             clone.GetComponent<FloatingNumbers>().damageNumber = currentDamage;         // 給定傷害值
 
-            if (destroyOnCollision)
+            if (destroyOnTrigger)
             {
                 Destroy(transform.gameObject);
             }
