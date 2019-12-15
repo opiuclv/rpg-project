@@ -80,6 +80,16 @@ public class PlayerHealthManager : MonoBehaviour {
         theSFXM.playerHurt.Play();
     }
 
+	public void PlayerAddBlood(int BloodToGive)        // 玩家補血
+	{
+		playerCurrentHealth += BloodToGive;
+
+		flashActive = true;
+		flashCounter = flashLength;
+	}
+
+
+
     public void SetMaxHealth()                      // 使滿血
     {
         playerCurrentHealth = playerMaxHealth;

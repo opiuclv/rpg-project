@@ -290,7 +290,7 @@ MonoBehaviour:
   hitPoint: {fileID: 5040596978043494630}
   damageNumber: {fileID: 1745051995956282, guid: c9fcf0ef3f5abe047a91fef0acfbf258,
     type: 3}
-  destroyOnCollision: 0
+  destroyOnTrigger: 0
 --- !u!1 &6750421470468301660
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,6 +306,7 @@ GameObject:
   - component: {fileID: 7577003684318432220}
   - component: {fileID: 5040715589653853898}
   - component: {fileID: 6646227876589915448}
+  - component: {fileID: 1450613954521580}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -446,7 +447,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
 --- !u!50 &5040715589653853898
 Rigidbody2D:
@@ -481,11 +482,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd338e6c0d1e3c14894acdf87cbe38d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMaxHealth: 50
-  playerCurrentHealth: 10
+  playerMaxHealth: 9999
+  playerCurrentHealth: 0
   flashLength: 0.33
   panelGameOver: {fileID: 0}
   levelToLoad: died
+--- !u!114 &1450613954521580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6750421470468301660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f2da354bff6cb7458b3839d3ea6608e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 00000000
+  slots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &7463895654868239060
 GameObject:
   m_ObjectHideFlags: 0
