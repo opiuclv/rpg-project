@@ -72,6 +72,11 @@
      <Compile Include="Assets\Scripts\AgentScript.cs" />
      <Compile Include="Assets\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\BackGame.cs" />
+     <Compile Include="Assets\Scripts\bag\BagInventory.cs" />
+     <Compile Include="Assets\Scripts\bag\BloodBottleItem.cs" />
+     <Compile Include="Assets\Scripts\bag\Pickupbottle.cs" />
+     <Compile Include="Assets\Scripts\bag\Slot.cs" />
+     <Compile Include="Assets\Scripts\bag\Spawn.cs" />
      <Compile Include="Assets\Scripts\Bounds.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\DestroyOnHit.cs" />
