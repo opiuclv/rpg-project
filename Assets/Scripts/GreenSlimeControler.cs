@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class GreenSlimeControler : MonoBehaviour {
 
     public Vector2 aimsDir;
-    public Vector2 attackObj;
 
     private GameObject playerUnit;      //獲取玩家單位
     private Animator thisAnimator;      //自身動畫組件
