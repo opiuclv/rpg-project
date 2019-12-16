@@ -10,6 +10,8 @@ public class BackGame : MonoBehaviour {
 
     private PlayerController thePlayer;
 
+    public GameObject test ;
+
     // Use this for initialization
     public void Start()
     {
@@ -25,11 +27,12 @@ public class BackGame : MonoBehaviour {
     public void ChangeScence()
     {           // 碰到該格 ( 觸發碰撞的物件 )
 
-        GameObject.Find("Player").SetActive(true);
-        GameObject.Find("Main Camera").SetActive(true);
-        GameObject.Find("Canvas").SetActive(true);
         // Application.LoadLevel(levelToLoad);      // 切換到下一個Area ; 該函數已過時雖還能用
         SceneManager.LoadScene(levelToLoad);        // Microsoft Visual Studio 推薦使用函數( using UnityEngine.SceneManagement
         thePlayer.startPoint = exitPoint;           // 根據exit point給定切換Area的start point ( startPoint 可以很多個
+    }
+    public void Active()
+    {
+        test.SetActive(true);
     }
 }

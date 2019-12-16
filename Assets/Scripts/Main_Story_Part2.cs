@@ -78,6 +78,7 @@ public class Main_Story_Part2 : MonoBehaviour
                 dialogueActive = false;
                 canvasGroup.alpha = 0;
                 thePlayer.canMove = true;
+                ResumeGame();
                 Destroy(gameObject); // 劇情已經觸發過一次就不要了
             }
             if (dialogueActive && currentLine <= totalLine) // 可以讀的行數才讀
@@ -133,6 +134,7 @@ public class Main_Story_Part2 : MonoBehaviour
     /// <returns></returns>
     private IEnumerator TypeText()
     {
+        ResumeGame();
         foreach (char letter in word.ToCharArray())
         {
             text += letter;
@@ -143,6 +145,10 @@ public class Main_Story_Part2 : MonoBehaviour
             }
             yield return new WaitForSeconds(letterPause);
         }
+        if (Time.timeScale == 1)
+        {
+            PauseGame();
+        }
         ok_to_Enter = true; // 這句跑完了之後才能換下一行
     }
 
@@ -152,5 +158,14 @@ public class Main_Story_Part2 : MonoBehaviour
         dialogueActive = true;
         thePlayer.canMove = false;
     }
+    void PauseGame()
+    {
+        Time.timeScale = 0;
+    }
+    void ResumeGame()
+    {
+        Time.timeScale = 1;
+    }
+
 
 }
