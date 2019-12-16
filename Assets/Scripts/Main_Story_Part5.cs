@@ -136,7 +136,10 @@ public class Main_Story_Part5 : MonoBehaviour
     /// <returns></returns>
     private IEnumerator TypeText()
     {
-        ResumeGame();
+        if (Time.timeScale == 1)
+        {
+            PauseGame();
+        }
         foreach (char letter in word.ToCharArray())
         {
             text += letter;
@@ -145,12 +148,9 @@ public class Main_Story_Part5 : MonoBehaviour
             {
                 source.PlayOneShot(clip);
             }
-            yield return new WaitForSeconds(letterPause);
+            yield return new WaitForSecondsRealtime(letterPause);
         }
-        if (Time.timeScale == 1)
-        {
-            PauseGame();
-        }
+
         ok_to_Enter = true; // 這句跑完了之後才能換下一行
     }
 

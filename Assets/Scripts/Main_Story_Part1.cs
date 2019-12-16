@@ -130,7 +130,6 @@ public class Main_Story_Part1 : MonoBehaviour
     /// <returns></returns>
     private IEnumerator TypeText()
     {
-        ResumeGame() ;
         foreach (char letter in word.ToCharArray())
         {
             text += letter;
@@ -139,7 +138,7 @@ public class Main_Story_Part1 : MonoBehaviour
             {
                 source.PlayOneShot(clip);
             }
-            yield return new WaitForSeconds(letterPause);
+            yield return new WaitForSecondsRealtime(letterPause);
         }
         if ( Time.timeScale == 1 ) {
             PauseGame();
