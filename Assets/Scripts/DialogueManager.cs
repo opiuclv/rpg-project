@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour {
     public string[] dialogueLines;      // 內容
     public int currentLine;
     public int totalLine;
+    public bool dialogue_complete = false; //判斷說完話就要把商店關掉
 
     private PlayerController thePlayer;
 
@@ -40,6 +41,7 @@ public class DialogueManager : MonoBehaviour {
 
         if (dialogueActive && currentLine >= dialogueLines.Length)          // 關閉對話框
         {
+            dialogue_complete = true ;
             dBox.SetActive(false);
             dialogueActive = false;
 
