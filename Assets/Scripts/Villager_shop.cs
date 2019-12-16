@@ -6,6 +6,7 @@ public class Villager_shop : MonoBehaviour {
 
     public GameObject shopMan;
     CanvasGroup canvas_g; // 宣告canvas group方便管理
+    private DialogueManager theDM ;
 
     // Use this for initialization
     private void Awake()
@@ -14,6 +15,10 @@ public class Villager_shop : MonoBehaviour {
         canvas_g = shopMan.GetComponent<CanvasGroup>();
 	} // Awake()
 
+    void Start()
+	{
+		theDM = FindObjectOfType<DialogueManager>();
+	}
 
     void OnTriggerStay2D(Collider2D other) // trigger有問題
     {
@@ -50,6 +55,12 @@ public class Villager_shop : MonoBehaviour {
     void Update()
     {
         StartCoroutine(load());   
+        if (theDM.dialogue_complete == true) { //結束完對話就要關掉商店視窗
+            canvas_g.alpha = 0;
+            canvas_g.interactable = false;
+            canvas_g.blocksRaycasts = false;
+            theDM.dialogue_complete = false ;
+        }
 	} // Update()
 
     IEnumerator load()

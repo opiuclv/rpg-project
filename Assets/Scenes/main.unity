@@ -16940,6 +16940,7 @@ MonoBehaviour:
   dialogueLines: []
   currentLine: 0
   totalLine: 0
+  dialogue_complete: 0
 --- !u!224 &1488862709
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24085,7 +24086,7 @@ PrefabInstance:
     - target: {fileID: 2592439114217179844, guid: 07c8683afe372614484d1063c3061521,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2592439114217179847, guid: 07c8683afe372614484d1063c3061521,
         type: 3}
@@ -24912,7 +24913,7 @@ PrefabInstance:
     - target: {fileID: 8380463181871304482, guid: 5bb2335e83839c74da8490c987f531cf,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8380463181871304487, guid: 5bb2335e83839c74da8490c987f531cf,
         type: 3}
