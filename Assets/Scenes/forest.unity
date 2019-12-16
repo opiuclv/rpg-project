@@ -203,9 +203,9 @@ MonoBehaviour:
   waitTime: 2
   bossRooms:
   - {fileID: 1769540621617454, guid: 9db9109aa21d06547b03c4d686f7b427, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 963601544827851892, guid: 9ea0188afa3aa48459fc7b843dc6e08c, type: 3}
+  - {fileID: 4195166288518938019, guid: d30fe6cc271434d41a0cf87a585e6746, type: 3}
+  - {fileID: 42095065622295614, guid: 0598e29a3e88f0447b1cc9532c49f1ec, type: 3}
 --- !u!4 &144666243
 Transform:
   m_ObjectHideFlags: 0
@@ -297,10 +297,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1535465377858403099, guid: 1d1084cc92ae3d14fb18f28a19286fa5,
+    - target: {fileID: 1534180025854590644, guid: 1d1084cc92ae3d14fb18f28a19286fa5,
         type: 3}
-      propertyPath: m_Name
-      value: StartRoom
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1534180025854590644, guid: 1d1084cc92ae3d14fb18f28a19286fa5,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000,
+        type: 0}
+    - target: {fileID: 1535465377092373931, guid: 1d1084cc92ae3d14fb18f28a19286fa5,
+        type: 3}
+      propertyPath: spawned
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1535465377858403093, guid: 1d1084cc92ae3d14fb18f28a19286fa5,
         type: 3}
@@ -357,30 +368,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1535465377858403099, guid: 1d1084cc92ae3d14fb18f28a19286fa5,
+        type: 3}
+      propertyPath: m_Name
+      value: StartRoom
+      objectReference: {fileID: 0}
     - target: {fileID: 1535465378843491240, guid: 1d1084cc92ae3d14fb18f28a19286fa5,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1534180025854590644, guid: 1d1084cc92ae3d14fb18f28a19286fa5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1534180025854590644, guid: 1d1084cc92ae3d14fb18f28a19286fa5,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000,
-        type: 0}
     - target: {fileID: 1555657367707801956, guid: 1d1084cc92ae3d14fb18f28a19286fa5,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1535465377092373931, guid: 1d1084cc92ae3d14fb18f28a19286fa5,
-        type: 3}
-      propertyPath: spawned
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
