@@ -302,7 +302,7 @@ MonoBehaviour:
   damageToGive: 10
   damageNumber: {fileID: 1745051995956282, guid: c9fcf0ef3f5abe047a91fef0acfbf258,
     type: 3}
-  destroyOnCollision: 0
+  destroyOnTrigger: 0
 --- !u!114 &661068924972678249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,7 +317,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 15
   CurrentHealth: 0
-  goldToGive: {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
+  goldToGive:
+  - {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
+  - {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
+  - {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
+  - {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
+  - {fileID: 2403519157119457710, guid: 609f8b6d278211b489086f6e0e98af35, type: 3}
+  - {fileID: 2403519157119457710, guid: 609f8b6d278211b489086f6e0e98af35, type: 3}
+  - {fileID: 5774323976291391020, guid: c690e79708c197943a80082ff3440114, type: 3}
+  - {fileID: 2881430455710541934, guid: b82b09044203387419941ff1b39c8de7, type: 3}
+  - {fileID: 8333871860817860752, guid: 2faa856e134e55d4c9c1dcea728cd9ca, type: 3}
+  - {fileID: 6514295599250812274, guid: 620a39f7c9e2ab046aa3a5922f0c9e33, type: 3}
   expToGive: 25
   healthBar: {fileID: 8406832469259680292}
   enemyQuestName: brown_slime
@@ -333,6 +343,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9acbfb1e4ae10a842baf91d370cc09ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aimsDir: {x: 0, y: 0}
+  attackObj: {x: 0, y: 0}
   enemy3D: {fileID: 0}
   attackObject: {fileID: 818365649932295499, guid: 1d9b8acf3c374254095e8d297cd3d938,
     type: 3}
