@@ -271,8 +271,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 500
   CurrentHealth: 0
-  goldToGive: {fileID: 0}
-  expToGive: 200
+  goldToGive: []
+  expToGive: 100
   healthBar: {fileID: 8906631298193032800}
   enemyQuestName: wolf
 --- !u!114 &490901244423711703
@@ -288,25 +288,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy3D: {fileID: 0}
-  attackObject: {fileID: 8693391830529579338, guid: 1e8f985dcb22c6b4590d60da60db8d55,
+  attackObject: {fileID: 6819409475252358749, guid: f145985f555b15240b4bed68a68e51f7,
     type: 3}
-  attackObject_2: {fileID: 0}
+  attackObject_2: {fileID: 6751870646755931586, guid: 05ce7ab088a0db7448fd3171a4c1534a,
+    type: 3}
   wanderRadius: 3
-  alertRadius: 6
-  defendRadius: 5
+  alertRadius: 8
+  defendRadius: 6
   chaseRadius: 30
-  attackRange: 2.5
-  attackRange_2: 0
+  attackRange: 3
+  attackRange_2: 5.5
   walkSpeed: 3
   runSpeed: 5
+  dashSpeed: 10
   shootingSpeed: 10
   currentState: 0
   actionWeight:
   - 3000
   - 3000
   - 4000
+  attackWeight:
+  - 1000
+  - 1000
   actRestTime: 5
-  attackCDTime: 1
+  attackCDTime: 1.5
   switchStateDelay: 0.5
 --- !u!1 &4213078454202335115
 GameObject:

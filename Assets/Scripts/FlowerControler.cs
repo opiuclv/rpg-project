@@ -121,7 +121,7 @@ public class FlowerControler : MonoBehaviour
     void Update()
     {
 
-        enemy3D.GetComponent<AgentScript>().MoveAgent(initialPosition, 1f);
+        enemy3D.GetComponent<AgentScript>().MoveAgent(initialPosition, 10f);
 
         if (!canSwitchState && Time.time - lastSwitchStateTime > switchStateDelay)     // 切換狀態延遲
             canSwitchState = true;
@@ -172,17 +172,29 @@ public class FlowerControler : MonoBehaviour
                         lastAttackTime = Time.time;
                         thisAnimator.SetTrigger("Attack");
 
-                        var clone = (GameObject)Instantiate(attackObject, transform.position, Quaternion.Euler(Vector3.zero));
                         aimsDir = (playerUnit.transform.position - transform.position);
                         aimsDir.Normalize();
 
-                        clone.GetComponent<Rigidbody2D>().velocity = new Vector2(aimsDir.x * shootingSpeed, aimsDir.y * shootingSpeed);
+                        Vector2[] dirs = { new Vector2(0f, 1f), new Vector2(0.7f, 0.7f), new Vector2(1f, 0f), new Vector2(0.7f, -0.7f),
+                                            new Vector2(0f, -1f), new Vector2(-0.7f, -0.7f), new Vector2(-1f, 0f), new Vector2(-0.7f, 0.7f)};
+                        
+                        for (int i = 0; i < dirs.Length; i++)
+                        {
+                            var clone = (GameObject)Instantiate(attackObject, transform.position, Quaternion.Euler(Vector3.zero));
+                            clone.GetComponent<Rigidbody2D>().velocity = dirs[i] * shootingSpeed;
+                        }
+
                     }
 
                     EnemyDistanceCheck();
                     break;
             }
         }
+    }
+
+    private void AttackRotate()
+    {
+        
     }
 
     /// <summary>

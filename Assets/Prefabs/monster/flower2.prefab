@@ -361,12 +361,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aimsDir: {x: 0, y: 0}
-  attackObj: {x: 0, y: 0}
+  attackPos: {x: 0, y: 0}
   enemy3D: {fileID: 0}
   attackObject: {fileID: 8693391830529579338, guid: 1e8f985dcb22c6b4590d60da60db8d55,
     type: 3}
-  alertRadius: 10
-  attackRange: 8
+  alertRadius: 8
+  attackRange: 6
   shootingSpeed: 10
   currentState: 0
   actionWeight:

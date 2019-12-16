@@ -24,6 +24,7 @@ public class WolfControler : MonoBehaviour
     public float attackRange_2;         //遠距攻擊距離
     public float walkSpeed;             //移動速度
     public float runSpeed;              //跑動速度
+    public float dashSpeed;             //衝刺速度
     public float shootingSpeed;         //射擊速度
 
     private Rigidbody2D myRigidbody;
@@ -42,7 +43,7 @@ public class WolfControler : MonoBehaviour
     public MonsterState currentState = MonsterState.STAND;          //默認狀態為原地呼吸
 
     public float[] actionWeight = { 3000, 3000, 4000 };             //設置待機時各種動作的權重，順序依次為呼吸、觀察、移動
-    public float[] attackWeight = { 1000, 1000 };                   //攻擊動作權重
+    public float[] attackWeight = { 1000, 2000 };                   //攻擊動作權重
     public float actRestTime;                   //更換待機指令的間隔時間
     private float lastActTime;                  //最近一次指令時間
     private float animationTime;                //最近一次移動的動畫開始時間
@@ -60,6 +61,7 @@ public class WolfControler : MonoBehaviour
     private bool is_Warned = false;
     private bool is_Walking = false;
     private bool is_Running = false;
+    private bool is_Dashing = false;
     private bool canSwitchState = true;         // 是否可以切換狀態
     private float lastSwitchStateTime;          // 最近一次切換狀態時間
     public float switchStateDelay = 0.5f;       // 切換狀態延遲
@@ -79,12 +81,13 @@ public class WolfControler : MonoBehaviour
         //1. 自衛半徑不大於警戒半徑，否則就無法觸發警戒狀態，直接開始追擊了
         defendRadius = Mathf.Min(alertRadius, defendRadius);
         //2. 攻擊距離不大於自衛半徑，否則就無法觸發追擊狀態，直接開始戰鬥了
-        attackRange = Mathf.Min(defendRadius, attackRange);
+        attackRange_2 = Mathf.Min(defendRadius, attackRange_2);
+
+        attackRange = Mathf.Min(attackRange_2, attackRange);
         //3. 遊走半徑不大於追擊半徑，否則怪物可能剛剛開始追擊就返回出生點
         wanderRadius = Mathf.Min(chaseRadius, wanderRadius);
 
         //隨機一個待機動作
-
         RandomAction();
     }
 
@@ -144,10 +147,41 @@ public class WolfControler : MonoBehaviour
         }
     }
 
+    void RandomAttack()
+    {
+        Vector2 aimsDir = (playerUnit.transform.position - transform.position);
+        aimsDir.Normalize();
+        Vector3 aims = aimsDir;
+
+        float number = Random.Range(0, attackWeight[0] + attackWeight[1]);
+        if (number < attackWeight[0])
+        {
+            var clone = (GameObject)Instantiate(attackObject_2, transform.position + aims * 2f, Quaternion.Euler(Vector3.zero));
+            clone.GetComponent<Rigidbody2D>().velocity = new Vector2(aimsDir.x * shootingSpeed, aimsDir.y * shootingSpeed);
+        }
+        else if (number < attackWeight[0] + attackWeight[1])
+        {
+            targetPosition = new Vector3(playerUnit.transform.position.x, playerUnit.transform.position.y, transform.position.z);
+            myRigidbody.velocity = aimsDir * dashSpeed;
+            is_Dashing = true;
+        }
+    }
+
     void Update()
     {
         if (!canSwitchState && Time.time - lastSwitchStateTime > switchStateDelay)     // 切換狀態延遲
+        {
             canSwitchState = true;
+        }
+
+        if (is_Dashing)
+        {
+            if (Vector3.Distance(transform.position,targetPosition) <= 0.5f)
+            {
+                myRigidbody.velocity = Vector2.zero;
+                is_Dashing = false;
+            }
+        }
 
         if (canSwitchState)
         {
@@ -161,7 +195,6 @@ public class WolfControler : MonoBehaviour
                     }
 
                     EnemyDistanceCheck();
-
                     break;
 
                 //待機狀態2（觀察），等待actRestTime後重新隨機指令
@@ -172,7 +205,6 @@ public class WolfControler : MonoBehaviour
                     }
 
                     EnemyDistanceCheck();
-
                     break;
 
                 //遊走狀態，根據狀態隨機時生成的目標位置移動
@@ -184,7 +216,6 @@ public class WolfControler : MonoBehaviour
 
                     startPosition = transform.position;
                     enemy3D.GetComponent<AgentScript>().MoveAgent(targetPosition, walkSpeed);
-                    UpdateLastMove(targetPosition);
 
                     if (!is_Walking)                    // 確保移動動畫在移動的時候會連續撥放
                     {
@@ -192,6 +223,8 @@ public class WolfControler : MonoBehaviour
                         animationTime = Time.time;
                         is_Walking = true;
                     }
+
+                    UpdateLastMove(targetPosition);
                     WanderRadiusCheck();
                     break;
 
@@ -205,8 +238,8 @@ public class WolfControler : MonoBehaviour
                         is_Warned = true;
                     }
 
-                    WarningCheck();
                     UpdateLastMove(playerUnit.transform.position);
+                    WarningCheck();
                     break;
 
                 //追擊狀態，朝著玩家跑去
@@ -220,8 +253,8 @@ public class WolfControler : MonoBehaviour
                     }
 
                     enemy3D.GetComponent<AgentScript>().MoveAgent(playerUnit.transform.position, runSpeed);
-                    UpdateLastMove(playerUnit.transform.position);
 
+                    UpdateLastMove(playerUnit.transform.position);
                     ChaseRadiusCheck();
                     break;
 
@@ -236,18 +269,18 @@ public class WolfControler : MonoBehaviour
                     }
 
                     enemy3D.GetComponent<AgentScript>().MoveAgent(initialPosition, walkSpeed);
+                    
                     UpdateLastMove(initialPosition);
-
-                    //該狀態下的檢測指令
                     ReturnCheck();
                     break;
+
+                // 攻擊狀態 (近戰)
                 case MonsterState.ATTACK_1:
 
                     is_Walking = false;
                     is_Running = false;
 
                     enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
-                    UpdateLastMove(playerUnit.transform.position);
 
                     if (Time.time - lastAttackTime > attackCDTime)
                     {
@@ -258,18 +291,30 @@ public class WolfControler : MonoBehaviour
                         aimsDir.Normalize();
                         Vector3 aims = aimsDir;
 
-                        float number = Random.Range(0, attackWeight[0] + attackWeight[1] );
-                        if (number < attackWeight[0])
-                        {
-                            var clone_1 = (GameObject)Instantiate(attackObject, transform.position + aims * 2f, Quaternion.Euler(Vector3.zero));
-                        }
-                        else if (number < attackWeight[0] + attackWeight[1])
-                        {
-                            var clone_2 = (GameObject)Instantiate(attackObject_2, transform.position + aims * 2f, Quaternion.Euler(Vector3.zero));
-                            clone_2.GetComponent<Rigidbody2D>().velocity = new Vector2(aimsDir.x * shootingSpeed, aimsDir.y * shootingSpeed);
-                        }
+                        var clone = (GameObject)Instantiate(attackObject, transform.position + aims * 2f, Quaternion.Euler(Vector3.zero));
                     }
 
+                    UpdateLastMove(playerUnit.transform.position);
+                    EnemyDistanceCheck();
+                    break;
+
+                // 攻擊狀態 (遠距)
+                case MonsterState.ATTACK_2:
+
+                    is_Walking = false;
+                    is_Running = false;
+
+                    enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
+
+                    if (Time.time - lastAttackTime > attackCDTime)
+                    {
+                        lastAttackTime = Time.time;
+                        thisAnimator.SetTrigger("Attack");
+
+                        RandomAttack();
+                    }
+
+                    UpdateLastMove(playerUnit.transform.position);
                     EnemyDistanceCheck();
                     break;
             }
@@ -295,10 +340,20 @@ public class WolfControler : MonoBehaviour
     /// </summary>
     private void LateUpdate()
     {
-        pos3D = enemy3D.transform.position;
-        transform.position = new Vector3(pos3D.x, pos3D.y, transform.position.z);
+        if (!is_Dashing)
+        {
+            pos3D = enemy3D.transform.position;
+            transform.position = new Vector3(pos3D.x, pos3D.y, transform.position.z);
+        }
+        else
+        {
+            enemy3D.transform.position = new Vector3(transform.position.x, transform.position.y, enemy3D.transform.position.z);
+        }
     }
 
+    /// <summary>
+    /// 更新最後面對的方向
+    /// </summary>
     void UpdateLastMove(Vector3 targetPos)
     {
         move = (targetPos - transform.position);
@@ -317,6 +372,10 @@ public class WolfControler : MonoBehaviour
         if (distanceToPlayer < attackRange)
         {
             currentState = MonsterState.ATTACK_1;
+        }
+        else if (distanceToPlayer < attackRange_2)
+        {
+            currentState = MonsterState.ATTACK_2;
         }
         else if (distanceToPlayer < defendRadius)
         {
@@ -369,6 +428,11 @@ public class WolfControler : MonoBehaviour
             is_Walking = false;
             currentState = MonsterState.ATTACK_1;
         }
+        else if (distanceToPlayer < attackRange_2)
+        {
+            is_Walking = false;
+            currentState = MonsterState.ATTACK_2;
+        }
         else if (distanceToPlayer < defendRadius)
         {
             is_Walking = false;
@@ -401,6 +465,12 @@ public class WolfControler : MonoBehaviour
             is_Running = false;
             currentState = MonsterState.ATTACK_1;
         }
+        else if (distanceToPlayer < attackRange_2)
+        {
+            enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
+            is_Running = false;
+            currentState = MonsterState.ATTACK_2;
+        }
         //如果超出追擊範圍或者敵人的距離超出警戒距離就返回
         if (distanceToInitial > chaseRadius)
         {
@@ -423,6 +493,15 @@ public class WolfControler : MonoBehaviour
             is_Running = false;
             enemy3D.GetComponent<AgentScript>().MoveAgent(transform.position, 1f);
             RandomAction();
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (is_Dashing)
+        {
+            myRigidbody.velocity = Vector2.zero;
+            is_Dashing = false;
         }
     }
 }
