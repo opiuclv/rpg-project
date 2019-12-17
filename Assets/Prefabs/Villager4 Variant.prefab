@@ -85,10 +85,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2901651321933305945, guid: c9ff133c102eb9d449b4212a2753bbc3,
+    - target: {fileID: 2901651321933305949, guid: c9ff133c102eb9d449b4212a2753bbc3,
         type: 3}
-      propertyPath: m_Mass
-      value: 10
+      propertyPath: m_Name
+      value: Villager4
       objectReference: {fileID: 0}
     - target: {fileID: 2901651321933305947, guid: c9ff133c102eb9d449b4212a2753bbc3,
         type: 3}
@@ -144,11 +144,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2901651321933305949, guid: c9ff133c102eb9d449b4212a2753bbc3,
-        type: 3}
-      propertyPath: m_Name
-      value: Villager4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9ff133c102eb9d449b4212a2753bbc3, type: 3}
