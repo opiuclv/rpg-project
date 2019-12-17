@@ -465,7 +465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aimsDir: {x: 0, y: 0}
   enemy3D: {fileID: 0}
-  attackObject: {fileID: 4454235391216496030, guid: fc0dd3946601bf148a0f66249e43723c,
+  attackObject: {fileID: 7660273485496094368, guid: 793674a3d3fa81c4995b13be7aa35ef8,
     type: 3}
   wanderRadius: 3
   alertRadius: 8

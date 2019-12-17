@@ -96,11 +96,9 @@
      <Compile Include="Assets\Scripts\LoadTXT.cs" />
      <Compile Include="Assets\Scripts\LoadVictoryStory.cs" />
      <Compile Include="Assets\Scripts\MoneyManager.cs" />
-     <Compile Include="Assets\Scripts\monster\Blue2SlimeControler.cs" />
-     <Compile Include="Assets\Scripts\monster\BlueSlimeControler.cs" />
-     <Compile Include="Assets\Scripts\monster\BrownSlimeControler.cs" />
      <Compile Include="Assets\Scripts\monster\EnemyHealthManager.cs" />
      <Compile Include="Assets\Scripts\monster\Flower2Controler.cs" />
+     <Compile Include="Assets\Scripts\monster\FlowerControler.cs" />
      <Compile Include="Assets\Scripts\monster\GreenSlimeControler.cs" />
      <Compile Include="Assets\Scripts\monster\HurtPlayer.cs" />
      <Compile Include="Assets\Scripts\monster\MonsterHpUi.cs" />
