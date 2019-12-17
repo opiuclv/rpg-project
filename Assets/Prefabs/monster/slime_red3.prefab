@@ -419,7 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 356e8b79408e0524284f08b136efdf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToGive: 10
+  damageToGive: 20
   damageNumber: {fileID: 1745051995956282, guid: c9fcf0ef3f5abe047a91fef0acfbf258,
     type: 3}
   destroyOnTrigger: 0
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ff7bd1623b07d4cb018cf907c2522f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 15
+  MaxHealth: 100
   CurrentHealth: 0
   goldToGive:
   - {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
@@ -448,7 +448,7 @@ MonoBehaviour:
   - {fileID: 2881430455710541934, guid: b82b09044203387419941ff1b39c8de7, type: 3}
   - {fileID: 8333871860817860752, guid: 2faa856e134e55d4c9c1dcea728cd9ca, type: 3}
   - {fileID: 6514295599250812274, guid: 620a39f7c9e2ab046aa3a5922f0c9e33, type: 3}
-  expToGive: 25
+  expToGive: 100
   healthBar: {fileID: 384412813544187158}
   enemyQuestName: red_slime3
 --- !u!114 &2346303191797682894
@@ -474,7 +474,7 @@ MonoBehaviour:
   attackRange: 5.5
   walkSpeed: 2.5
   runSpeed: 3.5
-  shootingSpeed: 3
+  shootingSpeed: 5
   currentState: 0
   actionWeight:
   - 3000

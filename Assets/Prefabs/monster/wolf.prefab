@@ -346,7 +346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 356e8b79408e0524284f08b136efdf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToGive: 10
+  damageToGive: 20
   damageNumber: {fileID: 1745051995956282, guid: c9fcf0ef3f5abe047a91fef0acfbf258,
     type: 3}
   destroyOnTrigger: 0
@@ -362,7 +362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ff7bd1623b07d4cb018cf907c2522f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 500
+  MaxHealth: 1000
   CurrentHealth: 0
   goldToGive:
   - {fileID: 5279943194351511778, guid: 96b14de3313376544801b899ad8e492a, type: 3}
