@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 114473528851145582}
   m_Layer: 5
   m_Name: BloodBottle_small Buttom
-  m_TagString: Untagged
+  m_TagString: item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,5 +151,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 010a188e861183a489a257b718e163d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thePlayerHealth: {fileID: 0}
   BloodBoost: 10

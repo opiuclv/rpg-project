@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 4089653722096650273}
   - component: {fileID: 2772260824103045496}
   - component: {fileID: 4567921943277268675}
-  - component: {fileID: 114759412413742504}
+  - component: {fileID: 2346303191797682894}
   m_Layer: 0
   m_Name: slime_red3
   m_TagString: Enemy
@@ -451,7 +451,7 @@ MonoBehaviour:
   expToGive: 25
   healthBar: {fileID: 384412813544187158}
   enemyQuestName: red_slime3
---- !u!114 &114759412413742504
+--- !u!114 &2346303191797682894
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -468,13 +468,13 @@ MonoBehaviour:
   attackObject: {fileID: 4454235391216496030, guid: fc0dd3946601bf148a0f66249e43723c,
     type: 3}
   wanderRadius: 3
-  alertRadius: 6
-  defendRadius: 5
+  alertRadius: 8
+  defendRadius: 6
   chaseRadius: 10
-  attackRange: 2.5
-  walkSpeed: 3
-  runSpeed: 4
-  shootingSpeed: 10
+  attackRange: 5.5
+  walkSpeed: 2.5
+  runSpeed: 3.5
+  shootingSpeed: 3
   currentState: 0
   actionWeight:
   - 3000

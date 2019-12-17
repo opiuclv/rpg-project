@@ -245,10 +245,10 @@ public class GreenSlimeControler : MonoBehaviour
                         lastAttackTime = Time.time;
                         thisAnimator.SetTrigger("Attack");
 
-                        var clone = (GameObject)Instantiate(attackObject, transform.position, Quaternion.Euler(Vector3.zero));
                         aimsDir = (playerUnit.transform.position - transform.position);
                         aimsDir.Normalize();
 
+                        var clone = (GameObject)Instantiate(attackObject, transform.position, Quaternion.Euler(Vector3.zero));
                         clone.GetComponent<Rigidbody2D>().velocity = new Vector2(aimsDir.x * shootingSpeed, aimsDir.y * shootingSpeed);
                     }
 

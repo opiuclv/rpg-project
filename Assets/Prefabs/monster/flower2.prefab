@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 6534073503700346376}
   - component: {fileID: 6534073503700346377}
   - component: {fileID: 6534073503700346390}
-  - component: {fileID: 6858770387427606034}
+  - component: {fileID: 344705141984320081}
   m_Layer: 0
   m_Name: flower2
   m_TagString: Enemy
@@ -452,7 +452,7 @@ MonoBehaviour:
   healthBar: {fileID: 806837128808773218, guid: c3b4bd44954a64b4aafed871c4a3c923,
     type: 3}
   enemyQuestName: green_slime
---- !u!114 &6858770387427606034
+--- !u!114 &344705141984320081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6534073503700346387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba82cffb355dc0947a7f6fb8c5231cef, type: 3}
+  m_Script: {fileID: 11500000, guid: ca18e478f4f7395478f0d39c86352190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   aimsDir: {x: 0, y: 0}
@@ -476,7 +476,7 @@ MonoBehaviour:
   actionWeight:
   - 1000
   - 1000
-  actRestTime: 0
+  actRestTime: 5
   attackCDTime: 1
 --- !u!1 &7259011182838189746
 GameObject:

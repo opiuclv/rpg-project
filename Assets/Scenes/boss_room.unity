@@ -334,7 +334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1980648315
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -395,6 +395,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 524756830774640974, guid: ed91704284fa6a643bed3a86e07b1129,
+        type: 3}
+      propertyPath: goldToGive.Array.data[0]
+      value: 
+      objectReference: {fileID: 1980648314}
     - target: {fileID: 2231965440340051739, guid: ed91704284fa6a643bed3a86e07b1129,
         type: 3}
       propertyPath: m_Name

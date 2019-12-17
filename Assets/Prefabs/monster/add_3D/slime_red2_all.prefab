@@ -39,11 +39,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2525576909668360261}
     m_Modifications:
-    - target: {fileID: 8257146773903406739, guid: b18c3092298951842a603c4390ff8fe3,
-        type: 3}
-      propertyPath: m_Name
-      value: slime_red2_3D
-      objectReference: {fileID: 0}
     - target: {fileID: 3322470996740944058, guid: b18c3092298951842a603c4390ff8fe3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -99,6 +94,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8257146773903406739, guid: b18c3092298951842a603c4390ff8fe3,
+        type: 3}
+      propertyPath: m_Name
+      value: slime_red2_3D
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b18c3092298951842a603c4390ff8fe3, type: 3}
 --- !u!4 &2838627034426753644 stripped
@@ -114,11 +114,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2525576909668360261}
     m_Modifications:
-    - target: {fileID: 6738660977440534996, guid: 2493e9484b965554d9f4af2e1f56a5d3,
-        type: 3}
-      propertyPath: m_Name
-      value: slime_red2
-      objectReference: {fileID: 0}
     - target: {fileID: 1279799979423909996, guid: 2493e9484b965554d9f4af2e1f56a5d3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -173,6 +168,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6738660977440534996, guid: 2493e9484b965554d9f4af2e1f56a5d3,
+        type: 3}
+      propertyPath: m_Name
+      value: slime_red2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2493e9484b965554d9f4af2e1f56a5d3, type: 3}

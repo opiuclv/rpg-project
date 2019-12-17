@@ -78,6 +78,7 @@
      <Compile Include="Assets\Scripts\bag\Slot.cs" />
      <Compile Include="Assets\Scripts\bag\Spawn.cs" />
      <Compile Include="Assets\Scripts\Bounds.cs" />
+     <Compile Include="Assets\Scripts\BuildForest.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\DestroyOnHit.cs" />
      <Compile Include="Assets\Scripts\DestroyOverTime.cs" />
@@ -95,12 +96,16 @@
      <Compile Include="Assets\Scripts\LoadTXT.cs" />
      <Compile Include="Assets\Scripts\LoadVictoryStory.cs" />
      <Compile Include="Assets\Scripts\MoneyManager.cs" />
+     <Compile Include="Assets\Scripts\monster\Blue2SlimeControler.cs" />
+     <Compile Include="Assets\Scripts\monster\BlueSlimeControler.cs" />
+     <Compile Include="Assets\Scripts\monster\BrownSlimeControler.cs" />
      <Compile Include="Assets\Scripts\monster\EnemyHealthManager.cs" />
-     <Compile Include="Assets\Scripts\monster\FlowerControler.cs" />
+     <Compile Include="Assets\Scripts\monster\Flower2Controler.cs" />
      <Compile Include="Assets\Scripts\monster\GreenSlimeControler.cs" />
      <Compile Include="Assets\Scripts\monster\HurtPlayer.cs" />
      <Compile Include="Assets\Scripts\monster\MonsterHpUi.cs" />
      <Compile Include="Assets\Scripts\monster\NewSlimeControler.cs" />
+     <Compile Include="Assets\Scripts\monster\Red2SlimeControler.cs" />
      <Compile Include="Assets\Scripts\monster\SlimeController.cs" />
      <Compile Include="Assets\Scripts\monster\WolfControler.cs" />
      <Compile Include="Assets\Scripts\monster\YellowSlimeControler.cs" />

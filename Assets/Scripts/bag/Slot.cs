@@ -11,13 +11,13 @@ public class Slot : MonoBehaviour
 
 	private void Start()
 	{
-		inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<BagInventory>();
+		inventory = FindObjectOfType<BagInventory>();
 	}
 
 	private void Update()
 	{
-		if (transform.childCount <= 0) {
-			inventory.isFull [i] = false;
+		if (inventory.slots[i].transform.childCount <= 0) {
+			inventory.isFull [i] = 0;
 		}
 	}
 
