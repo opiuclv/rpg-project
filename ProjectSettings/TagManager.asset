@@ -10,6 +10,7 @@ TagManager:
   - Rooms
   - Enemy3D
   - Player3D
+  - item
   layers:
   - Default
   - TransparentFX
