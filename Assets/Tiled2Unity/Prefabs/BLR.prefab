@@ -299,7 +299,7 @@ MonoBehaviour:
   MapWidthInPixels: 320
   MapHeightInPixels: 320
   BackgroundColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
---- !u!1 &4274658228134270343
+--- !u!1 &4440838465097772952
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -307,10 +307,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1743415239088922169}
-  - component: {fileID: 7710495939114784574}
-  - component: {fileID: 8320127394715802505}
-  - component: {fileID: 8832402414363732472}
+  - component: {fileID: 1156299745946135825}
+  - component: {fileID: 3445957641955511738}
+  - component: {fileID: 3977499590840393695}
+  - component: {fileID: 7324382523405504202}
   m_Layer: 0
   m_Name: tilemap
   m_TagString: Untagged
@@ -318,35 +318,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1743415239088922169
+--- !u!4 &1156299745946135825
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4274658228134270343}
+  m_GameObject: {fileID: 4440838465097772952}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6565343400001162363}
+  m_Father: {fileID: 6628018093593292280}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7710495939114784574
+--- !u!33 &3445957641955511738
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4274658228134270343}
-  m_Mesh: {fileID: 4300000, guid: 0a0d6be8d6d53d24c83dba7eeccb2a42, type: 3}
---- !u!23 &8320127394715802505
+  m_GameObject: {fileID: 4440838465097772952}
+  m_Mesh: {fileID: 4300000, guid: 473bcbede236b34419c6c9b195173504, type: 3}
+--- !u!23 &3977499590840393695
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4274658228134270343}
+  m_GameObject: {fileID: 4440838465097772952}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -376,14 +376,14 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
---- !u!114 &8832402414363732472
+  m_SortingOrder: 2
+--- !u!114 &7324382523405504202
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4274658228134270343}
+  m_GameObject: {fileID: 4440838465097772952}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1874989c5e2da094ea00112c6a895694, type: 3}
@@ -509,7 +509,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6628018093593292280}
+  m_Father: {fileID: 6565343400001162363}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8070602650874042851
@@ -519,7 +519,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5103000201613945291}
-  m_Mesh: {fileID: 4300000, guid: 473bcbede236b34419c6c9b195173504, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 0a0d6be8d6d53d24c83dba7eeccb2a42, type: 3}
 --- !u!23 &3498456050408757878
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -556,7 +556,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
 --- !u!114 &8523073498030618203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,7 +597,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1743415239088922169}
+  - {fileID: 183046142779586071}
   m_Father: {fileID: 5263554867702437523}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -642,7 +642,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 183046142779586071}
+  - {fileID: 1156299745946135825}
   m_Father: {fileID: 5263554867702437523}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
