@@ -39,7 +39,7 @@ public class WolfControler : MonoBehaviour
         RETURN,             //超出追擊範圍後返回
         ATTACK_1,           //攻擊玩家
         ATTACK_2
-    }
+    }
     public MonsterState currentState = MonsterState.STAND;          //默認狀態為原地呼吸
 
     public float[] actionWeight = { 3000, 3000, 4000 };             //設置待機時各種動作的權重，順序依次為呼吸、觀察、移動
@@ -176,7 +176,7 @@ public class WolfControler : MonoBehaviour
 
         if (is_Dashing)
         {
-            if (Vector3.Distance(transform.position,targetPosition) <= 0.5f)
+            if (Vector3.Distance(transform.position, targetPosition) <= 0.5f)
             {
                 myRigidbody.velocity = Vector2.zero;
                 is_Dashing = false;
@@ -269,7 +269,7 @@ public class WolfControler : MonoBehaviour
                     }
 
                     enemy3D.GetComponent<AgentScript>().MoveAgent(initialPosition, walkSpeed);
-                    
+
                     UpdateLastMove(initialPosition);
                     ReturnCheck();
                     break;
@@ -358,7 +358,7 @@ public class WolfControler : MonoBehaviour
     {
         move = (targetPos - transform.position);
         move.Normalize();
-        
+
         thisAnimator.SetFloat("MoveX", move.x);
         thisAnimator.SetFloat("MoveY", move.y);
     }

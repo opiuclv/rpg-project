@@ -305,7 +305,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1000
+  m_Mass: 0.5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -342,12 +342,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ff7bd1623b07d4cb018cf907c2522f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 15
+  MaxHealth: 20
   CurrentHealth: 0
-  goldToGive: []
+  goldToGive:
+  - {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
+  - {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
+  - {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
+  - {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
+  - {fileID: 2403519157119457710, guid: 609f8b6d278211b489086f6e0e98af35, type: 3}
+  - {fileID: 2403519157119457710, guid: 609f8b6d278211b489086f6e0e98af35, type: 3}
+  - {fileID: 5774323976291391020, guid: c690e79708c197943a80082ff3440114, type: 3}
+  - {fileID: 2881430455710541934, guid: b82b09044203387419941ff1b39c8de7, type: 3}
+  - {fileID: 8333871860817860752, guid: 2faa856e134e55d4c9c1dcea728cd9ca, type: 3}
+  - {fileID: 6514295599250812274, guid: 620a39f7c9e2ab046aa3a5922f0c9e33, type: 3}
   expToGive: 25
-  healthBar: {fileID: 7345976608125373355}
-  enemyQuestName: flower
+  healthBar: {fileID: 806837128808773218, guid: c3b4bd44954a64b4aafed871c4a3c923,
+    type: 3}
+  enemyQuestName: green_slime
 --- !u!114 &6858770387427606034
 MonoBehaviour:
   m_ObjectHideFlags: 0

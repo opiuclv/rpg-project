@@ -109,13 +109,24 @@
     <Compile Include="Assets\Scripts\LoadVictoryStory.cs" />
     <Compile Include="Assets\Scripts\Main_Story_Part1.cs" />
     <Compile Include="Assets\Scripts\Main_Story_Part2.cs" />
+    <Compile Include="Assets\Scripts\Main_Story_Part3.cs" />
+    <Compile Include="Assets\Scripts\Main_Story_Part4.cs" />
+    <Compile Include="Assets\Scripts\Main_Story_Part5.cs" />
+    <Compile Include="Assets\Scripts\Main_Story_Part6.cs" />
+    <Compile Include="Assets\Scripts\Main_Story_Part7.cs" />
     <Compile Include="Assets\Scripts\MoneyManager.cs" />
     <Compile Include="Assets\Scripts\MS_Part1_Holder.cs" />
     <Compile Include="Assets\Scripts\MS_Part2_Holder.cs" />
+    <Compile Include="Assets\Scripts\MS_Part3_Holder.cs" />
+    <Compile Include="Assets\Scripts\MS_Part4_Holder.cs" />
+    <Compile Include="Assets\Scripts\MS_Part5_Holder.cs" />
+    <Compile Include="Assets\Scripts\MS_Part6_Holder.cs" />
+    <Compile Include="Assets\Scripts\MS_Part7_Holder.cs" />
     <Compile Include="Assets\Scripts\MusicControler.cs" />
     <Compile Include="Assets\Scripts\MusicSwitcher.cs" />
     <Compile Include="Assets\Scripts\NewSlimeControler.cs" />
     <Compile Include="Assets\Scripts\Node.cs" />
+    <Compile Include="Assets\Scripts\OpenBackGame.cs" />
     <Compile Include="Assets\Scripts\OpenCanvasGroup.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerHealthManager.cs" />
@@ -170,6 +181,7 @@
     <None Include="Assets\Tiled2Unity\Imported\Novice_village.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\village.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\R.tiled2unity.xml" />
+    <None Include="Assets\Text\Main_story_part3.txt" />
     <None Include="Assets\Text\Victory_story.txt" />
     <None Include="Assets\Tiled2Unity\Shaders\shaDefault.shader" />
     <None Include="Assets\Tiled2Unity\Imported\village_house3.tiled2unity.xml" />
@@ -180,6 +192,7 @@
     <None Include="Assets\Tiled2Unity\Shaders\Tiled2Unity.cginc" />
     <None Include="Assets\Tiled2Unity\Imported\TBLR.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\B.tiled2unity.xml" />
+    <None Include="Assets\Text\Main_story_part4.txt" />
     <None Include="Assets\Resources\RPG_Data.txt" />
     <None Include="Assets\Tiled2Unity\Tiled2Unity.export.txt" />
     <None Include="Assets\Tiled2Unity\Imported\RB1.tiled2unity.xml" />
@@ -198,6 +211,7 @@
     <None Include="Assets\Tiled2Unity\Imported\suburbs.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\TBR.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\village_house6.tiled2unity.xml" />
+    <None Include="Assets\Text\Main_story_part6.txt" />
     <None Include="Assets\Tiled2Unity\Imported\LR1.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
     <None Include="Assets\Tiled2Unity\Imported\TB1.tiled2unity.xml" />
@@ -216,6 +230,7 @@
     <None Include="Assets\Tiled2Unity\Shaders\shaColorKey-Instanced.shader" />
     <None Include="Assets\Tiled2Unity\Imported\boss_E.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\house.tiled2unity.xml" />
+    <None Include="Assets\Text\Main_story_part5.txt" />
     <None Include="Assets\Tiled2Unity\Imported\LB1.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\testhomeInside.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Shaders\shaColorKey.shader" />
@@ -229,6 +244,7 @@
     <None Include="Assets\Tiled2Unity\Imported\TLR.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\village_house4.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\village_house7.tiled2unity.xml" />
+    <None Include="Assets\Text\Main_story_part7.txt" />
     <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/UNITY/temp project/rpg-project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

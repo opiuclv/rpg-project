@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GreenSlimeControler : MonoBehaviour {
+public class GreenSlimeControler : MonoBehaviour
+{
 
     public Vector2 aimsDir;
 
@@ -116,7 +117,7 @@ public class GreenSlimeControler : MonoBehaviour {
     void RandomAction()
     {
         myRigidbody.velocity = Vector2.zero;
-        lastActTime = Time.time;            //更新行動時間
+        lastActTime = Time.time;            //更新行動時間
 
         //根據權重 隨機選擇待機,觀察,遊走模式
         float number = Random.Range(0, actionWeight[0] + actionWeight[1] + actionWeight[2]);
@@ -126,12 +127,12 @@ public class GreenSlimeControler : MonoBehaviour {
             thisAnimator.SetTrigger("Stand");
         }
         else if (actionWeight[0] < number && number <= actionWeight[0] + actionWeight[1])
-        {
+        {
             currentState = MonsterState.CHECK;
             thisAnimator.SetTrigger("Check");
         }
         if (actionWeight[0] + actionWeight[1] < number && number <= actionWeight[0] + actionWeight[1] + actionWeight[2])
-        {
+        {
             currentState = MonsterState.WALK;
             //附近隨機一個座標
             Vector2 targetPosOffset = new Vector2(Random.Range(-wanderRadius, wanderRadius), Random.Range(-wanderRadius, wanderRadius));
@@ -154,7 +155,7 @@ public class GreenSlimeControler : MonoBehaviour {
                     {
                         RandomAction(); //隨機切換指令
                     }
-                    
+
                     EnemyDistanceCheck();
 
                     break;
@@ -165,7 +166,7 @@ public class GreenSlimeControler : MonoBehaviour {
                     {
                         RandomAction();
                     }
-                    
+
                     EnemyDistanceCheck();
 
                     break;
@@ -211,9 +212,9 @@ public class GreenSlimeControler : MonoBehaviour {
                         animationTime = Time.time;
                         is_Running = true;
                     }
-                    
+
                     enemy3D.GetComponent<AgentScript>().MoveAgent(playerUnit.transform.position, runSpeed);
-                    
+
                     ChaseRadiusCheck();
                     break;
 
@@ -247,7 +248,7 @@ public class GreenSlimeControler : MonoBehaviour {
                         var clone = (GameObject)Instantiate(attackObject, transform.position, Quaternion.Euler(Vector3.zero));
                         aimsDir = (playerUnit.transform.position - transform.position);
                         aimsDir.Normalize();
-                        
+
                         clone.GetComponent<Rigidbody2D>().velocity = new Vector2(aimsDir.x * shootingSpeed, aimsDir.y * shootingSpeed);
                     }
 

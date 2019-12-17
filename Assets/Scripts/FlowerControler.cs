@@ -14,7 +14,7 @@ public class FlowerControler : MonoBehaviour
     private Vector3 initialPosition;    //初始位置
     public GameObject enemy3D;          //自己的3D物件
     public GameObject attackObject;     //攻擊的特效(咬咬 射子彈)
-    
+
     public float alertRadius;           //警戒半徑，玩家進入後怪物會發出警告，並一直面朝玩家
     public float attackRange;           //攻擊距離
     public float shootingSpeed;         //射擊速度
@@ -151,7 +151,7 @@ public class FlowerControler : MonoBehaviour
                     EnemyDistanceCheck();
 
                     break;
-                    
+
                 //警戒狀態，播放一次警告動畫（聲音）
                 case MonsterState.WARN:
                     canSwitchState = false;             // 確保警告動畫能先播完
@@ -164,9 +164,9 @@ public class FlowerControler : MonoBehaviour
 
                     WarningCheck();
                     break;
-                    
+
                 case MonsterState.ATTACK:
-                    
+
                     if (Time.time - lastAttackTime > attackCDTime)
                     {
                         lastAttackTime = Time.time;
@@ -177,7 +177,7 @@ public class FlowerControler : MonoBehaviour
 
                         Vector2[] dirs = { new Vector2(0f, 1f), new Vector2(0.7f, 0.7f), new Vector2(1f, 0f), new Vector2(0.7f, -0.7f),
                                             new Vector2(0f, -1f), new Vector2(-0.7f, -0.7f), new Vector2(-1f, 0f), new Vector2(-0.7f, 0.7f)};
-                        
+
                         for (int i = 0; i < dirs.Length; i++)
                         {
                             var clone = (GameObject)Instantiate(attackObject, transform.position, Quaternion.Euler(Vector3.zero));
@@ -190,11 +190,6 @@ public class FlowerControler : MonoBehaviour
                     break;
             }
         }
-    }
-
-    private void AttackRotate()
-    {
-        
     }
 
     /// <summary>
@@ -242,5 +237,5 @@ public class FlowerControler : MonoBehaviour
             RandomAction();
         }
     }
-    
+
 }
