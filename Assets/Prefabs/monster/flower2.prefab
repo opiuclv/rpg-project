@@ -452,11 +452,7 @@ MonoBehaviour:
   healthBar: {fileID: 806837128808773218, guid: c3b4bd44954a64b4aafed871c4a3c923,
     type: 3}
   enemyQuestName: green_slime
-<<<<<<< HEAD
---- !u!114 &6858770387427606034
-=======
 --- !u!114 &344705141984320081
->>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -480,11 +476,7 @@ MonoBehaviour:
   actionWeight:
   - 1000
   - 1000
-<<<<<<< HEAD
-  actRestTime: 0
-=======
   actRestTime: 5
->>>>>>> master
   attackCDTime: 1
 --- !u!1 &7259011182838189746
 GameObject:

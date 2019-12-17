@@ -421,10 +421,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aimsDir: {x: 0, y: 0}
-<<<<<<< HEAD
-  attackObj: {x: 0, y: 0}
-=======
->>>>>>> master
   enemy3D: {fileID: 0}
   attackObject: {fileID: 818365649932295499, guid: 1d9b8acf3c374254095e8d297cd3d938,
     type: 3}
