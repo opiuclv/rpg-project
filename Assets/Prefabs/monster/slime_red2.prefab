@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 5628455123826947527}
   - component: {fileID: 3303137232077978558}
   - component: {fileID: 9133035381087522263}
-  - component: {fileID: 3482288084522779765}
+  - component: {fileID: 4407140442915477218}
   m_Layer: 0
   m_Name: slime_red2
   m_TagString: Enemy
@@ -450,7 +450,7 @@ MonoBehaviour:
   expToGive: 25
   healthBar: {fileID: 2361270903225056014}
   enemyQuestName: red_slime2
---- !u!114 &3482288084522779765
+--- !u!114 &4407140442915477218
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -459,7 +459,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6738660977440534996}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9acbfb1e4ae10a842baf91d370cc09ed, type: 3}
+  m_Script: {fileID: 11500000, guid: c298ef62c3d1c2f44b1b089111bf9796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   aimsDir: {x: 0, y: 0}
@@ -470,17 +470,17 @@ MonoBehaviour:
   alertRadius: 6
   defendRadius: 5
   chaseRadius: 10
-  attackRange: 2.5
+  attackRange: 4
   walkSpeed: 3
   runSpeed: 4
-  shootingSpeed: 10
+  shootingSpeed: 7
   currentState: 0
   actionWeight:
   - 3000
   - 3000
   - 4000
   actRestTime: 5
-  attackCDTime: 1
+  attackCDTime: 2
 --- !u!1 &7348474016985236136
 GameObject:
   m_ObjectHideFlags: 0

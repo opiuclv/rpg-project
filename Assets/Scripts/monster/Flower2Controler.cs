@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FlowerControler : MonoBehaviour
+public class Flower2Controler : MonoBehaviour
 {
 
     public Vector2 aimsDir;
@@ -171,9 +171,6 @@ public class FlowerControler : MonoBehaviour
                     {
                         lastAttackTime = Time.time;
                         thisAnimator.SetTrigger("Attack");
-
-                        aimsDir = (playerUnit.transform.position - transform.position);
-                        aimsDir.Normalize();
 
                         Vector2[] dirs = { new Vector2(0f, 1f), new Vector2(0.7f, 0.7f), new Vector2(1f, 0f), new Vector2(0.7f, -0.7f),
                                             new Vector2(0f, -1f), new Vector2(-0.7f, -0.7f), new Vector2(-1f, 0f), new Vector2(-0.7f, 0.7f)};
