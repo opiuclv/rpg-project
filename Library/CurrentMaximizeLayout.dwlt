@@ -21,12 +21,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1904
     height: 931
   m_MinSize: {x: 917, y: 348}
   m_MaxSize: {x: 22012, y: 10024}
   vertical: 0
   controlID: 2677
+=======
+    width: 1536
+    height: 731
+  m_MinSize: {x: 917, y: 348}
+  m_MaxSize: {x: 22012, y: 10024}
+  vertical: 0
+  controlID: 291
+>>>>>>> Hayden
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -49,9 +58,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 22
     width: 1187
     height: 551
+=======
+    y: 73.6
+    width: 701
+    height: 355
+>>>>>>> Hayden
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 1
   m_Gizmos: 0
@@ -63,10 +78,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -474.5
     m_HBaseRangeMax: 474.5
     m_VBaseRangeMin: -267
     m_VBaseRangeMax: 267
+=======
+    m_HBaseRangeMin: -240.40001
+    m_HBaseRangeMax: 240.40001
+    m_VBaseRangeMin: -135.2
+    m_VBaseRangeMax: 135.2
+>>>>>>> Hayden
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -84,25 +106,43 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
+<<<<<<< HEAD
       width: 1187
       height: 534
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 593.5, y: 267}
+=======
+      width: 701
+      height: 338
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 350.5, y: 169}
+>>>>>>> Hayden
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -593.5
       y: -267
       width: 1187
       height: 534
+=======
+      x: -350.5
+      y: -169
+      width: 701
+      height: 338
+>>>>>>> Hayden
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1187, y: 551}
+=======
+  m_LastWindowPixelSize: {x: 876.25, y: 443.75}
+>>>>>>> Hayden
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -126,12 +166,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1189
     height: 931
   m_MinSize: {x: 202, y: 348}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
   controlID: 2548
+=======
+    width: 703
+    height: 731
+  m_MinSize: {x: 202, y: 348}
+  m_MaxSize: {x: 4002, y: 8048}
+  vertical: 1
+  controlID: 192
+>>>>>>> Hayden
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,16 +198,27 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1189
     height: 575
+=======
+    width: 703
+    height: 375
+>>>>>>> Hayden
   m_MinSize: {x: 202, y: 224}
   m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
   - {fileID: 5}
+<<<<<<< HEAD
   m_Selected: 0
   m_LastSelected: 1
+=======
+  - {fileID: 2}
+  m_Selected: 1
+  m_LastSelected: 0
+>>>>>>> Hayden
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,10 +240,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 8
     y: 81
     width: 1187
     height: 555
+=======
+    x: 0
+    y: 22
+    width: 774
+    height: 351
+>>>>>>> Hayden
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: 8d35d396075f8934e804fed59120141d
   m_SceneLighting: 1
@@ -191,9 +258,15 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 407, y: -5, z: 0}
     speed: 2
     m_Value: {x: 407, y: -5, z: 0}
+=======
+    m_Target: {x: 50.174755, y: 218.62703, z: -0.4062565}
+    speed: 2
+    m_Value: {x: 50.174755, y: 218.62703, z: -0.4062565}
+>>>>>>> Hayden
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -225,9 +298,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 28.387674
     speed: 2
     m_Value: 28.387674
+=======
+    m_Target: 87.37135
+    speed: 2
+    m_Value: 87.37135
+>>>>>>> Hayden
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -249,6 +328,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
@@ -267,6 +347,26 @@ MonoBehaviour:
   - {fileID: 9}
   m_Selected: 0
   m_LastSelected: 2
+--- !u!114 &7
+=======
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 375
+    width: 703
+    height: 356
+  m_MinSize: {x: 102, y: 124}
+  m_MaxSize: {x: 4002, y: 4024}
+  m_ActualView: {fileID: 8}
+  m_Panes:
+  - {fileID: 7}
+  - {fileID: 8}
+  - {fileID: 9}
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -288,6 +388,63 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+    x: 0
+    y: 448
+    width: 701
+    height: 336
+  m_PersistentViewDataDictionary: {fileID: 0}
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: 1561878555887300916, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 448
+    width: 701
+    height: 336
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: 214994
+--- !u!114 &9
+>>>>>>> Hayden
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+<<<<<<< HEAD
     x: 8
     y: 656
     width: 1187
@@ -323,6 +480,52 @@ MonoBehaviour:
     m_IsLocked: 0
   m_LastSelectedObjectID: -9314
 --- !u!114 &9
+=======
+    x: 259.2
+    y: 448
+    width: 513
+    height: 336
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: 1107724348688695486, guid: 0c05ef5c0041e6941a260cdbb8bfe08e, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 0.2557895
+      e01: 0
+      e02: 0
+      e03: 2.2105255
+      e10: 0
+      e11: 0.2557895
+      e12: 0
+      e13: 102.713684
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: 0c05ef5c0041e6941a260cdbb8bfe08e,
+    type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 1107724348688695486, guid: 0c05ef5c0041e6941a260cdbb8bfe08e,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentEditor: 0
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &10
+>>>>>>> Hayden
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -330,6 +533,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
   m_EditorHideFlags: 0
   m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -373,6 +577,8 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+=======
+>>>>>>> Hayden
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -380,10 +586,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1189
     y: 0
     width: 204
     height: 931
+=======
+    x: 703
+    y: 0
+    width: 204
+    height: 731
+>>>>>>> Hayden
   m_MinSize: {x: 204, y: 224}
   m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 11}
@@ -412,17 +625,28 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1197
     y: 81
     width: 200
     height: 911
+=======
+    x: 703.2
+    y: 73.6
+    width: 200
+    height: 711
+>>>>>>> Hayden
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 2e2ef8ff0637f8ffc637f8ff027ef8ff1680f8ffe681f8ffce82f8ff1885f8ff72aff8ff1eb1f8ff20b6f8ffecd6f8ffc8d8f8ff80dbf8ffcaddf8ff9ac8f9ff44ebf9ff5a00fbffc600fbffe498fbff
+=======
+      m_ExpandedIDs: ae16ffff5ca1ffff1cabffff86e4ffff46f7fffff4ffffff106000003c63000060660000dc470300
+>>>>>>> Hayden
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: village_house7
@@ -438,7 +662,11 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 0
         m_IsRenamingFilename: 0
+<<<<<<< HEAD
         m_ClientGUIView: {fileID: 10}
+=======
+        m_ClientGUIView: {fileID: 0}
+>>>>>>> Hayden
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -461,12 +689,21 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1393
     y: 0
     width: 234
     height: 931
   m_MinSize: {x: 234, y: 274}
   m_MaxSize: {x: 10004, y: 10024}
+=======
+    x: 907
+    y: 0
+    width: 307
+    height: 731
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+>>>>>>> Hayden
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -493,10 +730,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1401
     y: 81
     width: 230
     height: 911
+=======
+    x: 907.2
+    y: 73.6
+    width: 303
+    height: 711
+>>>>>>> Hayden
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -510,6 +754,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scenes
   m_ViewMode: 0
   m_StartGridSize: 64
@@ -517,13 +762,28 @@ MonoBehaviour:
   - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\User\Desktop\rpg_master\rpg-project
+=======
+    - Assets/Prefabs/monster
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Prefabs/monster
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: C:\Users\qaz50\Desktop\RPG\RPG_cloud\rpg-project
+>>>>>>> Hayden
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 0e700200
     m_LastClickedID: 159758
     m_ExpandedIDs: 000000008e3b0000b03b00005c6002005e600200ac600200486e02001c6f0200626f0200b26f0200e46f020006700200087002000e7002002a700200367002004a700200a895020024960200e2960200bec30200c0c30200c2c3020000ca9a3b
+=======
+    m_SelectedIDs: 74550000
+    m_LastClickedID: 21876
+    m_ExpandedIDs: 000000007243000050440000e0440000404500008a450000924500007e460000225500004455000074550000e455000028580000bc58000096590000c4590000205a0000f65a0000b85b0000c45c0000d25d0000788b00007a8b00007c8b000000ca9a3b
+>>>>>>> Hayden
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -548,10 +808,17 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 300}
     m_SelectedIDs: 1a700200
     m_LastClickedID: 159770
     m_ExpandedIDs: ffffffff000000008e3b0000b03b00005c6002005e600200ac600200486e0200626f0200b26f0200e46f020006700200087002000e7002002a700200367002004a700200a895020024960200e2960200bec30200c0c30200c2c3020000ca9a3b
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 000000007243000050440000e0440000404500008a450000924500007e460000225500004455000074550000e455000028580000bc580000c4590000205a0000f65a0000b85b0000c45c0000d25d0000788b00007a8b00007c8b0000
+>>>>>>> Hayden
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -576,10 +843,17 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 1a700200
     m_LastClickedInstanceID: 159770
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: d4570000
+>>>>>>> Hayden
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -603,9 +877,15 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
+<<<<<<< HEAD
     m_ScrollPosition: {x: 0, y: 120}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 110
+=======
+    m_ScrollPosition: {x: 0, y: 184}
+    m_GridSize: 64
+  m_DirectoriesAreaWidth: 183
+>>>>>>> Hayden
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -621,10 +901,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1627
     y: 0
     width: 277
     height: 931
+=======
+    x: 1214
+    y: 0
+    width: 322
+    height: 731
+>>>>>>> Hayden
   m_MinSize: {x: 277, y: 74}
   m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 15}
@@ -653,10 +940,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1635
     y: 81
     width: 275
     height: 911
+=======
+    x: 1214.4
+    y: 73.6
+    width: 320
+    height: 711
+>>>>>>> Hayden
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 

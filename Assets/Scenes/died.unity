@@ -366,7 +366,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f96fe31790d7e1c4aa7360e7441fd6ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -566,6 +566,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: End_Button
       objectReference: {fileID: 0}
+    - target: {fileID: 127491843229628290, guid: 15ab3724580eebe48a79c69612d387cc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: 08281a5fdd8da904597438215e5a03f0,
+        type: 3}
+    - target: {fileID: 127491843229628290, guid: 15ab3724580eebe48a79c69612d387cc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 127491843229628291, guid: 15ab3724580eebe48a79c69612d387cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -670,17 +681,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 127491843229628290, guid: 15ab3724580eebe48a79c69612d387cc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 11500000, guid: 08281a5fdd8da904597438215e5a03f0,
-        type: 3}
-    - target: {fileID: 127491843229628290, guid: 15ab3724580eebe48a79c69612d387cc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15ab3724580eebe48a79c69612d387cc, type: 3}
