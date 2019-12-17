@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 336272655656696476}
   - component: {fileID: 7410932001037123891}
   - component: {fileID: 3561916516486047832}
+  - component: {fileID: 4347150565033521559}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -31,6 +32,7 @@ RectTransform:
   m_LocalScale: {x: 0.015, y: 0.015, z: 0.03}
   m_Children:
   - {fileID: 817753197659781800}
+  - {fileID: 958454092658601603}
   m_Father: {fileID: 6534073503700346388}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -99,6 +101,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &4347150565033521559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42975389594207829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9663dfe0f502f47ad5d02d87244bbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HPText: {fileID: 1032057709248964411}
+  Monsterhealth: {fileID: 6534073503700346390}
 --- !u!1 &944943794060814550
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,6 +188,83 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!1 &1193216080327842696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 958454092658601603}
+  - component: {fileID: 2824973564889626824}
+  - component: {fileID: 1032057709248964411}
+  m_Layer: 5
+  m_Name: HP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &958454092658601603
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193216080327842696}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8680776572344005703}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -2.5}
+  m_SizeDelta: {x: 60, y: 10}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2824973564889626824
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193216080327842696}
+  m_CullTransparentMesh: 0
+--- !u!114 &1032057709248964411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193216080327842696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 9
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 15/30
 --- !u!1 &6534073503700346387
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,7 +422,7 @@ MonoBehaviour:
   damageToGive: 10
   damageNumber: {fileID: 1745051995956282, guid: c9fcf0ef3f5abe047a91fef0acfbf258,
     type: 3}
-  destroyOnCollision: 0
+  destroyOnTrigger: 0
 --- !u!114 &6534073503700346390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,12 +435,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ff7bd1623b07d4cb018cf907c2522f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 15
+  MaxHealth: 20
   CurrentHealth: 0
-  goldToGive: {fileID: 0}
+  goldToGive:
+  - {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
+  - {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
+  - {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
+  - {fileID: 1131618260164548, guid: 822594c7ab642934fa36c3c2efa1134d, type: 3}
+  - {fileID: 2403519157119457710, guid: 609f8b6d278211b489086f6e0e98af35, type: 3}
+  - {fileID: 2403519157119457710, guid: 609f8b6d278211b489086f6e0e98af35, type: 3}
+  - {fileID: 5774323976291391020, guid: c690e79708c197943a80082ff3440114, type: 3}
+  - {fileID: 2881430455710541934, guid: b82b09044203387419941ff1b39c8de7, type: 3}
+  - {fileID: 8333871860817860752, guid: 2faa856e134e55d4c9c1dcea728cd9ca, type: 3}
+  - {fileID: 6514295599250812274, guid: 620a39f7c9e2ab046aa3a5922f0c9e33, type: 3}
   expToGive: 25
-  healthBar: {fileID: 7345976608125373355}
-  enemyQuestName: flower
+  healthBar: {fileID: 806837128808773218, guid: c3b4bd44954a64b4aafed871c4a3c923,
+    type: 3}
+  enemyQuestName: green_slime
 --- !u!114 &6858770387427606034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,13 +464,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba82cffb355dc0947a7f6fb8c5231cef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aimsDir: {x: 0, y: 0}
+  attackPos: {x: 0, y: 0}
   enemy3D: {fileID: 0}
   attackObject: {fileID: 8693391830529579338, guid: 1e8f985dcb22c6b4590d60da60db8d55,
     type: 3}
-  alertRadius: 6
-  defendRadius: 4
-  attackRange: 10
+  alertRadius: 8
+  attackRange: 6
   shootingSpeed: 10
+  currentState: 0
+  actionWeight:
+  - 1000
+  - 1000
+  actRestTime: 0
   attackCDTime: 1
 --- !u!1 &7259011182838189746
 GameObject:
